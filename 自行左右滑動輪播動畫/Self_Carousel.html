@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自行左右滑動輪播-動畫</title>
+    <link rel="stylesheet" href="./css/Self_Carousel_css.css">
+</head>
+
+<body>
+    <div class="main-wrap" id="main-wrap">
+        <div class="content-container" id="content">
+            <div class="width-proxy"></div>
+
+            <img src="./img/tw-product-segment-link-priority-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-product-segment-premium-banking-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-product-segment-priority-private-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-promotion-digital-mobile-line-400x-400y-230x230.webp" alt="">
+            <img src="./img/tw-product-segment-priority-private-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-wholesale-banking-400x-400y-200x200.webp" alt="">
+
+
+            <div class="width-proxy"></div>
+        </div>
+    </div>
+
+    <div class="main-wrap" id="main-wrap">
+        <div class="content-container" id="content">
+            <div class="width-proxy"></div>
+
+            <img src="./img/tw-product-segment-link-priority-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-product-segment-premium-banking-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-product-segment-priority-private-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-promotion-digital-mobile-line-400x-400y-230x230.webp" alt="">
+            <img src="./img/tw-product-segment-priority-private-400x-400y-200x200.webp" alt="">
+            <img src="./img/tw-wholesale-banking-400x-400y-200x200.webp" alt="">
+
+
+            <div class="width-proxy"></div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------- -->
+    <span class="count">0</span>
+    <div class="big_bbb">
+        <div class="pn01">
+            <div class="pn02">1</div>
+            <div class="pn02">2</div>
+            <div class="pn02">3</div>
+            <div class="pn02">4</div>
+        </div>
+    </div>
+
+
+    <!-- 自行左右滑動輪播-動畫 -->
+    <div class="bigd">
+        <div class="Self01">
+            <div class="Self02">1
+                <img src="./img/tw-product-segment-link-priority-400x-400y-200x200.webp" alt="">
+            </div>
+            <div class="Self02">2
+                <img src="./img/tw-product-segment-premium-banking-400x-400y-200x200.webp" alt="">
+            </div>
+            <div class="Self02">3
+                <img src="./img/tw-product-segment-priority-private-400x-400y-200x200.webp" alt="">
+            </div>
+            <div class="Self02">4
+                <img src="./img/tw-promotion-digital-mobile-line-400x-400y-230x230.webp" alt="">
+            </div>
+            <div class="Self02">5
+                <img src="./img/tw-product-segment-priority-private-400x-400y-200x200.webp" alt="">
+            </div>
+            <div class="Self02">6
+                <img src="./img/tw-wholesale-banking-400x-400y-200x200.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 手刻換圖輪播 -->
+    <div class="warp">
+        <ul class="warp01">
+            <!-- li*10>img["./img/cat/0$.png"] -->
+            <li class="warp02"><img src="./img/cat/01.png" alt="cat01"></li>
+            <li class="warp02"><img src="./img/cat/02.png" alt="cat02"></li>
+            <li class="warp02"><img src="./img/cat/03.png" alt="cat03"></li>
+            <li class="warp02"><img src="./img/cat/04.png" alt="cat04"></li>
+            <li class="warp02"><img src="./img/cat/05.png" alt="cat05"></li>
+            <li class="warp02"><img src="./img/cat/06.png" alt="cat06"></li>
+            <li class="warp02"><img src="./img/cat/07.png" alt="cat07"></li>
+            <li class="warp02"><img src="./img/cat/08.png" alt="cat08"></li>
+            <li class="warp02"><img src="./img/cat/09.png" alt="cat09"></li>
+            <li class="warp02"><img src="./img/cat/10.png" alt="cat10"></li>
+            <!-- <li class="warp02"><img src="./img/cat/01.png" alt="cat01"></li> -->
+        </ul>
+        <ul class="slider_dots">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/utils/Draggable.min.js"></script>
+    <!-- ----------------------- -->
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- <script src="./js/jquery-3.5.1.min.js"></script> -->
+    <script>
+        window.onload = function () {
+
+            $(".width-proxy").css("width", "0px");
+
+            Draggable.create("#content", {
+                type: "scrollLeft"
+            });
+
+            TweenLite.to("img", 1, { autoAlpha: 1 });
+
+
+        };
+    </script>
+    <script>
+        $(function () {
+            $(".pn01").draggable({
+                axis: "x",
+                drag: function () {
+                    let left = $(".big_bbb").scrollLeft();
+                    $("span.count").text(left);
+                }
+            });
+            // , containment: "parent" 
+            //$('html, body').scrollLeft()
+
+        });
+    </script>
+    <script>
+        // 設定換頁初始值
+        let page = 0;
+        $('.slider_dots li').eq(page).css('background', '#fff')
+            .siblings().css('background', 'transparent');
+
+
+        $('.slider_dots li').hover(function () {
+            page = $(this).index();
+
+            console.log('hi', $(this));
+            console.log($(this).index());
+            // .index()偵測索引值
+
+            $(this).css('background', '#fff')
+                .siblings().css('background', 'transparent');
+            // .siblings()指定的標籤底下的兄弟姊妹
+
+            // 輪播圖片的父層ul
+            $('.warp01').css('left', $(this).index() * - 600 + 'px');
+        })
+
+        //間隔的區間setInterval
+        //  ()=> 等於function ()
+        setInterval(() => {
+            page = page + 1;
+            if (page > 9) {
+                page = 0;
+            }
+            $('.warp01').css('left', page * - 600 + 'px');
+            console.log('page=', page);
+
+            //eq()選取的n個
+            $('.slider_dots li').eq(page).css('background', '#fff')
+                .siblings().css('background', 'transparent');
+
+        }, 2000);
+
+    </script>
+</body>
+
+</html>

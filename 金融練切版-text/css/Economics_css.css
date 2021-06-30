@@ -1,0 +1,736 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+/* ---------------手刻換圖輪播------------- */
+.warp01{
+    max-width: 100vw;
+    /* max-width:1600px; */
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.warp02{
+    list-style-type: none;
+    display: flex;/* 變成換圖輪播的橫排 */
+    width: 7680px;
+    /* 設定n個圖片寬度*數量 */
+    height: 350px;
+    /* 設定絕對定位是為了要輪播的位移 */
+    position: absolute;
+    left: -3840px;
+    margin: 0;
+    padding: 0;
+    transform: .5s;
+}
+.warp03{
+    width: 100%;
+    height: 100%;
+}
+.warp03 img{
+    /* 設定圖片符合最外面父層的視窗大小 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.warp03 .Carousel{
+    /* 設定圖片符合最外面父層的視窗大小 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* ----------設定換圖輪播的點點-------- */
+.slider_dots{
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    bottom: 20px;
+    justify-content: center;
+    /* 在自己的領域置中,所以要設定寬度 */
+    width: 100%;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.slider_dots li{
+    width: 20px;
+    height: 5px;
+    /* border-radius:50%; */
+    margin: 0 6px;
+    border: 1px solid #fff;
+    
+}
+.align_justify{
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+/* -------------------------------------------------------------- */
+@media screen and (max-width: 399px){
+    .xl_banner{
+        display: none;
+    }
+    .md_banner{
+        display: block;
+    }
+    .about_icon_body{
+
+    }
+    .about_icon_body li{
+
+    }
+    /* ----------手滑換圖輪播----------- */
+    .main-wrap .content-container{
+        max-width: 100%;
+    }
+    .main-wrap{
+        padding: 10px;
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 109px;
+    }
+  
+    .content-container{
+        height: 93px;
+        white-space: nowrap;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .content-container .width-proxy{
+        height: 10px;
+        display: inline-block;
+    }
+    .about_icon_center{
+        min-width: 110px;
+        white-space: normal; 
+    }
+    .content-container .about_icon_center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-container .about_icon_center:first-child{
+      margin-left: 0;
+    }
+    .content-container .about_icon_center{
+        width: 110px;
+        height: 93px;
+        padding: 8px;
+        
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .content-container h2{
+        font-size: .875em;
+        font-weight: 300;
+        text-align: center;
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .sc-icon{
+        width: 35px;
+        height: 35px;
+        margin:0px auto;
+    }
+    .sc-icon svg{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .about_icon_center svg{
+        stroke:#0c77b9;
+    }
+/* -----------------------最新焦點------------------------- */
+    /* 第一層父層 */
+    .Latest_focus{
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    /* 第二層父層 */
+    .focus_content{
+        padding: 32px 16px;
+    }
+    /* 卡片總父層 */
+    .focus_body{
+        padding: 32px 12px 0px 0px;
+        display: flex;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* 卡片父層 */
+    .focus_cord_body{
+        margin-right: 16px;
+        width: 224px;
+        height: 424px;
+        background-color: #fff;
+    }
+    .focus_cord_body:last-child{
+        margin-right: 0px;
+    }
+    /* 圖片父層 */
+    .focus_img{
+        width: 224px;
+        height: 224px;
+    }
+    .focus_img img{
+        width: 100%;
+        height: 100%;
+    }
+    /* 內文父層 */
+    .focus_text{
+        width: 224px;
+        width: 100%;
+        padding: 16px 16px 40px;
+        height: 200px;
+        /* white-space:pre-wrap; */
+    }
+    .focus_h3{
+        font-size: 1em;
+        height: 41px;
+        overflow: hidden;
+        font-weight: 400;
+        margin-bottom: .75rem;
+        margin-top: 0;
+    }
+    .focus_p{
+        height: 97px;
+        overflow: hidden;
+        /* margin-bottom: 8px; */
+        margin-top: 0;
+        font-size: .875em;
+    }
+    .focus_More{
+        padding-bottom: 20px;
+        font-size: .75em;
+        max-width: 150px;
+
+    }
+    .focus_More svg{
+        width: 16px;
+        height: 16px;
+        margin-left: .375rem;
+    }
+    /* -----------箭頭---------- */
+    .focus_arrow{
+        position: relative;
+        /* display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center; */
+        /* overflow: hidden; */
+    }
+    .arrow_body{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        top: calc(50% - -222px);
+        z-index: 5;
+    }
+
+    .arrow_right{
+        width: 35px;
+        height: 35px;
+    }
+    .arrow_left{
+        width: 35px;
+        height: 35px;
+    }
+    .arrow_right img{
+        width: 100%;
+        height: 100%;
+    }
+    .arrow_left img{
+        width: 100%;
+        height: 100%;
+    }
+   /* -----------news------------------ */
+   .news .item-group{
+    /* position: relative; */
+    }
+    .news_btn{
+        width: 200px;
+        height: 51px;
+        border-radius:25.5px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    } 
+    .news_btn:hover{
+        background-color: #fff;
+        color: #000;
+    }  
+    .news .item{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .news .pic{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #000;
+        overflow: hidden;
+        
+    }
+    .news .text{
+        position: absolute;
+        z-index: 5;
+        padding: 32px 16px; 
+        max-width: 638px;
+        height: 244px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .text02{
+        position: absolute;
+        z-index: 5;
+        padding: 32px 16px;     
+        max-width: 638px;
+        height: 271px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .news img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.6;
+        transform: .5s;
+        background-color: #000;
+    }
+    .news img:hover{
+        transform: scale(1.1);
+        opacity: .5;
+        
+    }
+    .big_text{
+        font-size: 1.375em;
+        font-weight: 200;
+    }
+    .news_text{
+        margin: 0 0 24px;
+    }
+    .text_p{
+        font-size: .875em;
+    }
+
+
+}
+/*如果螢幕寬度為 400px 以上 且 767px 以下，就套用 css 設定*/
+@media screen and (min-width: 400px) and (max-width: 768px){
+    .xl_banner{
+        display: none;
+    }
+    .md_banner{
+        display: block;
+    }
+     /* ----------手滑換圖輪播----------- */
+    .main-wrap .content-container{
+        max-width: 100%;
+    }
+    .main-wrap{
+        padding: 10px;
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 109px;
+    }
+  
+    .content-container{
+        height: 93px;
+        white-space: nowrap;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .content-container .width-proxy{
+        height: 10px;
+        display: inline-block;
+    }
+  
+    .content-container .about_icon_center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-container .about_icon_center:first-child{
+      margin-left: 0;
+    }
+    .content-container .about_icon_center{
+        width: 16.666%;
+        height: 93px;
+        white-space: normal;
+        padding: 8px;
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .content-container h2{
+        font-size: .875em;
+        font-weight: 300;
+        text-align: center;
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .sc-icon{
+        width: 35px;
+        height: 35px;
+        margin:0px auto;
+    }
+    .sc-icon svg{
+        width: 100%;
+        height: 100%;
+    }
+    .about_icon_center svg{
+        stroke:#0c77b9;
+    }
+ 
+    /* -----------news------------------ */
+    .news .item-group{
+        /* position: relative; */
+    }
+    .news_btn{
+        width: 200px;
+        height: 51px;
+        border-radius:25.5px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    } 
+    .news_btn:hover{
+        background-color: #fff;
+        color: #000;
+    }  
+    .news .item{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .news .pic{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #000;
+        overflow: hidden;
+        
+    }
+    .news .text{
+        position: absolute;
+        z-index: 5;
+        margin-left: 50px;
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .text02{
+        position: absolute;
+        z-index: 5;
+        margin-left: 50px;
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .news img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.6;
+        transform: .5s;
+        background-color: #000;
+    }
+    .news img:hover{
+        transform: scale(1.1);
+        opacity: .5;
+        
+    }
+    .big_text{
+        font-size: 1.875em;
+        margin: 0 0 24px;
+        font-weight: 200;
+    }
+    .text_p{
+        font-size: .875em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:769px){
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    /* .Carousel_01{
+        background: url("../img/banner01.webp") no-repeat;
+        background-size: 100% 100%;
+        
+    }
+    .Carousel_02{
+        background: url("../img/banner02.webp") no-repeat;
+        background-size: 100% 100%;
+    }
+    .Carousel_03{
+        background: url("../img/banner03.webp") no-repeat;
+        background-size: 100% 100%;
+    }
+    .Carousel_04{
+        background: url("../img/banner04.webp") no-repeat;
+        background-size: 100% 100%;
+    } */
+    .xl_banner{
+        display: block;
+    }
+    .md_banner{
+        display: none;
+    }
+
+    .item-group {
+        display: flex;
+    }
+     /* ----------手滑換圖輪播----------- */
+    .about{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height: 142px;
+        /* position: relative;
+        max-width: 50%;
+        overflow: hidden; */
+    }
+    .about_Carousel{
+       
+       
+    }
+    .about_icon_body{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        /* position: relative;
+        white-space: nowrap;
+        overflow: auto; */
+    
+    }
+    .about_icon_body .width-proxy{
+        /* height: 10px;
+        display: inline-block; */
+    }
+    .about_icon_body li:first-child{
+        /* margin-left: 0; */
+    }
+    .about_icon_body::-webkit-scrollbar{
+        /* display: none; */
+    }
+    .about_icon_body li{
+        width: 13%;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content:center;
+        /* border: 1px solid red; */
+        /* position: relative;
+        opacity:0;
+        visibility:hidden; */
+    }
+    .about_icon_body h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .sc-icon{
+        width: 48px;
+        height: 48px;
+        margin:0px auto;
+    }
+    .sc-icon svg{
+        width: 100%;
+        height: 100%;
+    }
+    .about_icon_text06{
+        /* transform: translateX(25%); */
+    }
+/* ------------------------------------- */
+    .main-wrap{
+        margin-left: 10%;
+        padding: 10px;
+        max-width: 80%;
+        overflow: hidden;
+    }
+  
+    .content-container{
+        height: 142px;
+        white-space: nowrap;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .content-container .width-proxy{
+        height: 10px;
+        display: inline-block;
+    }
+  
+    .content-container .about_icon_center{
+        /* opacity:0; */
+        /* visibility:hidden; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-container .about_icon_center:first-child{
+      margin-left: 0;
+    }
+    .content-container .about_icon_center{
+        width: 200px;
+        height: 142px;
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .content-container h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .about_icon_center svg{
+        stroke:#0c77b9;
+    }
+/* -----------news------------------ */
+    .news .item-group{
+        position: relative;
+    }
+    .news_btn{
+        width: 200px;
+        height: 51px;
+        border-radius:25.5px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    } 
+    .news_btn:hover{
+        background-color: #fff;
+        color: #000;
+    }  
+    .news .item{
+        width: 50%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .news .pic{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #000;
+        overflow: hidden;
+        
+    }
+    .news .text{
+        position: absolute;
+        z-index: 5;
+        margin-left: calc(100%/3.5);
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .text02{
+        position: absolute;
+        z-index: 5;
+        margin-left: 50px;
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .news img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.6;
+        transform: .5s;
+        background-color: #000;
+    }
+    .news img:hover{
+        transform: scale(1.1);
+        opacity: .5;
+        
+    }
+    .big_text{
+        font-size: 1.875em;
+        margin: 0 0 24px;
+        font-weight: 200;
+    }
+    .text_p{
+        font-size: .875em;
+    }
+
+
+
+
+}
