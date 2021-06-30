@@ -166,15 +166,16 @@
     /* 第二層父層 */
     .focus_content{
         padding: 32px 16px;
+        overflow: hidden;
     }
     /* 卡片總父層 */
     .focus_body{
         padding: 32px 12px 0px 0px;
         display: flex;
-        overflow: hidden;
         position: absolute;
         top: 0;
         left: 0;
+        white-space: nowrap;
     }
     /* 卡片父層 */
     .focus_cord_body{
@@ -232,11 +233,8 @@
     /* -----------箭頭---------- */
     .focus_arrow{
         position: relative;
-        /* display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center; */
-        /* overflow: hidden; */
+        min-height: 550px;
+        overflow: auto;
     }
     .arrow_body{
         position: absolute;
@@ -265,9 +263,7 @@
         height: 100%;
     }
    /* -----------news------------------ */
-   .news .item-group{
-    /* position: relative; */
-    }
+
     .news_btn{
         width: 200px;
         height: 51px;
