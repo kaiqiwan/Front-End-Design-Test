@@ -234,6 +234,9 @@
         height: 16px;
         margin-left: .375rem;
     }
+    .focus_body::-webkit-scrollbar{
+        width: 0 !important; /* 隱藏滾動條 */
+    }
     /* -----------箭頭---------- */
     .focus_arrow{
         position: relative;
@@ -519,6 +522,9 @@
         width: 16px;
         height: 16px;
         margin-left: .375rem;
+    }
+    .focus_body::-webkit-scrollbar{
+        width: 0 !important; /* 隱藏滾動條 */
     }
     /* -----------箭頭---------- */
     .focus_arrow{
@@ -833,18 +839,11 @@
         white-space: nowrap;
         min-height: 455px;
         overflow: auto;
-        /* -ms-overflow-style: none; */
-        /* width: 100%; */
-        /* width: calc(100% + 18px); */
-        
     }
 
 
     .focus_body::-webkit-scrollbar{
-        /* display: none; */
-        /* overflow: hidden; */
-        /* background-color:transparent; */
-        width: 0 !important;
+        width: 0 !important; /* 隱藏滾動條 */
     }
     /* 卡片父層 */
     .focus_cord_body{
