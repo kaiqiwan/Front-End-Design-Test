@@ -163,6 +163,9 @@
         background-color: rgb(245, 245, 245);
         min-height: 550px;
     }
+    .Latest_focus .big_text{
+        margin-bottom: 32px;
+    }
     /* 第二層父層 */
     .focus_content{
         padding: 32px 16px;
@@ -170,12 +173,13 @@
     }
     /* 卡片總父層 */
     .focus_body{
-        padding: 32px 12px 0px 0px;
         display: flex;
-        position: absolute;
+        /* position: absolute; */
         top: 0;
         left: 0;
         white-space: nowrap;
+        min-height: 455px;
+        overflow: auto;
     }
     /* 卡片父層 */
     .focus_cord_body{
@@ -233,8 +237,8 @@
     /* -----------箭頭---------- */
     .focus_arrow{
         position: relative;
-        min-height: 550px;
-        overflow: auto;
+        /* min-height: 455px;
+        overflow: auto; */
     }
     .arrow_body{
         position: absolute;
@@ -242,26 +246,51 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        top: calc(50% - -222px);
+        top: calc(50% - 38px);
         z-index: 5;
     }
 
     .arrow_right{
         width: 35px;
         height: 35px;
+        border-radius: 50%;
+        border: 3px solid #e1e1e1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     .arrow_left{
         width: 35px;
         height: 35px;
+        border: 3px solid #e1e1e1;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
     }
-    .arrow_right img{
-        width: 100%;
-        height: 100%;
+    .arrow_right svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(5%);
+        fill: #e1e1e1;
     }
-    .arrow_left img{
-        width: 100%;
-        height: 100%;
+    .arrow_left svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(-5%);
+        fill: #e1e1e1;
     }
+    .cls-1 {
+        fill: none;
+        stroke: #e1e1e1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+    }
+    
    /* -----------news------------------ */
 
     .news_btn{
@@ -414,7 +443,139 @@
     .about_icon_center svg{
         stroke:#0c77b9;
     }
- 
+    /* -----------------------最新焦點------------------------- */
+    /* 第一層父層 */
+    .Latest_focus{
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .Latest_focus .big_text{
+        margin-bottom: 32px;
+    }
+    /* 第二層父層 */
+    .focus_content{
+        padding: 32px 32px;
+        overflow: hidden;
+    }
+    /* 卡片總父層 */
+    .focus_body{
+        display: flex;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        min-height: 455px;
+        overflow: auto;
+    }
+    /* 卡片父層 */
+    .focus_cord_body{
+        margin-right: 16px;
+        width: 224px;
+        height: 424px;
+        background-color: #fff;
+    }
+    .focus_cord_body:last-child{
+        margin-right: 0px;
+    }
+    /* 圖片父層 */
+    .focus_img{
+        width: 224px;
+        height: 224px;
+    }
+    .focus_img img{
+        width: 100%;
+        height: 100%;
+    }
+    /* 內文父層 */
+    .focus_text{
+        width: 224px;
+        width: 100%;
+        padding: 16px 16px 40px;
+        height: 200px;
+        /* white-space:pre-wrap; */
+    }
+    .focus_h3{
+        font-size: 1em;
+        height: 41px;
+        overflow: hidden;
+        font-weight: 400;
+        margin-bottom: .75rem;
+        margin-top: 0;
+    }
+    .focus_p{
+        height: 97px;
+        overflow: hidden;
+        /* margin-bottom: 8px; */
+        margin-top: 0;
+        font-size: .875em;
+    }
+    .focus_More{
+        padding-bottom: 20px;
+        font-size: .75em;
+        max-width: 150px;
+
+    }
+    .focus_More svg{
+        width: 16px;
+        height: 16px;
+        margin-left: .375rem;
+    }
+    /* -----------箭頭---------- */
+    .focus_arrow{
+        position: relative;
+        /* min-height: 455px;
+        overflow: auto; */
+    }
+    .arrow_body{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        top: calc(50% - 38px);
+        z-index: 5;
+    }
+
+    .arrow_right{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 3px solid #e1e1e1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow_left{
+        width: 35px;
+        height: 35px;
+        border: 3px solid #e1e1e1;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .arrow_right svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(5%);
+        fill: #e1e1e1;
+    }
+    .arrow_left svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(-5%);
+        fill: #e1e1e1;
+    }
+    .cls-1 {
+        fill: none;
+        stroke: #e1e1e1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+    }
     /* -----------news------------------ */
     .news .item-group{
         /* position: relative; */
@@ -647,6 +808,164 @@
     .about_icon_center svg{
         stroke:#0c77b9;
     }
+    /* -----------------------最新焦點------------------------- */
+    /* 第一層父層 */
+    .Latest_focus{
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .Latest_focus .big_text{
+        margin-bottom: 32px;
+    }
+    /* 第二層父層 */
+    .focus_content{
+        padding: 32px 32px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    /* 卡片總父層 */
+    .focus_body{
+        display: flex;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        min-height: 455px;
+        overflow: auto;
+        /* -ms-overflow-style: none; */
+        /* width: 100%; */
+        /* width: calc(100% + 18px); */
+        
+    }
+
+
+    .focus_body::-webkit-scrollbar{
+        /* display: none; */
+        /* overflow: hidden; */
+        /* background-color:transparent; */
+    }
+    /* 卡片父層 */
+    .focus_cord_body{
+        margin-right: 16px;
+        width: 224px;
+        height: 424px;
+        background-color: #fff;
+    }
+    .focus_cord_body:last-child{
+        margin-right: 0px;
+    }
+    /* 圖片父層 */
+    .focus_img{
+        width: 224px;
+        height: 224px;
+    }
+    .focus_img img{
+        width: 100%;
+        height: 100%;
+    }
+    /* 內文父層 */
+    .focus_text{
+        width: 224px;
+        width: 100%;
+        padding: 16px 16px 40px;
+        height: 200px;
+        /* white-space:pre-wrap; */
+    }
+    .focus_h3{
+        font-size: 1em;
+        height: 41px;
+        overflow: hidden;
+        font-weight: 400;
+        margin-bottom: .75rem;
+        margin-top: 0;
+    }
+    .focus_p{
+        height: 97px;
+        overflow: hidden;
+        /* margin-bottom: 8px; */
+        margin-top: 0;
+        font-size: .875em;
+    }
+    .focus_More{
+        padding-bottom: 20px;
+        font-size: .75em;
+        max-width: 150px;
+
+    }
+    .focus_More svg{
+        width: 16px;
+        height: 16px;
+        margin-left: .375rem;
+    }
+    .focus_start{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .focus_content h2{
+        padding-left: 10%;
+    }
+    /* -----------箭頭---------- */
+    .focus_arrow{
+        position: relative;
+        min-width: 80%;
+        width: 80%;
+
+    }
+    
+    .arrow_body{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        top: calc(50% - 38px);
+        z-index: 5;
+    }
+
+    .arrow_right{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 3px solid #e1e1e1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow_left{
+        width: 35px;
+        height: 35px;
+        border: 3px solid #e1e1e1;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .arrow_right svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(5%);
+        fill: #e1e1e1;
+    }
+    .arrow_left svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(-5%);
+        fill: #e1e1e1;
+    }
+    .cls-1 {
+        fill: none;
+        stroke: #e1e1e1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+    }
+    
 /* -----------news------------------ */
     .news .item-group{
         position: relative;
