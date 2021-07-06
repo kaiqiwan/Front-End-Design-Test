@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>銀行切版-練習</title>
     <link rel="stylesheet" href="./css/Economics_css.css">
+    <link rel="stylesheet" href="./css/navber.css">
     <style>
         a {
             color: #000;
@@ -20,24 +21,380 @@
 </head>
 
 <body>
+    <header>
+
+        <div class="nav_01_body">
+            <div class="nav_01 p_32 item-group">
+                <div class="nav_youAre item-group">
+                    <p class="youAre_p01">你在</p>
+                    <p class="youAre_p02">個人銀行</p>
+                </div>
+                <div class="nav_other">
+                    <ul class="item-group">
+                        <li class="other_01">需要協助</li>
+                        <li class="other_01">服務據點</li>
+                        <li class="other_01">聯絡我們</li>
+                        <li class="other_01 nav_search">
+                            <a href="" title="搜尋" aria-label="Search">
+                                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.34 10.903A4.567 4.567 0 0 1 1.778 6.34 4.568 4.568 0 0 1 6.34 1.777a4.569 4.569 0 0 1 4.564 4.564 4.567 4.567 0 0 1-4.564 4.562m8.73 2.721l-3.596-3.592a6.283 6.283 0 0 0 1.208-3.691A6.348 6.348 0 0 0 6.34 0 6.348 6.348 0 0 0 0 6.34a6.347 6.347 0 0 0 6.34 6.34c1.476 0 2.816-.526 3.895-1.374l3.577 3.575a.887.887 0 0 0 1.257 0 .89.89 0 0 0 0-1.257"
+                                        fill="#221F20"></path>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="other_01">
+                            台灣
+                        </li>
+                        <li class="other_02">
+                            <p>EN</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav_02_body">
+            <div class="nav_02 p_32">
+                <div class="nav_logo ">
+                    <img src="./img/logo01.svg" alt="">
+                </div>
+                <div class="nav_count">
+                    <ul class="item-group">
+                        <li class="nav_menu_btn">存款</li>
+                        <li class="nav_menu_btn">信用卡</li>
+                        <li class="nav_menu_btn">貸款</li>
+                        <li class="nav_menu_btn">投資</li>
+                        <li class="nav_menu_btn">保險</li>
+                        <li class="nav_menu_btn">數位服務</li>
+                        <li class="nav_menu_btn">支援中心</li>
+                    </ul>
+                </div>
+                <div class="nav_member item-group">
+                    <div class="nav_registered_btn">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30">
+                                <path fill="#00a546"
+                                    d="M1 30c-.6 0-1-.4-1-1v-5.1c0-1.3 1.2-2.7 2.1-3.1l5.7-2.3c.5-.2.7-.4.8-.6.2-.5.8-.7 1.3-.5.5.2.7.8.5 1.3-.4 1-1.4 1.4-1.8 1.6l-.2.1-5.7 2.2c-.2.3-.7 1-.7 1.3V29c0 .5-.4 1-1 1zM23 30c-.6 0-1-.4-1-1v-5.1c0-.4-.4-1.1-.6-1.2l-5.8-2.3c-.5-.2-1.5-.6-2-1.6-.2-.5 0-1.1.5-1.3.5-.2 1.1 0 1.3.5 0 .1.2.2.9.5.1 0 .1.1.2.1l5.6 2.2c.9.3 1.8 1.8 1.8 3.1V29c.1.5-.3 1-.9 1zM13 16h-1.7c-2 0-4-2.2-4.6-5.1v-.1L6 5.7C6 2.5 8.5 0 11.6 0h1.5c2.9.2 5.2 2.7 5.2 5.6v.1l-.7 5C17 13.7 15 16 13 16zm-4.4-5.6c.5 2.2 1.9 3.5 2.7 3.5H13c.8 0 2.2-1.4 2.7-3.5l.6-4.8c0-1.9-1.5-3.4-3.4-3.6h-1.3C9.6 2 8 3.6 8 5.6l.6 4.8zm8.7-4.7z">
+                                </path>
+                            </svg>
+                        </span>
+                        註冊
+                    </div>
+                    <div class="nav_SignIn_btn">
+                        <span class="sc-nav__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24.19 28.58">
+                                <g data-name="Layer 2">
+                                    <g>
+                                        <path
+                                            d="M21.19 28.58H3a3 3 0 0 1-3-3V11.23a3 3 0 0 1 3-3h18.19a3 3 0 0 1 3 3v14.35a3 3 0 0 1-3 3zM3 10.23a1 1 0 0 0-1 1v14.35a1 1 0 0 0 1 1h18.19a1 1 0 0 0 1-1V11.23a1 1 0 0 0-1-1z"
+                                            fill="#d4d4d4"></path>
+                                        <path
+                                            d="M19 9.43a1 1 0 0 1-1-1v-2.7A3.74 3.74 0 0 0 14.26 2H9.92a3.74 3.74 0 0 0-3.73 3.73v2.7a1 1 0 0 1-2 0v-2.7A5.74 5.74 0 0 1 9.92 0h4.34A5.74 5.74 0 0 1 20 5.73v2.7a1 1 0 0 1-1 1zM12.19 23.33a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v4a.5.5 0 0 1-.5.5z"
+                                            fill="#d4d4d4"></path>
+                                        <path
+                                            d="M12.12 18.93a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0-2.44a.47.47 0 1 0 .47.47.47.47 0 0 0-.47-.47z"
+                                            fill="#d4d4d4" data-name="Ellipse 7"></path>
+                                        <path
+                                            d="M12.12 18.93a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0-2.44a.47.47 0 1 0 .47.47.47.47 0 0 0-.47-.47z"
+                                            fill="#d4d4d4" data-name="Ellipse 7"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        登入
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------nav_細頁_存款--deposit--------------------------------- -->
+        <div class="nav_deposit">
+            <span></span>
+            <div class="deposit_01">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="deposit_02">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="deposit_03">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="deposit_04">
+                <div class="deposit_img01">
+                    <img src="" alt="">
+                </div>
+                <div class="deposit_img02">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ------------------------------nav_細頁_信用卡--credit card------------------------------- -->
+        <div class="nav_creditCard">
+            <span></span>
+            <div class="creditCard_01">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </div>
+            <div class="creditCard_02">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="creditCard_03">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="creditCard_04">
+                <div class="creditCard_img01">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ------------------------------nav_細頁_貸款--loan--------------------------------- -->
+        <div class="nav_loan">
+            <span></span>
+            <div class="loan_01">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="loan_02">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="loan_03">
+                <div class="loan_img01">
+                    <img src="" alt="">
+                </div>
+                <div class="loan_img02">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------nav_細頁_投資--investment--------------------------------- -->
+        <div class="nav_investment">
+            <span></span>
+            <div class="investment_01">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="investment_02">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="investment_03">
+                <div class="investment_img01">
+                    <img src="" alt="">
+                </div>
+                <div class="investment_img02">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------nav_細頁_保險--Insurance--------------------------------- -->
+        <div class="nav_Insurance">
+            <span></span>
+            <div class="Insurance_01">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="Insurance_02">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="Insurance_03">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="Insurance_04">
+                <div class="Insurance_img01">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------nav_細頁_數位服務--Digital service----------------------------- -->
+        <div class="nav_DigitalService">
+            <span></span>
+            <div class="DigitalService_01">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="DigitalService_02">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="DigitalService_04">
+                <div class="DigitalService_img01">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ------------------------------nav_細頁_支援中心--Support center----------------------------- -->
+        <div class="nav_SupportCenter">
+            <span></span>
+            <div class="SupportCenter_01">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </div>
+            <div class="SupportCenter_02">
+                <ul>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </div>
+            <div class="SupportCenter_03">
+                <ul>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </div>
+            <div class="SupportCenter_04">
+                <ul>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
     <div class="banner_color">
         <div class="banner">
             <!-- 手刻換圖輪播 -->
             <div class="warp01">
                 <ul class="warp02">
-                    <li class="warp03">
+                    <li class="warp03" type="bnr_01">
                         <img class="xl_banner" src="./img/banner01-1.webp" alt="appearance01">
                         <img class="md_banner" src="./img/banner01_md-1.jpg" alt="appearance01">
                     </li>
-                    <li class="warp03">
+                    <li class="warp03" type="bnr_02">
                         <img class="xl_banner" src="./img/banner02.webp" alt="appearance02">
                         <img class="md_banner" src="./img/banner02_md.webp" alt="appearance02">
                     </li>
-                    <li class="warp03">
+                    <li class="warp03" type="bnr_02">
                         <img class="xl_banner" src="./img/banner03-1.webp" alt="appearance03">
                         <img class="md_banner" src="./img/banner03_md-1.jpg" alt="appearance03">
                     </li>
-                    <li class="warp03">
+                    <li class="warp03" type="bnr_02">
                         <img class="xl_banner" src="./img/banner04.webp" alt="appearance04">
                         <img class="md_banner" src="./img/banner04_md.webp" alt="appearance04">
                     </li>
@@ -285,8 +642,8 @@
                                 <img src="./img/focus02.webp" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">基金首購 限時放送</h3>
+                                <p class="focus_p">活動時間: 2021/7/1~2021/7/25</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -300,11 +657,11 @@
                         </div>
                         <div class="focus_cord_body">
                             <div class="focus_img">
-                                <img src="./img/focus03.webp" alt="">
+                                <img src="./img/focus03.jpg" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">渣打優先理財 享本季尊榮好禮</h3>
+                                <p class="focus_p">活動期間: 2021/07/01-2021/09/30</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -321,8 +678,8 @@
                                 <img src="./img/focus04.webp" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">新戶首刷好禮</h3>
+                                <p class="focus_p">信用卡新戶 完成指定任務享首刷好禮NT$500</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -339,8 +696,8 @@
                                 <img src="./img/focus05.webp" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">渣打防疫紓困專區</h3>
+                                <p class="focus_p">齊心抗疫 渣打挺你</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -357,8 +714,8 @@
                                 <img src="./img/focus06.webp" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">台外幣存款優惠</h3>
+                                <p class="focus_p">台幣與外幣優惠存款利率，讓您的存款輕輕鬆鬆，利上加利</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -375,8 +732,8 @@
                                 <img src="./img/focus07.webp" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">外匯新戶登入禮</h3>
+                                <p class="focus_p">活動期間符合條件，可享熱門幣別換匯優惠：日幣/台幣：0.14分；美金/台幣：4分；歐元/台幣：1.3角</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -393,8 +750,8 @@
                                 <img src="./img/focus08.webp" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">買債券？找渣打</h3>
+                                <p class="focus_p">債券精挑細選 價格透明呈現</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -411,26 +768,8 @@
                                 <img src="./img/focus09.webp" alt="">
                             </div>
                             <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
-                                <span class="focus_More">更多
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
-                                        viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
-                                        <title>icon-arrow-2</title>
-                                        <path fill="#c4c4c4"
-                                            d="M54.642 32.084l-10.694-10.36v6.851H9.358v6.851h34.59v7.018z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="focus_cord_body">
-                            <div class="focus_img">
-                                <img src="./img/focus10.webp" alt="">
-                            </div>
-                            <div class="focus_text">
-                                <h3 class="focus_h3">永續投資</h3>
-                                <p class="focus_p">為您的財富增值，也能真正改善世界</p>
+                                <h3 class="focus_h3">基金越扣越優惠</h3>
+                                <p class="focus_p">符合條件，享線上申購基金手續費最低1折優惠！</p>
                                 <span class="focus_More">更多
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                         viewbox="0 0 64 64" role="img" aria-label="icon-arrow-2">
@@ -605,7 +944,8 @@
     <footer>
         <!-- <div class="footer_body"> -->
         <div class="item-group">
-            <div class="footer01 footer_count padding_r">
+
+            <div class="footer01 footer_count padding_r footer_none_xs">
                 <ul>
                     <li>關於渣打</li>
                     <li>永續發展計畫</li>
@@ -613,7 +953,7 @@
                     <li>打擊金融詐騙</li>
                 </ul>
             </div>
-            <div class="footer02 footer_count padding_r">
+            <div class="footer02 footer_count padding_r footer_none_xs">
                 <ul>
                     <li>環球據點</li>
                     <li>菁英招募</li>
@@ -622,7 +962,7 @@
                     <li>消費者保護</li>
                 </ul>
             </div>
-            <div class="footer03 footer_count padding_r">
+            <div class="footer03 footer_count padding_r footer_none_xs">
                 <ul>
                     <li>集團網站</li>
                     <li>網站隱私權聲明</li>
@@ -633,7 +973,8 @@
                     <li>著作權聲明</li>
                 </ul>
             </div>
-            <div class="footer04 footer_count padding_l">
+
+            <div class="footer04 footer_count padding_l ">
                 <div class="download">
                     <div class="apps_title01">
                         <p>渣打行動銀行App</p>
@@ -742,6 +1083,45 @@
                             </div>
                         </a>
                     </div>
+
+                </div>
+                <div class="Quick_link_body">
+                    <div class="Quick_link">
+                        <p class="Quick_p">快速連結</p>
+                        <div class="footer_arrow">
+                            <img src="./img/箭頭往下.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer_body">
+                        <div class="footer01 footer_count padding_r footer_block_xs ">
+                            <ul>
+                                <li>關於渣打</li>
+                                <li>永續發展計畫</li>
+                                <li>投資者關係</li>
+                                <li>打擊金融詐騙</li>
+                            </ul>
+                        </div>
+                        <div class="footer02 footer_count padding_r footer_block_xs">
+                            <ul>
+                                <li>環球據點</li>
+                                <li>菁英招募</li>
+                                <li>財務報告</li>
+                                <li>環球研究</li>
+                                <li>消費者保護</li>
+                            </ul>
+                        </div>
+                        <div class="footer03 footer_count padding_r footer_block_xs">
+                            <ul>
+                                <li>集團網站</li>
+                                <li>網站隱私權聲明</li>
+                                <li>網路安全</li>
+                                <li>重要資訊</li>
+                                <li>法定公開揭露事項</li>
+                                <li>個人資料告知事項</li>
+                                <li>著作權聲明</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -827,19 +1207,15 @@
             }, 500);
 
         })
-        // ------------------------------------------
-        // banner_text父層
-        //banner_text h2要換文字
-        let bannerH2 = $('.banner_text h2');
+        // -------------footer-快速連結-手機版---------------------------
+        // Quick_link
+        // $(".Quick_link").click(function () {
+        //     $('.footer_body').toggleClass("footer_block_xs");
+        // });
+        $(".Quick_link").click(function () {
+            $('.footer_body').toggle();
+        });
 
-        //banner_text p要換文字
-        let bannerP = $('.banner_text p');
-
-        //banner_text btn_01要換樣式(其他要消失,只有第一張輪播圖使用)
-        let btn_01 = $('.banner_text .btn_01');
-
-        //banner_text btn_02要換樣式
-        let btn_02 = $('.banner_text .btn_02');
 
 
 
@@ -859,7 +1235,7 @@
                 let heightX = 4.8;
                 if (400 <= warp02_width && warp02_width <= 768) {
                     heightX = 2.84;
-                } else if (warp02_width < 400) {
+                } else if (warp02_width < 414) {
                     heightX = 1.38;
                 }
                 warp01.css("height", warp02_width / heightX + "px");
@@ -909,13 +1285,68 @@
             }
             $('.warp02').css('left', page * - warp02_width + 'px');
             console.log('page=', page);
-
+            //設定 Type 顯示方式
+            setTypeSetting(page);
+            //調整 Banner 文字
+            changeBannerText();
             // eq()選取的n個
             $('.slider_dots li').eq(page).css('background', '#fff')
                 .siblings().css('background', 'transparent');
 
-        }, 2000);
+        }, 3000);
 
+        function setTypeSetting(page) {
+            let type = $('.warp02 li').eq(page).attr("type");
+            let btn_01 = $('.btn_01');
+            let btn_02 = $('.btn_02');
+            console.log(type);
+
+            if (type === 'bnr_01') {
+                btn_01.css('display', 'block');
+                if (warp02_width > 768) {
+                    btn_02.css('border', '2px solid #fff').css('background-color', 'transparent').css('color', '#fff');
+                }
+                else {
+                    btn_02.css('border', '2px solid #000').css('background-color', 'transparent').css('color', '#000');
+                }
+
+            } else {
+                btn_01.css('display', 'none');
+                btn_02.css('border', '2px solid #008738').css('background-color', '#008738').css('color', '#fff');
+
+            }
+        }
+
+        function changeBannerText() {
+            // banner_text父層
+            //banner_text h2要換文字
+            var bannerH2 = $('.banner_text h2');
+
+            //banner_text p要換文字
+            var bannerP = $('.banner_text p');
+
+            switch (page) {
+                case 0:
+                    bannerH2.text('渣打居家貸');
+                    bannerP.text('前三期0.88 %  防疫期間 貸款免出門');
+                    break;
+                case 1:
+                    bannerH2.text('渣打優先理財 限時優惠活動');
+                    bannerP.text('渣打優先理財始終與您在一起，唯您尊榮服務、打造財富新視野！');
+
+                    break;
+                case 2:
+                    bannerH2.text('渣打優逸理財');
+                    bannerP.text('為您提供便捷的數位服務及多重禮遇，新戶活動最高享7 - ELEVEN $500、再享台幣活存最高1 %');
+
+                    break;
+                case 3:
+                    bannerH2.text('幸福加溫  精彩人生');
+                    bannerP.text('「轉動幸福」享房貸優惠利率最低1.31%起及最高NT$10,000地政設定規費補貼！');
+
+                    break;
+            }
+        }
         // --------------------------------貴賓理財服務----------------------------
         function reSet_h2_01_02() {
             $('.services01').css('display', 'block');

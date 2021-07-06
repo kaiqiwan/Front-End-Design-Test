@@ -1,0 +1,164 @@
+*{
+    list-style-type: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav_01_body,.nav_02_body{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav_01_body{
+    background-color: #f6f6f6;
+}
+
+
+.p_32{
+    padding: 0 32px;
+    margin: 0 19px;
+}
+/* -------------------------------------------------- */
+.nav_01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 30px;
+    
+    width: 75.1%;
+}
+.youAre_p01{
+    margin-right: 8px;
+}
+.other_01{
+    margin-right:16px;
+}
+.nav_search{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.other_02{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 0 8px;
+    color: #555;
+}
+.other_02 p{
+    font-size: 10px;
+    white-space: nowrap;
+    padding: 4px;
+    line-height: 10px;
+}
+/* ------------------------------------------------ */
+.nav_02{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75.1%;
+}
+.nav_logo{
+    width: 130px;
+    height: 51px;
+}
+.nav_logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ------註冊------------ */
+.nav_registered_btn{
+    display: flex;
+    background: #fff;
+    color: #00a546;
+    border: 1px solid #00a546;
+    padding: 0 8px;
+    width: 100%;
+    height: 32px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    min-width: 120px;
+    margin-right: 16px;
+
+}
+.nav_registered_btn svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+
+
+/* --------登入----------- */
+.nav_SignIn_btn{
+    display: flex;
+    width: 100%;
+    height: 32px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #00a546;
+    color: #fff;
+    font-size: 12px;
+    min-width: 120px;
+    
+}
+.nav_SignIn_btn path{
+    fill: #fff;
+    width: 16px;
+    height: 15px;
+}
+.nav_menu_btn{
+    padding: 8px 16px;
+}
+/* -------------nav_細頁_存款--deposit------------------ */
+
+
+/* -------------nav_細頁_信用卡--creditCard---------------- */
+
+
+/* -------------nav_細頁_貸款--loan------------------ */
+
+
+
+/* -------------nav_細頁_投資--investment------------------ */
+
+
+/* -------------nav_細頁_保險--Insurance------------------ */
+
+
+/* -------------nav_細頁_數位服務--DigitalService-------------- */
+
+
+/* -------------nav_細頁_支援中心--SupportCenter-------------- */
+
+
+
+
+
+
+
