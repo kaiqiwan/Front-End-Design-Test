@@ -1069,10 +1069,10 @@
     .text02{
         position: absolute;
         z-index: 5;
-        margin-left: 50px;
+        /* margin-left: 50px; */
         max-width: 638px;
         height: 280px;
-        padding: 40px 0;
+        padding: 40px 32px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1092,7 +1092,7 @@
         
     }
     .big_text{
-        font-size: 1.875em;
+        /* font-size: 1.875em; */
         padding: 0 0 24px;
         font-weight: 200;
     }
@@ -1400,8 +1400,11 @@
 
 
 }
-/* --------------------------------桌機版------------------------------------------- */
-@media screen and (min-width:769px){
+
+
+
+/* --------------------------------桌機版--1440----------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1440px){
     *{
         padding: 0;
         margin: 0;
@@ -1414,7 +1417,7 @@
     }
     .banner{
         position: relative;
-        
+       
     }
     .banner img{
         opacity: 0.5;
@@ -1429,7 +1432,7 @@
     .item-group {
         display: flex;
     }
-     /* ----------手滑換圖輪播-桌機版---------- */
+     /* ----------手滑換圖輪播-桌機版--1440-------- */
     .about{
         display:flex;
         align-items:center;
@@ -1489,15 +1492,23 @@
     .about_icon_text06{
         /* transform: translateX(25%); */
     }
-/* -----------------輪播內文-桌機版------------------ */
+/* -----------------輪播內文-桌機版--1440---------------- */
+    .banner_text_body{
+        /* width: 0 auto; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     .banner_text{
         position: absolute;
         max-width: 800px;
         width: 800px;
         padding: 40px 0;
-        top: 50px;
-        left: 280px;
+        top: 0px;
+        left: 32px;
         
+        /* align-items: center; */
+        /* align-content: center; */
     }
     .banner_btn{
         border-radius: 50px;
@@ -1535,7 +1546,7 @@
 
 
 
-/* ----------------桌機版--------------------- */
+/* ----------------桌機版--1440------------------- */
 
     .main-wrap{
         margin-left: 10%;
@@ -1583,7 +1594,7 @@
     .about_icon_center svg{
         stroke:#0c77b9;
     }
-    /* -----------------------最新焦點-桌機版------------------------ */
+    /* -----------------------最新焦點-桌機版--1440---------------------- */
     /* 第一層父層 */
     .Latest_focus{
         background-color: rgb(245, 245, 245);
@@ -1684,7 +1695,7 @@
     .focus_content h2{
         padding-left: 10%;
     }
-    /* -----------箭頭-桌機版--------- */
+    /* -----------箭頭-桌機版--1440------- */
     .focus_arrow{
         position: relative;
         min-width: 80%;
@@ -1744,7 +1755,678 @@
         stroke-width: 20px;
     }
     
-/* -----------news-桌機版----------------- */
+/* -----------news-桌機版--1440--------------- */
+    .news .item-group{
+        position: relative;
+    }
+    .news_btn{
+        width: 200px;
+        height: 51px;
+        border-radius:25.5px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    } 
+    .news_btn:hover{
+        background-color: #fff;
+        color: #000;
+    }  
+    .news .item{
+        width: 50%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .news .pic{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #000;
+        overflow: hidden;
+        
+    }
+    .news .text{
+        position: absolute;
+        z-index: 5;
+        /* margin-left: calc(100%/3.5); */
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .text02{
+        position: absolute;
+        z-index: 5;
+        /* margin-left: 50px; */
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .news img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.6;
+        transform: .5s;
+        background-color: #000;
+    }
+    .news img:hover{
+        transform: scale(1.1);
+        opacity: .5;
+        
+    }
+    .big_text{
+        /* font-size: 1.875em; */
+        margin: 0 0 24px;
+        font-weight: 200;
+    }
+    .text_p{
+        font-size: .875em;
+    }
+/* -----------------貴賓理財服務-桌機版--1440-------------- */
+    .Financial_services{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        background-color: rgb(245, 245, 245);
+        padding: 40px 0;
+    }
+    .Financial_body{
+        width: 100%;
+        min-width: 100%;
+        padding: 0 32px;
+    }
+    .Financial_services .item{
+        display: flex;
+        width: 33.333%;
+        padding: 0 8px;
+        
+    }
+    .h2_02{
+        display: none;
+    }
+    .Financial_services .text{
+        background-color: #fff;
+        width: 100%;
+        padding: 16px 16px 0;
+    }
+    .Financial_services .text h3{
+        margin: 0 0 12px;
+        font-size: 1em;
+    }
+    .Financial_services .text p{
+        height: 97px;
+        font-size: .875em;
+    }
+    .Financial_services .wrap .item01:first-child{
+        /* padding:上 右 下 左; */
+        padding: 0 8px 0 0;
+    }
+    .Financial_services .wrap .item02:first-child{
+        /* padding:上 右 下 左; */
+        padding: 0 8px 0 0;
+    }
+    .Financial_services .wrap .item01:last-child{
+        /* padding:上 右 下 左; */
+        padding: 0 0 0 8px;
+    }
+    .services01{
+        margin-bottom: 40px;
+        display: block;
+    }
+/* -------------------tools-桌機版--1440--------------------- */
+    .tools{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .tools .wrap{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .tools .item-group{
+        padding: 40px 0;
+        margin: 0;
+    }
+    .tools .item{
+        width: 323px;
+        min-width:323px;
+        height: 170px;
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #e1e1e1;
+        margin: 8px;
+        border-radius: 5px;
+    }
+    .tools .sc-icon{
+        height: 70px;
+        width: 70px;
+        margin: 24px auto 16px;
+    }
+    .tools .text{
+        padding: 0 16px 16px;
+        width: 100%;
+        font-weight: 400;
+    }
+/* ---------------------footer-桌機版--1440-------------------- */
+    footer{
+        background-color: #2b2929;
+        color: #b7b7b7;
+        padding: 40px 0;
+        min-height: 350px;
+        height: 350px;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* position: relative; */
+    }
+    /* .footer_body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    } */
+    footer .item-group{
+        width: 80%;
+
+    }
+    .footer_count{
+        width: 25%;
+    }
+    .footer03{
+        border-right: 1px solid #b7b7b7;
+    }
+    .padding_r{
+        padding-right: 32px;
+    }
+    .padding_l{
+        padding-left: 32px;
+    }
+    footer li{
+        margin: 0 0 8px;
+    }
+    .apps_title01{
+        margin-bottom: 8px;
+    }
+
+    .footer_link{
+        height: 60px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer_guide{
+        /* width: 25%; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .footer__sitemap::before{
+        border-top: 1px solid #b7b7b7;
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 5px;
+        margin: 0 8px;
+    }
+    .footer_link .item-group{
+        
+        display: flex;
+        flex-direction: row;
+
+    }
+    .guide_link{
+        width: 75%;
+    }
+    .guide_Introduction{
+        width: 25%;
+
+    }
+    .guide_Introduction li{
+        border-radius: 18px;
+        background-color: #555;
+        margin: 0 0 0 16px;
+    }
+    .guide_Introduction a{
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_website path{
+        fill: #b7b7b7;
+    }
+    .website01 svg{
+        width: 50%;
+        height: 50%;
+
+    }
+    .website02 svg{
+        width: 60%;
+        height: 60%;
+
+    }
+    .footer_apps_title02{
+        min-width: 144px;
+        width: 144px;
+        height: 40px;
+        margin-bottom: 8px;
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+    .footer_apps_title02 svg{
+        height: 45px;
+        width: 135px;
+    }
+    .footer_none_xs{
+        display: block;
+        
+    }
+    .footer_block_xs{
+        display: none;
+    }
+    .Quick_link{
+        display: none;
+    }
+/* --------------客服-桌機版--1440------------- */
+    .footer_Customer{
+        background-color: #00b7fb;
+        bottom: 5px;
+        right: 50px;
+        z-index: 50;
+        border-radius: 30px;
+        position: fixed;
+        
+    }
+    .c2c_box_wrapper {
+        font-weight: 400px;
+        font-size: 16px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+
+    .c2c-title-text{
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-font-smoothing: subpixel-antialiased;
+        letter-spacing: .55px;
+        white-space: nowrap;        
+        text-overflow: ellipsis;
+        max-width: 120px;  
+    }
+    .wrapper_img img{
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+}
+/* --------------------------------桌機版--1920----------------------------------------- */
+@media screen and (min-width:1441px){
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .banner_color{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(to right, #000 25%, transparent 100%); 
+    }
+    .banner{
+        position: relative;
+        
+    }
+    .banner img{
+        opacity: 0.5;
+    }
+    .xl_banner{
+        display: block;
+    }
+    .md_banner{
+        display: none;
+    }
+
+    .item-group {
+        display: flex;
+    }
+     /* ----------手滑換圖輪播-桌機版--1920-------- */
+    .about{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height: 142px;
+        /* position: relative;
+        max-width: 50%;
+        overflow: hidden; */
+    }
+    .about_Carousel{
+       
+       
+    }
+    .about_icon_body{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        /* position: relative;
+        white-space: nowrap;
+        overflow: auto; */
+    
+    }
+    .about_icon_body .width-proxy{
+        /* height: 10px;
+        display: inline-block; */
+    }
+    .about_icon_body li:first-child{
+        /* margin-left: 0; */
+    }
+    .about_icon_body::-webkit-scrollbar{
+        /* display: none; */
+    }
+    .about_icon_body li{
+        width: 13%;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content:center;
+        /* border: 1px solid red; */
+        /* position: relative;
+        opacity:0;
+        visibility:hidden; */
+    }
+    .about_icon_body h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .sc-icon{
+        width: 48px;
+        height: 48px;
+        margin:0px auto;
+    }
+    .sc-icon svg{
+        width: 100%;
+        height: 100%;
+    }
+    .about_icon_text06{
+        /* transform: translateX(25%); */
+    }
+/* -----------------輪播內文-桌機版--1920---------------- */
+    .banner_text{
+        position: absolute;
+        max-width: 800px;
+        width: 800px;
+        padding: 40px 0;
+        top: 50px;
+        left: 280px;
+        
+    }
+    .banner_btn{
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.4;        
+        color: #fff;
+        padding: 0.8em 1em;
+        min-width: 200px;
+        margin: 0 24px 16px 0;
+        font-size: 1em;
+        width: 200px;
+        text-align: center;
+    }
+    .btn_01{
+        border: 2px solid #008738;
+        background-color: #008738;
+    }
+    .btn_02{
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+    }
+    .banner_text h2{
+        font-size: 2.9375em;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    .banner_text p{
+        color: #fff;
+        margin-bottom: 32px;
+        display: block;
+    }
+
+
+
+
+/* ----------------桌機版--1920------------------- */
+
+    .main-wrap{
+        margin-left: 10%;
+        padding: 10px;
+        max-width: 80%;
+        overflow: hidden;
+    }
+  
+    .content-container{
+        height: 142px;
+        white-space: nowrap;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .content-container .width-proxy{
+        height: 10px;
+        display: inline-block;
+    }
+  
+    .content-container .about_icon_center{
+        /* opacity:0; */
+        /* visibility:hidden; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-container .about_icon_center:first-child{
+      margin-left: 0;
+    }
+    .content-container .about_icon_center{
+        width: 200px;
+        height: 142px;
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .content-container h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .about_icon_center svg{
+        stroke:#0c77b9;
+    }
+    /* -----------------------最新焦點-桌機版--1920---------------------- */
+    /* 第一層父層 */
+    .Latest_focus{
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .Latest_focus .big_text{
+        margin-bottom: 32px;
+    }
+    /* 第二層父層 */
+    .focus_content{
+        padding: 40px 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    /* 卡片總父層 */
+    .focus_body{
+        display: flex;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        min-height: 455px;
+        /* overflow: auto hidden; */
+        overflow: auto;
+        /* cursor: move; */
+        /* touch-action: none; */
+        
+    }
+
+
+    .focus_body::-webkit-scrollbar{
+        /* width : 0  !important; */
+    }
+    /* 卡片父層 */
+    .focus_cord_body{
+        margin-right: 16px;
+        width: 224px;
+        height: 424px;
+        background-color: #fff;
+    }
+    .focus_cord_body:last-child{
+        margin-right: 0px;
+    }
+    /* 圖片父層 */
+    .focus_img{
+        width: 224px;
+        height: 224px;
+    }
+    .focus_img img{
+        width: 100%;
+        height: 100%;
+    }
+    /* 內文父層 */
+    .focus_text{
+        width: 224px;
+        width: 100%;
+        padding: 16px 16px 40px;
+        height: 200px;
+        /* white-space:pre-wrap; */
+    }
+    .focus_h3{
+        font-size: 1em;
+        height: 41px;
+        overflow: hidden;
+        font-weight: 400;
+        margin-bottom: .75rem;
+        margin-top: 0;
+    }
+    .focus_p{
+        height: 97px;
+        overflow: hidden;
+        /* margin-bottom: 8px; */
+        margin-top: 0;
+        font-size: .875em;
+    }
+    .focus_More{
+        padding-bottom: 20px;
+        font-size: .75em;
+        max-width: 150px;
+        opacity: 0;
+        transition: .2s;
+    }
+    .focus_More:hover{
+        opacity: 1;
+    }
+    .focus_More svg{
+        width: 16px;
+        height: 16px;
+        margin-left: .375rem;
+    }
+    .focus_start{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .focus_content h2{
+        padding-left: 10%;
+    }
+    /* -----------箭頭-桌機版--1920------- */
+    .focus_arrow{
+        position: relative;
+        min-width: 80%;
+        width: 80%;
+        padding: 0 32px;
+        /* cursor: move; */
+    }
+    
+    .arrow_body{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        top: calc(50% - 38px);
+        z-index: 5;
+    }
+
+    .arrow_right{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 3px solid #e1e1e1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow_left{
+        width: 35px;
+        height: 35px;
+        border: 3px solid #e1e1e1;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .arrow_right svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(5%);
+        fill: #e1e1e1;
+    }
+    .arrow_left svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(-5%);
+        fill: #e1e1e1;
+    }
+    .cls-1 {
+        fill: none;
+        stroke: #e1e1e1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+    }
+    
+/* -----------news-桌機版--1920--------------- */
     .news .item-group{
         position: relative;
     }
@@ -1822,7 +2504,7 @@
     .text_p{
         font-size: .875em;
     }
-/* -----------------貴賓理財服務-桌機版---------------- */
+/* -----------------貴賓理財服務-桌機版--1920-------------- */
     .Financial_services{
         display: flex;
         justify-content: center; 
@@ -1873,7 +2555,7 @@
         margin-bottom: 40px;
         display: block;
     }
-/* -------------------tools-桌機版----------------------- */
+/* -------------------tools-桌機版--1920--------------------- */
     .tools{
         width: 100%;
         display: flex;
@@ -1912,7 +2594,7 @@
         width: 100%;
         font-weight: 400;
     }
-/* ---------------------footer-桌機版---------------------- */
+/* ---------------------footer-桌機版--1920-------------------- */
     footer{
         background-color: #2b2929;
         color: #b7b7b7;
@@ -1963,7 +2645,7 @@
         align-items: flex-end;
     }
     .footer_guide{
-        width: 25%;
+        /* width: 25%; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -2037,7 +2719,7 @@
     .Quick_link{
         display: none;
     }
-/* --------------客服-桌機版--------------- */
+/* --------------客服-桌機版--1920------------- */
     .footer_Customer{
         background-color: #00b7fb;
         bottom: 5px;
@@ -2070,7 +2752,6 @@
         height: 24px;
         margin-right: 5px;
     }
-
 
 
 
