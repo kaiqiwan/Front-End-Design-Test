@@ -1,10 +1,10 @@
-*{
-    list-style-type: none;
-    box-sizing: border-box;
-}
+
 /*如果螢幕寬度為 414px 以上 且 768px 以下，就套用 css 設定*/
 @media screen and (min-width: 415px) and (max-width: 768px){
-
+    *{
+        list-style-type: none;
+        
+    }
     .header_body{
         border-bottom: 1px solid rgb(225, 225, 225);
         position: sticky;
@@ -16,6 +16,10 @@
     .item-group{
         display: flex;
         flex-direction: row;
+    }
+    .item-group_xs{
+        display: flex;
+        flex-direction: column;
     }
     header{
         width: 100%;
@@ -58,6 +62,9 @@
     }
     .youAre_p01{
         margin-right: 8px;
+    }
+    .youAre_p02{
+        margin-left: 8px;
     }
     .other_01{
         margin-right:16px;
@@ -124,6 +131,7 @@
     .logo_xs{
         display: block;
     }
+
 /* ------------------漢堡--Hamburger_body--ipad版----------------- */
     .Hamburger_body{
         display: block;
@@ -247,6 +255,17 @@
         background-color: #fff;
         display: none;
     }
+
+    .nav_youAre_count01{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .nav_youAre_count02{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
     .nav_youAre{
         padding: 0 16px;
         height: 50px;
@@ -256,6 +275,19 @@
         justify-content: flex-start;
         align-items: center;
         border-bottom: 1px solid rgb(225, 225, 225);
+        
+        
+    }
+    .nav_youAre02{
+        padding: 0 16px;
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid rgb(225, 225, 225);
+        
     }
     .nav_Down02_xs::after{
         content: '';
@@ -282,7 +314,16 @@
         height: 10px;
         transform: translateY(-25%);
     }
+    .nav_Down_l{
+        width: 10px;
+        height: 10px;
+        transform: translateY(-25%);
+    }
     .nav_Down_r img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav_Down_l img{
         width: 100%;
         height: 100%;
     }
@@ -310,12 +351,13 @@
     position: absolute;
     top: 102px;
     z-index: 200;
+    
 }
 .ul_bottom{
     /* padding: 0 32px; */
     padding-right: 32px;
    
-    border-right: 1px solid rgb(225, 225, 225);
+    /* border-right: 1px solid rgb(225, 225, 225); */
 }
 .ul_bottom_l{
     padding-right: 32px;
@@ -370,7 +412,7 @@
     margin-left: 32px;
 }
 
-/* 橫向_置中設定 SetIn */
+/* 橫向_置中設定 SetIn-----------ipad版 */
 .SetIn{
     display: flex;
     justify-content: center;
@@ -378,11 +420,11 @@
     align-items: center;
     align-content: center;
 }
-/* 橫向_均分設定 EvenlySplit*/
+/* 橫向_均分設定 EvenlySplit------------ipad版*/
 .EvenlySplit{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
 }
 .w_100pa{
@@ -402,7 +444,7 @@
     margin: 0;
 }
 .w_40pa{
-    width: 37.5%;
+    width: 100%;
     margin: 0;
 }
 .w_48pa{
@@ -584,6 +626,10 @@
 
 /*如果螢幕寬度為 769px 以上 且 1440px 以下，就套用 css 設定*/
 @media screen and (min-width: 769px) and (max-width: 1440px){
+    *{
+        list-style-type: none;
+        box-sizing: border-box;
+    }
     .header_body{
         border-bottom: 1px solid rgb(225, 225, 225);
         position: sticky;
@@ -699,6 +745,9 @@
         display: none;
     }
     .Hamburger_body{
+        display: none;
+    }
+    .nav_02_dropDown_xs{
         display: none;
     }
     /* ------註冊--1440---------- */
@@ -1029,6 +1078,10 @@
 }
 /*如果螢幕寬度為 1441px 以上*/
 @media screen and (min-width: 1441px){
+    *{
+        list-style-type: none;
+        box-sizing: border-box;
+    }
     .header_body{
         border-bottom: 1px solid rgb(225, 225, 225);
         position: sticky;
@@ -1143,6 +1196,9 @@
         display: none;
     }
     .Hamburger_body{
+        display: none;
+    }
+    .nav_02_dropDown_xs{
         display: none;
     }
     /* ------註冊--1920---------- */
