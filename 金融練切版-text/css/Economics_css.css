@@ -768,10 +768,10 @@
         list-style-type: none;
     }
     .xl_banner{
-        display: none;
+        display: block;
     }
     .md_banner{
-        display: block;
+        display:none;
     }
      /* ----------手滑換圖輪播-ipad版---------- */
 

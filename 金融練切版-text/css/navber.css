@@ -4,6 +4,7 @@
 }
 /*如果螢幕寬度為 414px 以上 且 768px 以下，就套用 css 設定*/
 @media screen and (min-width: 415px) and (max-width: 768px){
+
     .header_body{
         border-bottom: 1px solid rgb(225, 225, 225);
         position: sticky;
@@ -43,7 +44,7 @@
         /* padding:上 右 下 左; */
         /* margin: 0 19px; */
     }
-    /* -------------------------------------------------- */
+    /* ----------------------ipad版---------------------------- */
     
     .nav_01{
         display: flex;
@@ -85,7 +86,7 @@
         padding: 4px;
         line-height: 10px;
     }
-    /* ------------------------------------------------ */
+    /* -----------------------ipad版------------------------- */
     .nav_02_body{
         border-bottom: 1px solid rgb(225, 225, 225);
         /* position: fixed; */
@@ -123,7 +124,7 @@
     .logo_xs{
         display: block;
     }
-/* ------------------漢堡--Hamburger_body------------------- */
+/* ------------------漢堡--Hamburger_body--ipad版----------------- */
     .Hamburger_body{
         display: block;
     }
@@ -189,7 +190,7 @@
     .nav_Hamburger_xs div:after{
         transform: translateY(0) rotate(45deg);
     }
-    /* ------註冊------------ */
+    /* ------註冊--ipad版---------- */
     .nav_registered_btn{
         display: flex;
         background: #fff;
@@ -216,7 +217,7 @@
     
     
     
-    /* --------登入----------- */
+    /* --------登入--ipad版--------- */
     .nav_SignIn_btn{
         display: flex;
         width: 100%;
@@ -239,7 +240,71 @@
     .nav_menu_btn{
         padding: 8px 16px;
     }
-   /* ------------------nav_細頁--共用----------------------------------- */
+    /* ------------------------ipea_navber下拉選單--ipad版----------------------------------- */
+    .nav_02_dropDown_xs{
+        width: 100vw;
+        /* height: 100vh; */
+        background-color: #fff;
+        display: none;
+    }
+    .nav_youAre{
+        padding: 0 16px;
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .nav_Down02_xs::after{
+        content: '';
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 10px;
+        height: 10px;
+        background-image:url('../img/箭頭往下.svg') ;
+    }
+    .nav_02_ul_xs{
+        
+        margin-top: 8px;
+    }
+    .border-b_xs{
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .nav_02_ul_xs li{
+        padding: 9.5px 16px;
+        
+    }
+    .nav_Down_r{
+        width: 10px;
+        height: 10px;
+        transform: translateY(-25%);
+    }
+    .nav_Down_r img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav_Down02_li_xs{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav_Down01_li_xs{
+        align-items: center;
+        display: inline-block;
+    }
+    .nav_Down01_li_xs p{
+        font-weight: 300;
+        display: inline-block;
+    }
+    .nav_Down02_li_xs p{
+        font-weight: 300;
+    }
+    .sc-nav__icon{
+        margin-left: 8px;
+    }
+   /* ------------------nav_細頁--共用--ipad版--------------------------------- */
    .fixed{
         
     position: absolute;
@@ -403,7 +468,7 @@
     font-size: 14px;
     font-weight: 350;
 }
-/* -------------nav_細頁_存款--deposit------------------ */
+/* -------------nav_細頁_存款--deposit--ipad版---------------- */
 .nav_deposit_body{
     width: 100%;
     display: none;
@@ -438,7 +503,7 @@
     
 }
 
-/* -------------nav_細頁_信用卡--creditCard---------------- */
+/* -------------nav_細頁_信用卡--creditCard--ipad版-------------- */
 .nav_creditCard_body{
     width: 100%;
     display: none;
@@ -454,7 +519,7 @@
 }
 
 
-/* -------------nav_細頁_貸款--loan------------------ */
+/* -------------nav_細頁_貸款--loan--ipad版---------------- */
 .nav_loan_body{
     display: none;
     width: 100%;
@@ -464,19 +529,19 @@
     padding: 0 32px;
 }
 
-/* -------------nav_細頁_投資--investment------------------ */
+/* -------------nav_細頁_投資--investment--ipad版---------------- */
 .nav_investment_body{
     width: 100%;
     display: none;
 }
 
-/* -------------nav_細頁_保險--Insurance------------------ */
+/* -------------nav_細頁_保險--Insurance--ipad版---------------- */
 .nav_Insurance_body{
     width: 100%;
     display: none;
 }
 
-/* -------------nav_細頁_數位服務--DigitalService-------------- */
+/* -------------nav_細頁_數位服務--DigitalService--ipad版------------ */
 .nav_DigitalService_body{
     width: 100%;
     display: none;
@@ -486,7 +551,7 @@
     flex-direction: row-reverse;
 }
 
-/* -------------nav_細頁_支援中心--SupportCenter-------------- */
+/* -------------nav_細頁_支援中心--SupportCenter--ipad版------------ */
 .nav_SupportCenter_body{
     width: 100%;
     display: none;
@@ -557,7 +622,7 @@
         padding: 0 32px;
         /* margin: 0 19px; */
     }
-    /* -------------------------------------------------- */
+    /* ----------------------1440---------------------------- */
     
     .nav_01{
         display: flex;
@@ -599,7 +664,7 @@
         padding: 4px;
         line-height: 10px;
     }
-    /* ------------------------------------------------ */
+    /* -----------------------1440------------------------- */
     .nav_02_body{
         border-bottom: 1px solid rgb(225, 225, 225);
         /* position: fixed; */
@@ -636,7 +701,7 @@
     .Hamburger_body{
         display: none;
     }
-    /* ------註冊------------ */
+    /* ------註冊--1440---------- */
     .nav_registered_btn{
         display: flex;
         background: #fff;
@@ -663,7 +728,7 @@
     
     
     
-    /* --------登入----------- */
+    /* --------登入--1440--------- */
     .nav_SignIn_btn{
         display: flex;
         width: 100%;
@@ -686,7 +751,7 @@
     .nav_menu_btn{
         padding: 8px 16px;
     }
-   /* ------------------nav_細頁--共用----------------------------------- */
+   /* ------------------nav_細頁--共用--1440--------------------------------- */
    .fixed{
         
     position: absolute;
@@ -850,7 +915,7 @@
     font-size: 14px;
     font-weight: 350;
 }
-/* -------------nav_細頁_存款--deposit------------------ */
+/* -------------nav_細頁_存款--deposit--1440---------------- */
 .nav_deposit_body{
     width: 100%;
     display: none;
@@ -885,7 +950,7 @@
     
 }
 
-/* -------------nav_細頁_信用卡--creditCard---------------- */
+/* -------------nav_細頁_信用卡--creditCard--1440-------------- */
 .nav_creditCard_body{
     width: 100%;
     display: none;
@@ -901,7 +966,7 @@
 }
 
 
-/* -------------nav_細頁_貸款--loan------------------ */
+/* -------------nav_細頁_貸款--loan--1440---------------- */
 .nav_loan_body{
     display: none;
     width: 100%;
@@ -911,19 +976,19 @@
     padding: 0 32px;
 }
 
-/* -------------nav_細頁_投資--investment------------------ */
+/* -------------nav_細頁_投資--investment--1440---------------- */
 .nav_investment_body{
     width: 100%;
     display: none;
 }
 
-/* -------------nav_細頁_保險--Insurance------------------ */
+/* -------------nav_細頁_保險--Insurance--1440---------------- */
 .nav_Insurance_body{
     width: 100%;
     display: none;
 }
 
-/* -------------nav_細頁_數位服務--DigitalService-------------- */
+/* -------------nav_細頁_數位服務--DigitalService--1440------------ */
 .nav_DigitalService_body{
     width: 100%;
     display: none;
@@ -933,7 +998,7 @@
     flex-direction: row-reverse;
 }
 
-/* -------------nav_細頁_支援中心--SupportCenter-------------- */
+/* -------------nav_細頁_支援中心--SupportCenter--1440------------ */
 .nav_SupportCenter_body{
     width: 100%;
     display: none;
@@ -1001,7 +1066,7 @@
         padding: 0 32px;
         margin: 0 19px;
     }
-    /* -------------------------------------------------- */
+    /* ------------------------1920-------------------------- */
     
     .nav_01{
         display: flex;
@@ -1043,7 +1108,7 @@
         padding: 4px;
         line-height: 10px;
     }
-    /* ------------------------------------------------ */
+    /* ------------------------1920------------------------ */
     
     .nav_02_body{
         border-bottom: 1px solid rgb(225, 225, 225);
@@ -1080,7 +1145,7 @@
     .Hamburger_body{
         display: none;
     }
-    /* ------註冊------------ */
+    /* ------註冊--1920---------- */
     .nav_registered_btn{
         display: flex;
         background: #fff;
@@ -1107,7 +1172,7 @@
     
     
     
-    /* --------登入----------- */
+    /* --------登入--1920--------- */
     .nav_SignIn_btn{
         display: flex;
         width: 100%;
@@ -1130,7 +1195,7 @@
     .nav_menu_btn{
         padding: 8px 16px;
     }
-    /* ------------------nav_細頁--共用----------------------------------- */
+    /* ------------------nav_細頁--共用--1920--------------------------------- */
     .fixed{
         
         position: absolute;
@@ -1294,7 +1359,7 @@
         font-size: 14px;
         font-weight: 350;
     }
-    /* -------------nav_細頁_存款--deposit------------------ */
+    /* -------------nav_細頁_存款--deposit--1920---------------- */
     .nav_deposit_body{
         width: 100%;
         display: none;
@@ -1329,7 +1394,7 @@
         
     }
     
-    /* -------------nav_細頁_信用卡--creditCard---------------- */
+    /* -------------nav_細頁_信用卡--creditCard--1920-------------- */
     .nav_creditCard_body{
         width: 100%;
         display: none;
@@ -1345,26 +1410,26 @@
     }
 
 
-    /* -------------nav_細頁_貸款--loan------------------ */
+    /* -------------nav_細頁_貸款--loan--1920---------------- */
     .nav_loan_body{
         display: none;
         width: 100%;
     }
     
     
-    /* -------------nav_細頁_投資--investment------------------ */
+    /* -------------nav_細頁_投資--investment--1920---------------- */
     .nav_investment_body{
         width: 100%;
         display: none;
     }
     
-    /* -------------nav_細頁_保險--Insurance------------------ */
+    /* -------------nav_細頁_保險--Insurance--1920---------------- */
     .nav_Insurance_body{
         width: 100%;
         display: none;
     }
     
-    /* -------------nav_細頁_數位服務--DigitalService-------------- */
+    /* -------------nav_細頁_數位服務--DigitalService--1920------------ */
     .nav_DigitalService_body{
         width: 100%;
         display: none;
@@ -1374,7 +1439,7 @@
         flex-direction: row-reverse;
     }
 
-    /* -------------nav_細頁_支援中心--SupportCenter-------------- */
+    /* -------------nav_細頁_支援中心--SupportCenter--1920------------ */
     .nav_SupportCenter_body{
         width: 100%;
         display: none;
