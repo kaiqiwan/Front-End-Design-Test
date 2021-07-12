@@ -257,28 +257,28 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w_40pa">
-                        <div class="deposit_04 item-group item-group_xs">
-                            <div class="deposit_img01 DetailPage_img_w m_l w_50pa">
-                                <div class="nav_img_btn">
-                                    <img src="./img/Detail_page-01-1.webp" alt="">
-                                </div>
-                                <div class="nav_text">
-                                    <p class="text_01">心幸福數位帳戶</p>
-                                    <p class="">開立心幸福數位帳戶並加入優逸理財最高享活存年利率<strong>1%</strong></p>
-                                </div>
+                    <!-- <div class="w_40pa"> -->
+                    <div class="deposit_04 item-group item-group_xs">
+                        <div class="deposit_img01 DetailPage_img_w m_l w_50pa">
+                            <div class="nav_img_btn">
+                                <img src="./img/Detail_page-01-1.webp" alt="">
                             </div>
-                            <div class="deposit_img02 DetailPage_img_w m_l w_50pa">
-                                <div class="nav_img_btn ">
-                                    <img src="./img/Detail_page-01-2.webp" alt="">
-                                </div>
-                                <div class="nav_text">
-                                    <p class="text_01">台外幣存款優惠</p>
-                                    <p class="">美金活存年息最高加碼<strong>1.2%</strong></p>
-                                </div>
+                            <div class="nav_text">
+                                <p class="text_01">心幸福數位帳戶</p>
+                                <p class="">開立心幸福數位帳戶並加入優逸理財最高享活存年利率<strong>1%</strong></p>
+                            </div>
+                        </div>
+                        <div class="deposit_img02 DetailPage_img_w m_l w_50pa">
+                            <div class="nav_img_btn ">
+                                <img src="./img/Detail_page-01-2.webp" alt="">
+                            </div>
+                            <div class="nav_text">
+                                <p class="text_01">台外幣存款優惠</p>
+                                <p class="">美金活存年息最高加碼<strong>1.2%</strong></p>
                             </div>
                         </div>
                     </div>
+                    <!-- </div> -->
 
                 </div>
             </div>
@@ -1630,6 +1630,7 @@
                 $('.nav_youAre_count02').css('display', 'block');
 
                 $('.fixed').css('top', '120px');
+
                 // $('.fixed').css("position", "staic");
                 // $('.fixed').css('transform', 'translateY(0px)');
 
@@ -1649,10 +1650,14 @@
             $('.nav_youAre_count02').css('display', 'none');
             $('.nav_02_ul_xs').css('display', 'block');
             $('.nav_youAre_count01').css('display', 'block');
+            nav_body_none();
+        });
+
+        function nav_body_none() {
             getCssArray().forEach(item => {
                 $(item).css('display', 'none');
             });
-        });
+        }
 
         // -----------------------------------------導覽列---用陣列跑回圈click導覽列---------------------------------------
         // .nav_02_body ul li * 7
@@ -1713,6 +1718,7 @@
             $('.nav_02_dropDown_xs').toggle();
             $('.xs_count_body').toggle();
             SetBodyHeight();
+            $('.nav_youAre_count02').click();//返回上一頁
 
         });
 
