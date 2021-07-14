@@ -349,12 +349,12 @@
 
 
    /* ------------------nav_細頁--共用--ipad版--------------------------------- */
-   .fixed{
+   /* .fixed{
         
     position: absolute;
     top: 102px;
     z-index: 200;
-}
+} */
 .ul_bottom{
     /* padding: 0 32px; */
     padding-right: 32px;
@@ -1009,12 +1009,12 @@
 
 
    /* ------------------nav_細頁--共用--ipad版--------------------------------- */
-   .fixed{
+   /* .fixed{
         
     position: absolute;
     top: 102px;
     z-index: 200;
-}
+} */
 .ul_bottom{
     /* padding: 0 32px; */
     padding-right: 32px;

@@ -1720,6 +1720,7 @@
         //$('.header_body').offset().top;
         $(window).scroll(function () {
             let top = $('.header_body').offset().top;
+
             if (top > 0) {
                 $('.fixed').css('top', '71px');
                 $('.nav_01_body').css('display', 'none');
@@ -1728,6 +1729,7 @@
                 $('.fixed').css('top', '102px');
                 $('.nav_01_body').css('display', 'block');
             }
+
         });
 
         // 設定換頁初始值
