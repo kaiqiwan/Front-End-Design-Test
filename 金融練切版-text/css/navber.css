@@ -2,9 +2,8 @@
     list-style-type: none;
     box-sizing: border-box;
 }
-/*如果螢幕寬度為 414px 以上 且 768px 以下，就套用 css 設定*/
-@media screen and (min-width: 415px) and (max-width: 768px){
-
+/* ---------------------------手機板----------------------------- */
+@media screen and (max-width: 414px){
     .header_body{
         border-bottom: 1px solid rgb(225, 225, 225);
         position: sticky;
@@ -16,6 +15,16 @@
     .item-group{
         display: flex;
         flex-direction: row;
+    }
+    .Financial_services .item-group{
+        flex-direction: column;
+    }
+    .news .item-group{
+        flex-direction: column;
+    }
+    .banner_btn_body{
+        display: flex;
+        flex-direction: column;
     }
     header{
         width: 100%;
@@ -420,6 +429,12 @@
     flex-direction: column;
     align-content: center;
 }
+.EvenlySplit_warp_xs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+}
 .w_100pa{
     width: 100%;
     margin: 0;
@@ -549,6 +564,8 @@
 .nav_creditCard{
     width: 100%;
     padding: 0 32px;
+    /* display: flex; */
+    flex-wrap: wrap;
 }
 .creditCard_img01{
     width: 100%;
@@ -615,7 +632,689 @@
     text-shadow:0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757;
     padding: 9px 16px;
 }
+.SupportCenter_xs01_2{
+    display: block;
+}
+.nav_Language_body{
+    display: none;
+    width: 100%;
+    padding: 0 16px;
+}
 
+.nav_Language_body li{
+    padding: 12px 16px 12px 0px;
+    /* padding:上 右 下 左; */
+    border-bottom: 1px solid #c4c3c3;
+}
+.nav_Language_body li:last-child{
+    padding: 12px 16px 12px 0px;
+    /* padding:上 右 下 左; */
+    border-bottom: 1px solid transparent;
+}
+.nav_Language_body li p{
+    padding:  0 16px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+}
+/*如果螢幕寬度為 414px 以上 且 768px 以下，就套用 css 設定*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+
+    .header_body{
+        border-bottom: 1px solid rgb(225, 225, 225);
+        position: sticky;
+        /* position: sticky;自動偵測到使用者滑動後固定在一個定點 */
+        top: 0px;
+        z-index: 2000;
+
+    }
+    .item-group{
+        display: flex;
+        flex-direction: row;
+    }
+    .Financial_services .item-group{
+        flex-direction: column;
+    }
+    .news .item-group{
+        flex-direction: column;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+    .nav_01_body,.nav_02_body{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_01_body{
+        background-color: #f6f6f6;
+    }
+    
+    
+    .p_32{
+        padding: 0 12px;
+        /* padding:上 右 下 左; */
+        /* margin: 0 19px; */
+    }
+    /* ----------------------ipad版---------------------------- */
+    
+    .nav_01{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        height: 30px;
+        width: 100%;
+        display: none;
+    }
+    .youAre_p01{
+        margin-right: 8px;
+    }
+    .other_01{
+        margin-right:16px;
+    }
+    .nav_search{
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        color: #000;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .other_02{
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 15px;
+        padding: 0 8px;
+        color: #555;
+    }
+    .other_02 p{
+        font-size: 10px;
+        white-space: nowrap;
+        padding: 4px;
+        line-height: 10px;
+    }
+    /* -----------------------ipad版------------------------- */
+    .nav_02_body{
+        border-bottom: 1px solid rgb(225, 225, 225);
+        /* position: fixed; */
+        position: sticky;
+        /* position: sticky;自動偵測到使用者滑動後固定在一個定點 */
+        top: 0px;
+        background: #fff;
+    }
+    .nav_02{
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .nav_logo{
+        width: 40px;
+        height: 40px;
+        /* object-fit: cover; */
+    }
+    .nav_logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav_02_ul_pc{
+        display: none;
+    }
+    .nav_row{
+        align-items: center;
+    }
+    .logo_pc{
+        display: none;
+    }
+    .logo_xs{
+        display: block;
+    }
+/* ------------------漢堡--Hamburger_body--ipad版----------------- */
+    .Hamburger_body{
+        display: block;
+    }
+    .nav_Hamburger_xs{
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+    }
+    .nav_Hamburger_xs div{
+        width: 1.6rem;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #e1e1e1;
+        position: relative;
+        z-index: 1001;
+        transition: .5s;
+    }
+    .nav_Hamburger_xs div:before,
+    .nav_Hamburger_xs div:after {
+        content:'';
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        /* height:inherit卻完美高度自適應沒有定位特性的父級元素 */
+        background-color: #e1e1e1;
+        border-radius: 3px;
+        transition: .5s;
+    }
+
+    .nav_Hamburger_xs div:before {
+        transform: translateY(-7px);
+    }
+
+    .nav_Hamburger_xs div:after {
+        transform: translateY(7px);
+    }
+    #check {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        z-index: 90000;
+        cursor: pointer;
+        opacity: 0;
+    }
+    #check:checked ~ .nav_Hamburger_container
+    .nav_Hamburger_xs div{
+        background-color: transparent;
+    }
+
+    #check:checked ~ .nav_Hamburger_container
+    .nav_Hamburger_xs div:before{
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    #check:checked ~ .nav_Hamburger_container
+    .nav_Hamburger_xs div:after{
+        transform: translateY(0) rotate(45deg);
+    }
+    /* ------註冊--ipad版---------- */
+    .nav_registered_btn{
+        display: flex;
+        background: #fff;
+        color: #00a546;
+        border: 1px solid #00a546;
+        padding: 0 8px;
+        width: 100%;
+        height: 32px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        min-width: 120px;
+        margin-right: 16px;
+    
+    }
+    .nav_registered_btn svg{
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+    
+    
+    
+    /* --------登入--ipad版--------- */
+    .nav_SignIn_btn{
+        display: flex;
+        width: 100%;
+        height: 32px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: #00a546;
+        color: #fff;
+        font-size: 12px;
+        min-width: 120px;
+        
+    }
+    .nav_SignIn_btn path{
+        fill: #fff;
+        width: 16px;
+        height: 15px;
+    }
+    .nav_menu_btn{
+        padding: 8px 16px;
+    }
+    /* ------------------------ipea_navber下拉選單--ipad版----------------------------------- */
+    .nav_02_dropDown_xs{
+        width: 100vw;
+        /* height: 100vh; */
+        background-color: #fff;
+        display: none;
+    }
+    
+    .nav_youAre_count01{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .nav_youAre_count02{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .nav_youAre{
+        padding: 0 16px;
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid rgb(225, 225, 225);
+        
+        
+    }
+    .nav_youAre02{
+        padding: 0 16px;
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid rgb(225, 225, 225);
+        
+    }
+    .nav_Down02_xs::after{
+        content: '';
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 10px;
+        height: 10px;
+        background-image:url('../img/箭頭往下.svg') ;
+    }
+    .nav_02_ul_xs{
+        
+        margin-top: 8px;
+    }
+    .border-b_xs{
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .nav_02_ul_xs li{
+        padding: 9.5px 16px;
+        
+    }
+    .nav_Down_r{
+        width: 10px;
+        height: 10px;
+        transform: translateY(-25%);
+    }
+    .nav_Down_l{
+        width: 10px;
+        height: 10px;
+        transform: translateY(-25%);
+    }
+    .nav_Down_r img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav_Down_l img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav_Down02_li_xs{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav_Down01_li_xs{
+        align-items: center;
+        display: inline-block;
+    }
+    .nav_Down01_li_xs p{
+        font-weight: 300;
+        display: inline-block;
+    }
+    .nav_Down02_li_xs p{
+        font-weight: 300;
+    }
+    .sc-nav__icon{
+        margin-left: 8px;
+    }
+
+
+   /* ------------------nav_細頁--共用--ipad版--------------------------------- */
+   .fixed{
+        
+    position: absolute;
+    top: 102px;
+    z-index: 200;
+}
+.ul_bottom{
+    /* padding: 0 32px; */
+    padding-right: 32px;
+   
+    /* border-right: 1px solid rgb(225, 225, 225); */
+}
+.ul_bottom_l{
+    padding-right: 32px;
+    border-right: 1px solid transparent;
+}
+.ul_bottom_l li{
+    padding-bottom: 12px;
+}
+.ul_bottom:last-child{
+    /* padding: 0 32px 0 0; */
+    border-right: 1px solid transparent;
+}
+
+.ul_bottom li{
+    /* padding-bottom: 8px; */
+    padding-bottom: 12px;
+    /* padding:上 右 下 左; */
+    
+}
+
+
+.l_padding{
+    padding-left: 32px;
+}
+.DetailPage_img_w{
+    /* max-width: 225px; */
+    /* height: 247px; */
+    /* height: 255px; */
+    border: 1px solid rgb(225, 225, 225);
+}
+.deposit_img_btn{
+    max-width: 100%;
+    height: 150px;
+    
+}
+.nav_img_btn{
+    width: 100%;
+    height: 150px;
+}
+.nav_img_btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav_text{
+    padding: 16px;
+    /* padding: 14px; */
+    line-height: 1.3;
+    text-align: left;
+}
+.m_l{
+    margin-left: 32px;
+}
+
+/* 橫向_置中設定 SetIn */
+.SetIn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+/* 橫向_均分設定 EvenlySplit*/
+.EvenlySplit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+}
+.EvenlySplit_warp_xs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+}
+.w_100pa{
+    width: 100%;
+    margin: 0;
+}
+.w_70pa{
+    width: 62.5%;
+    margin: 0;
+}
+.w_71pa{
+    width: 71.5%;
+    margin: 0;
+}
+.w_72pa{
+    width: 72.5%;
+    margin: 0;
+}
+.w_40pa{
+    width: 37.5%;
+    margin: 0;
+}
+.w_48pa{
+    width: 48%;
+    margin: 0;
+}
+.w_31pa{
+    width: 31%;
+    margin: 0;
+}
+.w_30pa{
+    width: 33.3333%;
+    margin: 0;
+}
+.w_50pa{
+    width: 50%;
+}
+.w_25pa{
+    width: 25%;
+}
+.w_03{
+    width: 284.98px;
+    margin: 0;
+}
+.text_01{
+    margin-bottom: 8px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    word-wrap:break-word;
+}
+.nav_setUp_m{
+    margin: 24px 0 20px 0;
+}
+.background_fff{
+    background: #fff;
+}
+.nav_border_b{
+    border-bottom: 1px solid #e1e1e1;
+    /* margin-bottom: 16px; */
+    padding-bottom: 8px;
+    color: #919191;
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav_pt{
+    padding-top: 25px;
+
+}
+.nav_pt_0{
+    padding-top: 42px;
+}
+.nav_li li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav_text{
+    font-size: 14px;
+}
+.sc-nav-drop__link{
+    padding-bottom: 3px;
+}
+.sc-nav-drop__desc{
+    font-size: 14px;
+    font-weight: 350;
+}
+/* -------------nav_細頁_存款--deposit--ipad版---------------- */
+
+.nav_deposit_body{
+    width: 100%;
+    display: none;
+}
+
+.nav_deposit{
+    width: 100%;
+    padding: 0 32px;
+    
+}
+
+.deposit_04{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.More {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: start;
+    height: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    padding: 8px 16px;
+    width: 100%;
+    background-color: #f6f6f6;
+    
+}
+
+/* -------------nav_細頁_信用卡--creditCard--ipad版-------------- */
+.nav_creditCard_body{
+    width: 100%;
+    display: none;
+    
+}
+
+.nav_creditCard{
+    width: 100%;
+    padding: 0 32px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+.creditCard_img01{
+    width: 100%;
+}
+
+
+/* -------------nav_細頁_貸款--loan--ipad版---------------- */
+.nav_loan_body{
+    display: none;
+    width: 100%;
+}
+.nav_loan{
+    width: 100%;
+    padding: 0 32px;
+}
+
+/* -------------nav_細頁_投資--investment--ipad版---------------- */
+.nav_investment_body{
+    width: 100%;
+    display: none;
+}
+
+/* -------------nav_細頁_保險--Insurance--ipad版---------------- */
+.nav_Insurance_body{
+    width: 100%;
+    display: none;
+}
+
+/* -------------nav_細頁_數位服務--DigitalService--ipad版------------ */
+.nav_DigitalService_body{
+    width: 100%;
+    display: none;
+}
+.DigitalService_03{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* -------------nav_細頁_支援中心--SupportCenter--ipad版------------ */
+.nav_SupportCenter_body{
+    width: 100%;
+    display: none;
+}
+.nav_SupportCenter_body button{
+    transition: all .3s ease-in-out;
+    min-width: 120px;
+    border: 2px solid #e1e1e1;
+    text-transform: uppercase;
+    color: #555;
+    background-color: transparent;
+    text-align: center;
+    height: auto;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 30px;
+    line-height: 1.4;
+    padding: 8px 16px;
+    margin-top: 8px;
+}
+.nav_SupportCenter_body button:hover{
+    border: 1px solid#000;
+    box-shadow: 0 0 1px #00ff3793, 0 0 1px #00ff3793, 0 0 1px #00ff3793, 0 0 1px #00ff3793,
+    inset 0 0 3px #00ff3793, 0 0 3px #00ff3793, 0 0 3px #00ff3793, 0 0 3px #00ff3793;
+    text-shadow:0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757;
+    padding: 9px 16px;
+}
+.SupportCenter_xs01_2{
+    display: block;
+}
+.nav_Language_body{
+    display: none;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.nav_Language_body li{
+    padding: 12px 16px 12px 0px;
+    /* padding:上 右 下 左; */
+    border-bottom: 1px solid #c4c3c3;
+}
+.nav_Language_body li:last-child{
+    padding: 12px 16px 12px 0px;
+    /* padding:上 右 下 左; */
+    border-bottom: 1px solid transparent;
+}
+.nav_Language_body li p{
+    padding:  0 16px;
+    width: 100%;
+}
 }
 
 /*如果螢幕寬度為 769px 以上 且 1440px 以下，就套用 css 設定*/
@@ -868,6 +1567,7 @@
     flex-direction: row;
     align-content: center;
 }
+
 .w_100pa{
     width: 100%;
     margin: 0;
@@ -1064,6 +1764,12 @@
     inset 0 0 3px #00ff3793, 0 0 3px #00ff3793, 0 0 3px #00ff3793, 0 0 3px #00ff3793;
     text-shadow:0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757;
     padding: 9px 16px;
+}
+.SupportCenter_xs01_2{
+    display: none;
+}
+.nav_Language_body{
+    display: none;
 }
 }
 /*如果螢幕寬度為 1441px 以上*/
@@ -1511,8 +2217,12 @@
         text-shadow:0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757, 0 0 1px #00ff3757;
         padding: 9px 16px;
     }
-
-
+    .SupportCenter_xs01_2{
+        display: none;
+    }
+    .nav_Language_body{
+        display: none;
+    }
 }
 
 
