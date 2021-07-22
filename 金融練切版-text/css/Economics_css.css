@@ -2448,6 +2448,28 @@ footer li{
     .focus_content h2{
         padding-left: 10%;
     }
+    /* --------------------拖移-1920-------------------- */
+    .Latest_focus_xl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .focus_content_xl{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      
+    }
+
+    .lSPager{
+        display: none;
+    }
+    .lSAction > a{
+        color:#e1e1e1;
+        /* transition: linear 0s; */
+        /* opacity:0.8s; */
+    }
     /* -----------箭頭-桌機版--1920------- */
     .focus_arrow{
         position: relative;
