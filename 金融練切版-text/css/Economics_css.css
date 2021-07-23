@@ -2454,22 +2454,28 @@ footer li{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
     }
     .focus_content_xl{
         display: flex;
         flex-direction: column;
         width: 80%;
-      
+        padding: 0 32px;
     }
 
     .lSPager{
         display: none;
     }
-    .lSAction > a{
+    /* .lSAction > a .lSPrev{
         color:#e1e1e1;
-        /* transition: linear 0s; */
-        /* opacity:0.8s; */
+        background-image: url('../img/箭頭-左-圓角.svg');
     }
+    .lSAction > a .lSNext{
+        color:#e1e1e1;
+        background-image: url('../img/箭頭-右-圓角.svg');
+    } */
+    
     /* -----------箭頭-桌機版--1920------- */
     .focus_arrow{
         position: relative;
