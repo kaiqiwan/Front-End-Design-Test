@@ -656,6 +656,10 @@
         /* padding:上 右 下 左; */
         /* display: none; */
     }
+    .footer_body_xs li{
+        list-style: disc; 
+        /*  ist-style: disc;  li 點點 樣式 */
+    }
     .footer_count_body{
         display: none;
     }
@@ -668,8 +672,7 @@
     footer li{
         padding: 8px 0;
         font-size: 12px;
-        list-style: disc; 
-        /*  ist-style: disc;  li 點點 樣式 */
+        
     }
     .apps_title01{
         margin-bottom: 8px;
