@@ -91,11 +91,14 @@
     .md_banner{
         display: block;
     }
-    .about_icon_body{
 
+/* ----------------下拉選單--手機板--------------------- */
+    .nav_menu_btn:hover{
+        color: #00a546;
     }
-    .about_icon_body li{
-
+/* ----------------下拉選單特效--手機板--------------------- */
+    .nav_img_Btline li span:hover {
+        color: #0c77b9;
     }
     /* ----------手滑換圖輪播-手機板---------- */
     .main-wrap .content-container{
@@ -649,7 +652,6 @@
         flex-direction: column;
         /* width: 92.5%; */
         width: 100%;
-
         /* border-bottom: 1px solid #6b6a6a; */
         padding: 1rem;
         /* padding: 16px 16px 0 16px; */
@@ -702,7 +704,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 16px 0;
-
+        transition: 0.005s;
     }
 
     .Quick_link p{
@@ -842,7 +844,15 @@
     .md_banner{
         display:none;
     }
-     /* ----------手滑換圖輪播-ipad版---------- */
+/* ----------------下拉選單--ipad版--------------------- */
+    .nav_menu_btn:hover{
+        color: #00a546;
+    }
+/* ----------------下拉選單特效--ipad版--------------------- */
+    .nav_img_Btline li span:hover {
+        color: #0c77b9;
+    }
+/* ----------手滑換圖輪播-ipad版---------- */
 
     .main-wrap .content-container{
         max-width: 100%;
@@ -1565,6 +1575,23 @@ footer li{
 
     .item-group {
         display: flex;
+    }
+     /* ----------------下拉選單--桌機版--1440--------------------- */
+     .nav_menu_btn:hover{
+        color: #00a546;
+    }
+    /* ----------------下拉選單特效--桌機版--1440--------------------- */
+    .nav_img_Btline li span{
+        background-image: linear-gradient(#0c77b9, #0c77b9);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 0 1px;
+        transition: 0.15s;
+        padding-bottom: 3px;
+    }
+    .nav_img_Btline li span:hover {
+        background-size: 100% 1px;
+        color: #0c77b9;
     }
      /* ----------手滑換圖輪播-桌機版--1440-------- */
     .about{
@@ -2303,6 +2330,23 @@ footer li{
 
     .item-group {
         display: flex;
+    }
+    /* ----------------下拉選單--桌機版--1920--------------------- */
+    .nav_menu_btn:hover{
+        color: #00a546;
+    }
+    /* ----------------下拉選單特效--桌機版--1920--------------------- */
+    .nav_img_Btline li span{
+        background-image: linear-gradient(#0c77b9, #0c77b9);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 0 1px;
+        transition: 0.15s;
+        padding-bottom: 3px;
+    }
+    .nav_img_Btline li span:hover {
+        background-size: 100% 1px;
+        color: #0c77b9;
     }
      /* ----------手滑換圖輪播-桌機版--1920-------- */
     .about{

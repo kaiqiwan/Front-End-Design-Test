@@ -1857,12 +1857,9 @@
         line-height: 10px;
     }
     /* ------------------------1920------------------------ */
-    
     .nav_02_body{
         border-bottom: 1px solid rgb(225, 225, 225);
-        /*position: sticky;*/
         /* position: sticky;自動偵測到使用者滑動後固定在一個定點 */
-        /*top: 0px;*/
         background: #fff;
     }
     .nav_02{
@@ -2168,7 +2165,10 @@
         display: none;
         width: 100%;
     }
-    
+    .nav_loan{
+        width: 75.1%;
+        padding: 0 32px;
+    }
     
     /* -------------nav_細頁_投資--investment--1920---------------- */
     .nav_investment_body{
