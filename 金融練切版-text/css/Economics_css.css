@@ -76,6 +76,10 @@
     text-align: justify;
     text-justify: inter-ideograph;
 }
+.lslide{
+    margin: 0 !important;
+}
+
 /* ------------------------手機板-------------------------------------- */
 @media screen and (max-width: 414px){
     *{
@@ -162,6 +166,7 @@
     .about_icon_center svg{
         stroke:#0c77b9;
     }
+    
      /* -----------------輪播內文-手機板------------------ */
      .banner_text{
         max-width: 100vw;
@@ -208,6 +213,19 @@
     .banner_text p{
         margin-bottom: 16px;
         display: block;
+    }
+    /* -------------------換圖輪播_左右滑動icon-手機板------------------------ */
+    .main-wrap_xl{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+            
+    }
+    .main-wrap .lSAction{
+        display: none !important;
+    }
+    .main-wrap_xl li{
+        /* width: 16.6666%; */
     }
 /* -----------------------最新焦點-手機板------------------------ */
     /* 第一層父層 */
@@ -288,6 +306,28 @@
     }
     .focus_body::-webkit-scrollbar{
         width: 0 !important; /* 隱藏滾動條 */
+    }
+    /* -------------最新焦點-換圖輪播_左右滑動-手機板------------------- */
+    .Latest_focus_xl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .focus_content_xl{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 16px;
+    }
+        
+    .lSPager{
+        display: none;
+    }
+    .focus_xl_01{
+        padding-top: 16px;
     }
     /* -----------箭頭-手機板--------- */
     .focus_arrow{
@@ -413,8 +453,9 @@
         
     }
     .big_text{
-        font-size: 1.375em;
-        font-weight: 200;
+        /* font-size: 1.375em; */
+        font-size: 24px;
+        font-weight: 300;
     }
     .news_text{
         margin: 0 0 24px;
@@ -834,7 +875,7 @@
       margin-left: 0;
     }
     .content-container .about_icon_center{
-        width: 16.666%;
+        /* width: 16.666%; */
         height: 93px;
         white-space: normal;
         padding: 8px;
@@ -861,6 +902,20 @@
     }
     .about_icon_center svg{
         stroke:#0c77b9;
+    }
+    
+    /* -------------------換圖輪播_左右滑動icon-ipad------------------------ */
+    .main-wrap_xl{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .main-wrap .lSAction{
+        display: none !important;
+    }
+    .main-wrap_xl li{
+        width: 16.6666%;
     }
     /* -----------------輪播內文-ipad版------------------ */
     .banner_text{
@@ -988,6 +1043,25 @@
     }
     .focus_body::-webkit-scrollbar{
         width: 0 !important; /* 隱藏滾動條 */
+    }
+    /* -------------最新焦點-換圖輪播_左右滑動-ipad版------------------- */
+    .Latest_focus_xl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .focus_content_xl{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 32px;
+    }
+    
+    .lSPager{
+        display: none;
     }
     /* -----------箭頭-ipad版--------- */
     .focus_arrow{
@@ -1636,7 +1710,8 @@ footer li{
       margin-left: 0;
     }
     .content-container .about_icon_center{
-        width: 200px;
+        /* width: 200px; */
+        width: 188.67px;
         height: 142px;
     }
     .content-container::-webkit-scrollbar {
@@ -1648,6 +1723,18 @@ footer li{
     }
     .about_icon_center svg{
         stroke:#0c77b9;
+    }
+    /* -------------------換圖輪播_左右滑動icon-1440------------------------ */
+    .main-wrap_xl{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main-wrap .lSAction{
+        display: none !important;
+    }
+    .main-wrap_xl li{
+        width: 16.6666%;
     }
     /* -----------------------最新焦點-桌機版--1440---------------------- */
     /* 第一層父層 */
@@ -1749,6 +1836,25 @@ footer li{
     }
     .focus_content h2{
         padding-left: 10%;
+    }
+    /* -------------最新焦點-換圖輪播_左右滑動-1440------------------- */
+    .Latest_focus_xl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .focus_content_xl{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    .lSPager{
+        display: none;
     }
     /* -----------箭頭-桌機版--1440------- */
     .focus_arrow{
@@ -2347,6 +2453,18 @@ footer li{
     .about_icon_center svg{
         stroke:#0c77b9;
     }
+    /* -------------------換圖輪播_左右滑動icon-1920------------------------ */
+    .main-wrap_xl{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main-wrap .lSAction{
+        display: none !important;
+    }
+
+
+
     /* -----------------------最新焦點-桌機版--1920---------------------- */
     /* 第一層父層 */
     .Latest_focus{
@@ -2467,15 +2585,7 @@ footer li{
     .lSPager{
         display: none;
     }
-    /* .lSAction > a .lSPrev{
-        color:#e1e1e1;
-        background-image: url('../img/箭頭-左-圓角.svg');
-    }
-    .lSAction > a .lSNext{
-        color:#e1e1e1;
-        background-image: url('../img/箭頭-右-圓角.svg');
-    } */
-    
+
     /* -----------箭頭-桌機版--1920------- */
     .focus_arrow{
         position: relative;
