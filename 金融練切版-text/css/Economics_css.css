@@ -651,7 +651,7 @@
         width: 100%;
 
         /* border-bottom: 1px solid #6b6a6a; */
-        /* padding: 1rem; */
+        padding: 1rem;
         /* padding: 16px 16px 0 16px; */
         /* padding:上 右 下 左; */
         /* display: none; */
@@ -668,6 +668,8 @@
     footer li{
         padding: 8px 0;
         font-size: 12px;
+        list-style: disc; 
+        /*  ist-style: disc;  li 點點 樣式 */
     }
     .apps_title01{
         margin-bottom: 8px;
