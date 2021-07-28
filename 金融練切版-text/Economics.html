@@ -56,7 +56,7 @@
 
             </div>
         </div>
-        <div class="nav_02_body">
+        <div class="nav_02_body nav_02_flex">
             <div class="nav_02 p_32">
                 <div class="nav_logo ">
                     <img class="logo_pc" src="./img/logo01.svg" alt="">
@@ -2076,18 +2076,11 @@
         })
         // ---------------------------------設定網頁 高度------------------------------------------
         function SetBodyHeight() {
-            //$('body').css('height', '0px');
-            var warp_height = $(document).height();
-            // console.log(warp_height);
-            $('body').css('height', warp_height);
-        }
-        function SetBodyHeight(addheight) {
             $('body').css('height', '0px');
-            var warp_height = $(document).height() + addheight;
-            // console.log(warp_height);
+            var warp_height = $(document).height();
+            console.log(warp_height);
             $('body').css('height', warp_height);
         }
-
         //-----------------------導覽列 - XS ---------------------------------------
 
         let arrayXs = [];

@@ -2309,6 +2309,12 @@ footer li{
         list-style: none;
         /* box-sizing: border-box; */
     }
+    .nav_02_flex{
+        position: sticky;
+        /* position: fixed; */
+        /* top: 30px; */
+        top: 0;
+    }
     .banner_color{
         margin: 0;
         padding: 0;
