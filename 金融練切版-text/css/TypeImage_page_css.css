@@ -1,0 +1,4870 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* cursor: grab; 設定滑鼠為手的游標*/
+.banner{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    
+}
+/* ---------------手刻換圖輪播------------- */
+.warp01{
+    max-width: 100vw;
+    /* max-width:1600px; */
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.warp02{
+
+    list-style-type: none;
+    display: flex;/* 變成換圖輪播的橫排 */
+    width: 7680px;
+    /* 設定n個圖片寬度*數量 */
+    height: 350px;
+    /* 設定絕對定位是為了要輪播的位移 */
+    position: absolute;
+    left: -3840px;
+    margin: 0;
+    padding: 0;
+    transform: .5s;
+}
+.warp03{
+    width: 100%;
+    height: 100%;
+}
+.warp03 img{
+    /* 設定圖片符合最外面父層的視窗大小 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.warp03 .Carousel{
+    /* 設定圖片符合最外面父層的視窗大小 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* ----------設定換圖輪播的點點-------- */
+.slider_dots{
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    bottom: 20px;
+    justify-content: center;
+    /* 在自己的領域置中,所以要設定寬度 */
+    width: 100%;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.slider_dots li{
+    width: 20px;
+    height: 5px;
+    /* border-radius:50%; */
+    margin: 0 6px;
+    border: 1px solid #fff;
+    
+}
+.align_justify{
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+.lslide{
+    margin: 0 !important;
+}
+
+/* ------------------------手機板-------------------------------------- */
+@media screen and (max-width: 414px){
+    *{
+        /* list-style-type: none; */
+    }
+    .xl_banner{
+        display: none;
+    }
+    .md_banner{
+        display: block;
+    }
+    
+/* ----------------下拉選單--手機板--------------------- */
+    .nav_menu_btn:hover{
+        color: #00a546;
+    }
+/* ----------------下拉選單特效--手機板--------------------- */
+    .nav_img_Btline li span:hover {
+        color: #0c77b9;
+    }
+   /* ---------------------------Type_count網站橫幅_分頁-手機板------------------------------------- */
+   .TypeImage{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;   */
+}
+.Type_row01{
+    position: absolute;
+    margin-left: -500px;
+    left: 50%;
+    /* padding: 0 32px; */
+    /* margin: 0 auto; */
+    max-width: 1404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    height: 100%;
+}
+.Type_row02{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.Type_row02::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+}
+.Type_count{
+    position: absolute;
+    width: 250%;
+    height: 200%;
+    left: -280px;
+    top: -150px;
+}
+.Type_count video{
+    width: 100%;
+    height: 100%;
+   
+}
+.Type_text{
+    position: absolute;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.Type_text p{
+    font-size: 1.125em;
+    font-weight: 400;
+    margin: 0 0 16px;
+
+}
+.Type_text h1{
+    font-size: 1.375em;
+    margin: 0 0 24px;
+    font-weight: 400;
+}
+.margin_0{
+    margin: 0 auto;
+}
+/* -----------------全球銀行金融服務--手機板---------------------- */
+.service_body01{
+    background-color: #0967a1;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service_body02 h2{
+    font-size: 1.5em;
+    line-height: 1.25;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.service_body02{
+    /* width: 70%; */
+    /* width: 1404px; */
+    padding: 0 32px;
+}
+.service_count{
+    background-color: #fff;
+    padding: 32px 16px;
+    border-radius: 5px;
+    margin-top: 55px;
+}
+.service_img{
+    /* width: 30%; */
+    width: 100%;
+    padding: 16px;
+}
+.service_img img{
+    width: 100%;
+    /* height: 100%; */
+}
+.service_text{
+    padding: 32px 16px 24px 16px;
+    /* width: 70%; */
+    width: 100%;
+}
+.service_text h4{
+    color: #0c77b9;
+    font-size: .875em;
+    /* margin-bottom: 8px; */
+    text-transform: uppercase;
+}
+.service_text_row01 ul li{
+    list-style: disc;
+    margin-top: 8px;
+}
+.service_text_row01 ul{
+    padding-left: 16px;
+    column-count: 2;
+}
+.service_text_row01{
+    margin-bottom: 8px;
+    font-size: .875em;
+}
+/* ----------------------------------- */
+.service_text_row02 ul li{
+    color: #000;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    list-style: none;
+    font-size: 1em;
+}
+.service_text_row02 ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 13px;
+    height: 13px;
+    background-image: url(../page/勾勾.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+
+    
+}
+.service_text_row02{
+    margin: 8px 0 24px 0;
+    font-size: .875em;
+}
+/* ---------------------------------- */
+.service_btn{
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.4;
+    background-color: #008738;
+    color: #fff;
+    padding: 1em 1.5em;
+    min-width: 200px;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
+/* -------------------------------貴賓客群比較--手機板----------------------------- */
+.guests_body{
+    overflow:hidden;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: linear-gradient(to right, #000 25%, transparent 100%); */
+    /* opacity: 0.8; */
+}
+.background_c{
+    position: absolute;
+    background-color: linear-gradient(to right, #000 25%, transparent 100%);
+    /* background-color: #000; */
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.2; */
+    /* z-index: 5; */
+}
+.guests_img{
+    width: 100%;
+    height: 100%;
+}
+.guests_img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000 25%, transparent 100%);
+    opacity: .5;
+    overflow: hidden;
+}
+.guests_img01{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+.guests_img01 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.guests_img02{
+    display: none;
+}
+.guests_body{
+    position: relative;
+}
+.guests_img{
+    position: absolute;
+}
+.guests_text_body{
+    width: 1404px;
+    padding: 0 32px;
+    color: #fff;
+    margin: 0 auto;
+    
+}
+.guests_text{
+    position: relative;
+    /* width: 700px; */
+    padding: 40px 0;
+}
+.guests_text h2{
+    font-size: 1.375em;
+    font-weight: 200;
+}
+.guests_text p{
+    font-size: 1em;
+    margin: 16px 0;
+}
+.guests_text_count{
+    height: 100%;
+}
+
+
+/* -----------------------------------最新活動--手機板------------------------------------------- */
+.Activity_body{
+    width: 100%;
+    background-color: #fff;
+    height: 520px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+.Activity_row{
+    /* width: 1404px; */
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 32px;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.Activity_row02{
+    height: 387px;
+}
+.Activity_h2{
+    margin-bottom: 16px;
+    font-size: 1.375em;
+    font-weight: inherit;
+}
+.Activity_img_body{ 
+    width: 336px;
+    height: 100%;
+    /* height: 387px; */
+    color: #fff;
+    margin: 0 8px;
+    /* padding:上 右 下 左; */
+    position: relative; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Activity_img{
+    position: absolute;
+    /* border-radius: 5px; */
+    /* height: 387px; */
+    width: 336px;
+    height: 100%;
+}
+.margin_r16{
+    margin: 0 16px 0 0;
+}
+.margin_l16{
+    margin: 0 0 0 16px;
+}
+
+.Activity_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Activity_text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    padding: 24px 24px 8px;
+    word-wrap:break-word;
+}
+.Activity_text p{
+    font-size: .875em;
+    margin: 0 0 16px;
+}
+.Activity_text h2{
+    font-size: 1.375em;
+    margin: 0 0 24px;
+    font-weight: 200;
+}
+.Activity_btn {
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.4;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 1em 1.5em;
+    min-width: 200px;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* -------------------------優先理財貴賓相關聲明及注意事項--手機板-------------------- */
+.Precautions_body{
+    width: 100%;
+    background-color: #fff;
+}
+.Precautions_count{
+    padding: 16px 16px 16px 30px;
+    /* width: 1404px; */
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+.Precautions_count h2{
+    font-size: 1em;
+    font-size: 300;
+    padding-left: 5px;
+}
+.Precautions_add{
+    width: 24px;
+    height: 24px;
+}
+/* ---------------------------謹慎理財 信用至上--手機板--------------------------- */
+.CEDIT_body {
+    padding: 40px 0;
+}
+.CEDIT_count{
+    /* width: 1404px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px; 
+}
+.CEDIT_body h2{
+    color: #0c77b9;
+    margin: 0 0 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 1.875em;
+    font-weight: inherit;
+}
+.CEDIT_body p{
+    margin-bottom: 8px;
+    font-size: .875em;
+}
+
+
+
+/* ----------------下拉選單--手機板--------------------- */
+.nav_menu_btn:hover{
+    color: #00a546;
+}
+/* ----------------下拉選單特效--手機板--------------------- */
+.nav_img_Btline li span{
+    background-image: linear-gradient(#0c77b9, #0c77b9);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: 0.15s;
+    padding-bottom: 3px;
+}
+.nav_img_Btline li span:hover {
+    background-size: 100% 1px;
+    color: #0c77b9;
+}
+ /* ----------手滑換圖輪播--手機板-------- */
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* height: 228px; */
+    height: 220px;
+}
+.about_Carousel{
+   
+   
+}
+.about_icon_body{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    /* position: relative;
+    white-space: nowrap;
+    overflow: auto; */
+
+}
+.about_icon_body .width-proxy{
+    /* height: 10px;
+    display: inline-block; */
+}
+.about_icon_body li:first-child{
+    /* margin-left: 0; */
+}
+.about_icon_body::-webkit-scrollbar{
+    /* display: none; */
+}
+.about_icon_body li{
+    width: 13%;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+    /* border: 1px solid red; */
+    /* position: relative;
+    opacity:0;
+    visibility:hidden; */
+}
+.about_icon_body h2{
+    font-size: 1.125em;
+    margin-top: 5px;
+}
+.sc-icon{
+    width: 48px;
+    height: 48px;
+    margin:0px auto;
+}
+.sc-icon svg{
+    width: 100%;
+    height: 100%;
+}
+.about_icon_text06{
+    /* transform: translateX(25%); */
+}
+/* -----------------輪播內文--手機板---------------- */
+.banner_text{
+    position: absolute;
+    max-width: 800px;
+    width: 800px;
+    padding: 40px 0;
+    top: 50px;
+    left: 280px;
+    
+}
+.banner_btn{
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.4;        
+    color: #fff;
+    padding: 0.8em 1em;
+    min-width: 200px;
+    margin: 0 24px 16px 0;
+    font-size: 1em;
+    width: 200px;
+    text-align: center;
+}
+.btn_01{
+    border: 2px solid #008738;
+    background-color: #008738;
+}
+.btn_02{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.banner_text h2{
+    font-size: 2.9375em;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.banner_text p{
+    color: #fff;
+    margin-bottom: 32px;
+    display: block;
+}
+
+
+
+
+/* ----------------桌機版--手機板------------------- */
+
+.main-wrap{
+    margin-left: 2%;
+    padding: 10px;
+    max-width: 95%;
+    overflow: hidden;
+}
+
+.content-container{
+    height: 163px;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-wrap_xl{
+    height: 163px;
+}
+.content-container .width-proxy{
+    height: 10px;
+    display: inline-block;
+}
+
+.content-container .about_icon_center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    word-wrap:break-word;
+    position: relative;
+}
+.content-container .about_icon_center:first-child{
+  margin-left: 0;
+}
+.content-container .about_icon_center{
+    width: 148px;
+    height: 148px;
+}
+.content-container::-webkit-scrollbar {
+    display: none;
+}
+.content-container h2{
+    font-size: 1.125em;
+    margin-top: 5px;
+}
+.about_icon_center svg{
+    /* stroke:#0c77b9; */
+}
+
+.about_icon_center svg path{
+    border-image: linear-gradient(to bottom right,#44ccea 0,#2cce8f 100%);
+    border-image-slice: 1;
+    stroke: url(#Gradient1);
+    fill: url(#Gradient1);
+    stroke-width: .5;
+}
+.about_icon_center h3{
+    font-size: 1em;
+    margin-top: 16px;
+}
+/* ------------------------------------- */
+.about_icon_center::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    border-right: 2px solid #2cce8f;
+    border-bottom: 2px solid #2cce8f;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    background-color: #fff;    
+}
+.about_icon_center:active{
+    border: 2px solid #0c77b9;
+    border-image: linear-gradient(to bottom right,#44ccea 0,#2cce8f 100%);
+    border-image-slice: 1;
+}
+
+    .stop1 { stop-color: #44ccea; }
+    .stop2 { stop-color: #2cce8f; }
+/* -------------------換圖輪播_左右滑動icon--手機板------------------------ */
+.main-wrap_xl{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* padding: 40px 0 32px 0; */
+}
+.main-wrap .lSAction{
+    display: none !important;
+}
+
+
+
+/* -----------------------最新焦點-桌機版--手機板---------------------- */
+/* 第一層父層 */
+.Latest_focus{
+    background-color: rgb(245, 245, 245);
+    min-height: 550px;
+}
+.Latest_focus .big_text{
+    margin-bottom: 32px;
+}
+/* 第二層父層 */
+.focus_content{
+    padding: 40px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* 卡片總父層 */
+.focus_body{
+    display: flex;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    min-height: 455px;
+    /* overflow: auto hidden; */
+    overflow: auto;
+    /* cursor: move; */
+    /* touch-action: none; */
+    
+}
+
+
+.focus_body::-webkit-scrollbar{
+    /* width : 0  !important; */
+}
+/* 卡片父層 */
+.focus_cord_body{
+    margin-right: 16px;
+    width: 224px;
+    height: 285px;
+    background-color: #fff;
+}
+.focus_cord_body:last-child{
+    margin-right: 0px;
+}
+/* 圖片父層 */
+.focus_img{
+    width: 224px;
+    height: 200px;
+}
+.focus_img img{
+    width: 100%;
+    height: 100%;
+}
+/* 內文父層 */
+.focus_text{
+    /* width: 224px; */
+    width: 100%;
+    padding: 16px;
+    height: 85px;
+    /* white-space:pre-wrap; */
+}
+.focus_h3{
+    font-size: 1em;
+    height: 41px;
+    overflow: hidden;
+    font-weight: 400;
+    margin-bottom: .75rem;
+    margin-top: 0;
+}
+.focus_p{
+    /* height: 97px; */
+    overflow: hidden;
+    /* margin-bottom: 8px; */
+    margin-top: 0;
+    font-size: .875em;
+}
+.focus_More{
+    padding-bottom: 20px;
+    font-size: .75em;
+    max-width: 150px;
+    opacity: 0;
+    transition: .2s;
+}
+.focus_More:hover{
+    opacity: 1;
+}
+.focus_More svg{
+    width: 16px;
+    height: 16px;
+    margin-left: .375rem;
+}
+.focus_start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.focus_content h2{
+    padding-left: 10%;
+}
+/* --------------------拖移--手機板-------------------- */
+.Latest_focus_xl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2929;
+    min-height: 426px;
+}
+.focus_content_xl{
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    /* width: 1404px; */
+    width: 100%;
+    padding: 0 32px;
+}
+.focus_content_xl h2{
+    color: #fff;
+}
+.lSPager{
+    display: none;
+}
+
+/* -----------箭頭-桌機版--手機板------- */
+.focus_arrow{
+    position: relative;
+    min-width: 80%;
+    width: 80%;
+    padding: 0 32px;
+    /* cursor: move; */
+}
+
+.arrow_body{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    top: calc(50% - 38px);
+    z-index: 5;
+}
+
+.arrow_right{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #e1e1e1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.arrow_left{
+    width: 35px;
+    height: 35px;
+    border: 3px solid #e1e1e1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.arrow_right svg{
+    width: 70%;
+    height: 70%;
+    transform: translateX(5%);
+    fill: #e1e1e1;
+}
+.arrow_left svg{
+    width: 70%;
+    height: 70%;
+    transform: translateX(-5%);
+    fill: #e1e1e1;
+}
+.cls-1 {
+    fill: none;
+    stroke: #e1e1e1;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+}
+
+/* -----------news-桌機版--手機板--------------- */
+.news .item-group{
+    position: relative;
+}
+.news_btn{
+    width: 200px;
+    height: 51px;
+    border-radius:25.5px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+} 
+.news_btn:hover{
+    background-color: #fff;
+    color: #000;
+}  
+.news .item{
+    width: 50%;
+    height: 320px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.news .pic{
+    width: 100%;
+    height: 320px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #000;
+    overflow: hidden;
+    
+}
+.news .text{
+    position: absolute;
+    z-index: 5;
+    margin-left: calc(100%/3.5);
+    max-width: 638px;
+    height: 280px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.text02{
+    position: absolute;
+    z-index: 5;
+    margin-left: 50px;
+    max-width: 638px;
+    height: 280px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.news img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.6;
+    transform: .5s;
+    background-color: #000;
+}
+.news img:hover{
+    transform: scale(1.1);
+    opacity: .5;
+    
+}
+.big_text{
+    font-size: 1.375em;
+    margin: 0 0 24px;
+    font-weight: 200;
+}
+.text_p{
+    font-size: .875em;
+}
+/* -----------------貴賓理財服務--手機板-------------- */
+.Financial_services{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(245, 245, 245);
+    padding: 40px 0;
+}
+.Financial_body{
+    width: 80%;
+    min-width: 80%;
+    padding: 0 32px;
+}
+.Financial_services .item{
+    display: flex;
+    width: 33.333%;
+    padding: 0 8px;
+    
+}
+.h2_02{
+    display: none;
+}
+.Financial_services .text{
+    background-color: #fff;
+    width: 100%;
+    padding: 16px 16px 0;
+}
+.Financial_services .text h3{
+    margin: 0 0 12px;
+    font-size: 1em;
+}
+.Financial_services .text p{
+    height: 97px;
+    font-size: .875em;
+}
+.Financial_services .wrap .item01:first-child{
+    /* padding:上 右 下 左; */
+    padding: 0 8px 0 0;
+}
+.Financial_services .wrap .item02:first-child{
+    /* padding:上 右 下 左; */
+    padding: 0 8px 0 0;
+}
+.Financial_services .wrap .item01:last-child{
+    /* padding:上 右 下 左; */
+    padding: 0 0 0 8px;
+}
+.services01{
+    margin-bottom: 40px;
+    display: block;
+}
+/* -------------------tools--手機板--------------------- */
+.tools{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tools .wrap{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+.tools .item-group{
+    padding: 40px 0;
+    margin: 0;
+}
+.tools .item{
+    width: 323px;
+    min-width:323px;
+    height: 170px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    margin: 8px;
+    border-radius: 5px;
+}
+.tools .sc-icon{
+    height: 70px;
+    width: 70px;
+    margin: 24px auto 16px;
+}
+.tools .text{
+    padding: 0 16px 16px;
+    width: 100%;
+    font-weight: 400;
+}
+/* -----------------往上滑動按鈕--手機板--------------------- */
+.scoll_top{
+    height: 54px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoll_top_count{
+    /* width: 1404px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 100%;
+}
+.arrow_top{
+    width: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.arrow_top img{
+    width: 12px;
+    height: 12px;
+}
+.scoll_top_count h3{
+    padding-left: 10px;
+    color: #0c77b9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: .875em;
+}
+
+/* ---------------------footer-手機板---------------------- */
+    footer{
+        background-color: #2b2929;
+        color: #b7b7b7;
+        padding: 32px 0;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        position: relative;
+        
+    }
+  
+    footer .item-group{
+        width: 92.5%;
+
+    }
+
+    .footer_count{
+        /* width: 25%; */
+        /* padding: 0 0 16px 0; */
+
+    }
+    .footer_none_xs{
+        display: none;
+        
+    }
+    .footer_block_xs{
+        display: block;
+    }
+
+    .footer04 .download{
+        margin-bottom: 16px;
+    }
+    .footer_body{
+        /* border-bottom: 1px solid #6b6a6a; */
+        padding: 1rem;
+        /* padding: 16px 16px 0 16px; */
+        /* padding:上 右 下 左; */
+        /* display: none; */
+    }
+    .footer_body_xs{
+        display: flex;
+        flex-direction: column;
+        /* width: 92.5%; */
+        width: 100%;
+        /* border-bottom: 1px solid #6b6a6a; */
+        padding: 1rem;
+        /* padding: 16px 16px 0 16px; */
+        /* padding:上 右 下 左; */
+        /* display: none; */
+    }
+    .footer_body_xs li{
+        list-style: disc; 
+        /*  ist-style: disc;  li 點點 樣式 */
+    }
+    .footer_count_body{
+        display: none;
+    }
+    .padding_r{
+        padding-right: 32px;
+    }
+    .padding_l{
+        /* padding-left: 32px; */
+    }
+    footer li{
+        padding: 8px 0;
+        font-size: 12px;
+        
+    }
+    .apps_title01{
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .footer_link{
+        height: 60px;
+        width: 100%;
+        border-top: 1px solid #6b6a6a;
+    }
+
+    .footer__social-links{
+        list-style-type:none;
+    }
+    footer li::marker{
+        color: #4d4b4b;
+    }
+    .Quick_link_body{
+        /* border-bottom: 1px solid #6b6a6a; */
+        display: none;
+        color: #fff;
+    }
+    .Quick_link{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        transition: 0.005s;
+    }
+
+    .Quick_link p{
+        color: #fff;
+        font-size: .875em;
+        /* display: inline-block; */
+    }
+    .footer_arrow{
+        width: 13px;
+        height: 13px;
+
+    }
+    .footer_arrow img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .footer_guide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        display: none;
+    }
+    .footer__sitemap::before{
+        border-top: 1px solid #b7b7b7;
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 5px;
+        margin: 0 8px;
+    }
+    .footer_link .item-group{
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .guide_link{
+        width: 75%;
+        
+    }
+    .guide_Introduction{
+        /* width: 25%; */   
+        margin-top: 24px;  
+    }
+    .guide_Introduction li{
+        border-radius: 18px;
+        margin: 0 0 0 16px;
+        width: 36px;
+        /* height: 36px; */
+    }
+
+    .guide_Introduction a{
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .guide_Introduction img{
+        width: 100%;
+        height: 100%;
+    }
+    .footer_website path{
+        fill: #b7b7b7;
+    }
+    .website01 svg{
+        width: 50%;
+        height: 50%;
+
+    }
+    .website02 svg{
+        width: 60%;
+        height: 60%;
+
+    }
+    .footer_apps_title02{
+        min-width: 144px;
+        width: 144px;
+        height: 40px;
+        margin-bottom: 8px;
+        
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+
+    .footer_apps_title02 svg{
+        height: 45px;
+        width: 135px;
+    }
+/* --------------客服-手機板--------------- */
+    .footer_Customer{
+        background-color: #00b7fb;
+        bottom: 5px;
+        right: 13px;
+        z-index: 50;
+        border-radius: 30px;
+        position: fixed;
+        
+    }
+    .c2c_box_wrapper {
+        font-weight: 400px;
+        font-size: 16px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+
+    .c2c-title-text{
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-font-smoothing: subpixel-antialiased;
+        letter-spacing: .55px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 120px;  
+    }
+    .wrapper_img img{
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+    /* ---------------------------------- */
+    .margin_b16{
+        margin-bottom: 16px;
+    }
+
+}
+
+/* --------------------------------ipad版------------------------------------------ */
+/*如果螢幕寬度為 414px 以上 且 768px 以下，就套用 css 設定*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    *{
+        list-style-type: none;
+    }
+    .xl_banner{
+        display: block;
+    }
+    .md_banner{
+        display:none;
+    }
+/* ----------------下拉選單--ipad版--------------------- */
+    .nav_menu_btn:hover{
+        color: #00a546;
+    }
+/* ----------------下拉選單特效--ipad版--------------------- */
+    .nav_img_Btline li span:hover {
+        color: #0c77b9;
+    }
+  /* ---------------------------Type_count網站橫幅_分頁-ipad版------------------------------------- */
+  .TypeImage{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;   */
+}
+.Type_row01{
+    position: absolute;
+    margin-left: -500px;
+    left: 50%;
+    /* padding: 0 32px; */
+    /* margin: 0 auto; */
+    max-width: 1404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    height: 100%;
+}
+.Type_row02{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.Type_row02::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+}
+.Type_count{
+    position: absolute;
+    width: 100%;
+    /* top: -450px; */
+    /* height: 320px; */
+}
+.Type_count video{
+    width: 100%;
+    height: 100%;
+   
+}
+.Type_text{
+    position: absolute;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.Type_text p{
+    font-size: 1.125em;
+    font-weight: 400;
+    margin: 0 0 16px;
+
+}
+.Type_text h1{
+    font-size: 2.125em;
+    margin: 0 0 24px;
+    font-weight: 400;
+}
+.margin_0{
+    margin: 0 auto;
+}
+/* -----------------全球銀行金融服務--桌機版--ipad版---------------------- */
+.service_body01{
+    background-color: #0967a1;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service_body02 h2{
+    font-size: 2.125em;
+    line-height: 1.25;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.service_body02{
+    /* width: 70%; */
+    /* width: 1404px; */
+    padding: 0 32px;
+}
+.service_count{
+    background-color: #fff;
+    padding: 40px 32px;
+    border-radius: 5px;
+    margin-top: 55px;
+}
+.service_img{
+    width: 30%;
+    padding: 16px;
+}
+.service_img img{
+    width: 100%;
+    /* height: 100%; */
+}
+.service_text{
+    padding: 32px 16px 24px 16px;
+    width: 70%;
+}
+.service_text h4{
+    color: #0c77b9;
+    font-size: .875em;
+    /* margin-bottom: 8px; */
+    text-transform: uppercase;
+}
+.service_text_row01 ul li{
+    list-style: disc;
+    margin-top: 8px;
+}
+.service_text_row01 ul{
+    padding-left: 16px;
+    column-count: 2;
+}
+.service_text_row01{
+    margin-bottom: 8px;
+    font-size: .875em;
+}
+/* ----------------------------------- */
+.service_text_row02 ul li{
+    color: #000;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    list-style: none;
+    font-size: 1em;
+}
+.service_text_row02 ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 13px;
+    height: 13px;
+    background-image: url(../page/勾勾.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+
+    
+}
+.service_text_row02{
+    margin: 8px 0 24px 0;
+    font-size: .875em;
+}
+/* ---------------------------------- */
+.service_btn{
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.4;
+    background-color: #008738;
+    color: #fff;
+    padding: 1em 1.5em;
+    min-width: 200px;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
+/* -------------------------------貴賓客群比較--桌機版--ipad版------------------------------ */
+.guests_body{
+    overflow:hidden;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: linear-gradient(to right, #000 25%, transparent 100%); */
+    /* opacity: 0.8; */
+}
+.background_c{
+    position: absolute;
+    background-color: linear-gradient(to right, #000 25%, transparent 100%);
+    /* background-color: #000; */
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.2; */
+    /* z-index: 5; */
+}
+.guests_img{
+    width: 100%;
+    height: 100%;
+}
+.guests_img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000 25%, transparent 100%);
+    opacity: .5;
+}
+.guests_img01{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+.guests_img01 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.guests_img02{
+    display: none;
+}
+.guests_body{
+    position: relative;
+}
+.guests_img{
+    position: absolute;
+}
+.guests_text_body{
+    width: 1404px;
+    padding: 0 32px;
+    color: #fff;
+    margin: 0 auto;
+    
+}
+.guests_text{
+    position: relative;
+    width: 700px;
+    padding: 40px 0;
+}
+.guests_text h2{
+    font-size: 1.875em;
+    font-weight: 200;
+}
+.guests_text p{
+    font-size: 1em;
+    margin: 16px 0;
+}
+.guests_text_count{
+    height: 100%;
+}
+
+
+/* -----------------------------------最新活動--------------------------------------------- */
+.Activity_body{
+    width: 100%;
+    background-color: #fff;
+    height: 520px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+.Activity_row{
+    /* width: 1404px; */
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 32px;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.Activity_row02{
+    height: 387px;
+}
+.Activity_h2{
+    margin-bottom: 16px;
+    font-size: 1.875em;
+    font-weight: inherit;
+}
+.Activity_img_body{ 
+    width: 336px;
+    height: 100%;
+    /* height: 387px; */
+    color: #fff;
+    margin: 0 8px;
+    /* padding:上 右 下 左; */
+    position: relative; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Activity_img{
+    position: absolute;
+    /* border-radius: 5px; */
+    /* height: 387px; */
+    width: 336px;
+    height: 100%;
+}
+.margin_r16{
+    margin: 0 16px 0 0;
+}
+.margin_l16{
+    margin: 0 0 0 16px;
+}
+
+.Activity_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Activity_text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    padding: 24px 24px 8px;
+    word-wrap:break-word;
+}
+.Activity_text p{
+    font-size: .875em;
+    margin: 0 0 16px;
+}
+.Activity_text h2{
+    font-size: 1.875em;
+    margin: 0 0 24px;
+    font-weight: 200;
+}
+.Activity_btn {
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.4;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 1em 1.5em;
+    min-width: 200px;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* -------------------------優先理財貴賓相關聲明及注意事項---------------------- */
+.Precautions_body{
+    width: 100%;
+    background-color: #fff;
+}
+.Precautions_count{
+    padding: 16px 16px 16px 30px;
+    /* width: 1404px; */
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+.Precautions_count h2{
+    font-size: 1em;
+    font-size: 300;
+    padding-left: 5px;
+}
+.Precautions_add{
+    width: 24px;
+    height: 24px;
+}
+/* ---------------------------謹慎理財 信用至上----------------------------- */
+.CEDIT_body {
+    padding: 40px 0;
+}
+.CEDIT_count{
+    /* width: 1404px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px; 
+}
+.CEDIT_body h2{
+    color: #0c77b9;
+    margin: 0 0 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 1.875em;
+    font-weight: inherit;
+}
+.CEDIT_body p{
+    margin-bottom: 8px;
+    font-size: .875em;
+}
+
+
+
+/* ----------------下拉選單--桌機版--ipad版--------------------- */
+.nav_menu_btn:hover{
+    color: #00a546;
+}
+/* ----------------下拉選單特效--桌機版--ipad版--------------------- */
+.nav_img_Btline li span{
+    background-image: linear-gradient(#0c77b9, #0c77b9);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: 0.15s;
+    padding-bottom: 3px;
+}
+.nav_img_Btline li span:hover {
+    background-size: 100% 1px;
+    color: #0c77b9;
+}
+ /* ----------手滑換圖輪播-桌機版--ipad版-------- */
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* height: 228px; */
+    height: 300px;
+}
+.about_Carousel{
+   
+   
+}
+.about_icon_body{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    /* position: relative;
+    white-space: nowrap;
+    overflow: auto; */
+
+}
+.about_icon_body .width-proxy{
+    /* height: 10px;
+    display: inline-block; */
+}
+.about_icon_body li:first-child{
+    /* margin-left: 0; */
+}
+.about_icon_body::-webkit-scrollbar{
+    /* display: none; */
+}
+.about_icon_body li{
+    width: 13%;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+    /* border: 1px solid red; */
+    /* position: relative;
+    opacity:0;
+    visibility:hidden; */
+}
+.about_icon_body h2{
+    font-size: 1.125em;
+    margin-top: 5px;
+}
+.sc-icon{
+    width: 48px;
+    height: 48px;
+    margin:0px auto;
+}
+.sc-icon svg{
+    width: 100%;
+    height: 100%;
+}
+.about_icon_text06{
+    /* transform: translateX(25%); */
+}
+/* -----------------輪播內文-桌機版--ipad版---------------- */
+.banner_text{
+    position: absolute;
+    max-width: 800px;
+    width: 800px;
+    padding: 40px 0;
+    top: 50px;
+    left: 280px;
+    
+}
+.banner_btn{
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.4;        
+    color: #fff;
+    padding: 0.8em 1em;
+    min-width: 200px;
+    margin: 0 24px 16px 0;
+    font-size: 1em;
+    width: 200px;
+    text-align: center;
+}
+.btn_01{
+    border: 2px solid #008738;
+    background-color: #008738;
+}
+.btn_02{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.banner_text h2{
+    font-size: 2.9375em;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.banner_text p{
+    color: #fff;
+    margin-bottom: 32px;
+    display: block;
+}
+
+
+
+
+/* ----------------桌機版--ipad版------------------- */
+
+.main-wrap{
+    margin-left: 10%;
+    padding: 10px;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.content-container{
+    height: 228px;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-container .width-proxy{
+    height: 10px;
+    display: inline-block;
+}
+
+.content-container .about_icon_center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+}
+.content-container .about_icon_center:first-child{
+  margin-left: 0;
+}
+.content-container .about_icon_center{
+    width: 248px;
+    height: 228px;
+}
+.content-container::-webkit-scrollbar {
+    display: none;
+}
+.content-container h2{
+    font-size: 1.125em;
+    margin-top: 5px;
+}
+.about_icon_center svg{
+    stroke:#0c77b9;
+}
+/* -------------------換圖輪播_左右滑動icon--ipad版------------------------ */
+.main-wrap_xl{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* padding: 40px 0 32px 0; */
+}
+.main-wrap .lSAction{
+    display: none !important;
+}
+
+
+
+/* -----------------------最新焦點-桌機版--ipad版---------------------- */
+/* 第一層父層 */
+.Latest_focus{
+    background-color: rgb(245, 245, 245);
+    min-height: 550px;
+}
+.Latest_focus .big_text{
+    margin-bottom: 32px;
+}
+/* 第二層父層 */
+.focus_content{
+    padding: 40px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* 卡片總父層 */
+.focus_body{
+    display: flex;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    min-height: 455px;
+    /* overflow: auto hidden; */
+    overflow: auto;
+    /* cursor: move; */
+    /* touch-action: none; */
+    
+}
+
+
+.focus_body::-webkit-scrollbar{
+    /* width : 0  !important; */
+}
+/* 卡片父層 */
+.focus_cord_body{
+    margin-right: 16px;
+    width: 224px;
+    height: 285px;
+    background-color: #fff;
+}
+.focus_cord_body:last-child{
+    margin-right: 0px;
+}
+/* 圖片父層 */
+.focus_img{
+    width: 224px;
+    height: 200px;
+}
+.focus_img img{
+    width: 100%;
+    height: 100%;
+}
+/* 內文父層 */
+.focus_text{
+    /* width: 224px; */
+    width: 100%;
+    padding: 16px;
+    height: 85px;
+    /* white-space:pre-wrap; */
+}
+.focus_h3{
+    font-size: 1em;
+    height: 41px;
+    overflow: hidden;
+    font-weight: 400;
+    margin-bottom: .75rem;
+    margin-top: 0;
+}
+.focus_p{
+    /* height: 97px; */
+    overflow: hidden;
+    /* margin-bottom: 8px; */
+    margin-top: 0;
+    font-size: .875em;
+}
+.focus_More{
+    padding-bottom: 20px;
+    font-size: .75em;
+    max-width: 150px;
+    opacity: 0;
+    transition: .2s;
+}
+.focus_More:hover{
+    opacity: 1;
+}
+.focus_More svg{
+    width: 16px;
+    height: 16px;
+    margin-left: .375rem;
+}
+.focus_start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.focus_content h2{
+    padding-left: 10%;
+}
+/* --------------------拖移-ipad版-------------------- */
+.Latest_focus_xl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2929;
+    min-height: 426px;
+}
+.focus_content_xl{
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    /* width: 1404px; */
+    width: 100%;
+    padding: 0 32px;
+}
+.focus_content_xl h2{
+    color: #fff;
+}
+.lSPager{
+    display: none;
+}
+
+/* -----------箭頭-桌機版--ipad版------- */
+.focus_arrow{
+    position: relative;
+    min-width: 80%;
+    width: 80%;
+    padding: 0 32px;
+    /* cursor: move; */
+}
+
+.arrow_body{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    top: calc(50% - 38px);
+    z-index: 5;
+}
+
+.arrow_right{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #e1e1e1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.arrow_left{
+    width: 35px;
+    height: 35px;
+    border: 3px solid #e1e1e1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.arrow_right svg{
+    width: 70%;
+    height: 70%;
+    transform: translateX(5%);
+    fill: #e1e1e1;
+}
+.arrow_left svg{
+    width: 70%;
+    height: 70%;
+    transform: translateX(-5%);
+    fill: #e1e1e1;
+}
+.cls-1 {
+    fill: none;
+    stroke: #e1e1e1;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+}
+
+/* -----------news-桌機版--ipad版--------------- */
+.news .item-group{
+    position: relative;
+}
+.news_btn{
+    width: 200px;
+    height: 51px;
+    border-radius:25.5px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+} 
+.news_btn:hover{
+    background-color: #fff;
+    color: #000;
+}  
+.news .item{
+    width: 50%;
+    height: 320px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.news .pic{
+    width: 100%;
+    height: 320px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #000;
+    overflow: hidden;
+    
+}
+.news .text{
+    position: absolute;
+    z-index: 5;
+    margin-left: calc(100%/3.5);
+    max-width: 638px;
+    height: 280px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.text02{
+    position: absolute;
+    z-index: 5;
+    margin-left: 50px;
+    max-width: 638px;
+    height: 280px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.news img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.6;
+    transform: .5s;
+    background-color: #000;
+}
+.news img:hover{
+    transform: scale(1.1);
+    opacity: .5;
+    
+}
+.big_text{
+    font-size: 1.875em;
+    margin: 0 0 24px;
+    font-weight: 200;
+}
+.text_p{
+    font-size: .875em;
+}
+/* -----------------貴賓理財服務-桌機版--ipad版-------------- */
+.Financial_services{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(245, 245, 245);
+    padding: 40px 0;
+}
+.Financial_body{
+    width: 80%;
+    min-width: 80%;
+    padding: 0 32px;
+}
+.Financial_services .item{
+    display: flex;
+    width: 33.333%;
+    padding: 0 8px;
+    
+}
+.h2_02{
+    display: none;
+}
+.Financial_services .text{
+    background-color: #fff;
+    width: 100%;
+    padding: 16px 16px 0;
+}
+.Financial_services .text h3{
+    margin: 0 0 12px;
+    font-size: 1em;
+}
+.Financial_services .text p{
+    height: 97px;
+    font-size: .875em;
+}
+.Financial_services .wrap .item01:first-child{
+    /* padding:上 右 下 左; */
+    padding: 0 8px 0 0;
+}
+.Financial_services .wrap .item02:first-child{
+    /* padding:上 右 下 左; */
+    padding: 0 8px 0 0;
+}
+.Financial_services .wrap .item01:last-child{
+    /* padding:上 右 下 左; */
+    padding: 0 0 0 8px;
+}
+.services01{
+    margin-bottom: 40px;
+    display: block;
+}
+/* -------------------tools-桌機版--ipad版--------------------- */
+.tools{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tools .wrap{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+.tools .item-group{
+    padding: 40px 0;
+    margin: 0;
+}
+.tools .item{
+    width: 323px;
+    min-width:323px;
+    height: 170px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    margin: 8px;
+    border-radius: 5px;
+}
+.tools .sc-icon{
+    height: 70px;
+    width: 70px;
+    margin: 24px auto 16px;
+}
+.tools .text{
+    padding: 0 16px 16px;
+    width: 100%;
+    font-weight: 400;
+}
+/* -----------------往上滑動按鈕-桌機版--ipad版--------------------- */
+.scoll_top{
+    height: 54px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoll_top_count{
+    /* width: 1404px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 100%;
+}
+.arrow_top{
+    width: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.arrow_top img{
+    width: 12px;
+    height: 12px;
+}
+.scoll_top_count h3{
+    padding-left: 10px;
+    color: #0c77b9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* ---------------------footer-ipad版---------------------- */
+footer{
+    background-color: #2b2929;
+    color: #b7b7b7;
+    padding: 40px 0;
+    min-height: 350px;
+    /* height: 350px; */
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+.footer_body_xl{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+}
+.footer_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 32px;
+}
+.footer_count_body{
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #6b6a6a;
+}
+.footer_body_xl .item-group{
+    flex-direction: column;
+}
+.footer04{
+    /* width: 20%; */
+    margin-bottom: 32px;
+}
+.footer_count{
+    width: 25%;
+}
+.footer03{
+    /* border-right: 1px solid #b7b7b7; */
+}
+.padding_r{
+    padding-right: 32px;
+}
+.padding_l{
+    padding-left: 32px;
+}
+footer li{
+    margin: 0 0 8px;
+}
+.apps_title01{
+    margin-bottom: 8px;
+}
+
+.footer_link{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer_guide{
+    /* width: 25%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+.footer__sitemap::before{
+    border-top: 1px solid #b7b7b7;
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 5px;
+    margin: 0 8px;
+}
+.footer_link .item-group{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+.guide_link{
+    width: 75%;
+}
+.guide_Introduction{
+    width: 25%;
+
+}
+.guide_Introduction li{
+    border-radius: 18px;
+    margin: 0 0 0 19px;
+    width: 36px;
+    height: 36px;
+}
+
+.guide_Introduction a{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guide_Introduction img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer_website path{
+    fill: #b7b7b7;
+}
+.website01 svg{
+    width: 50%;
+    height: 50%;
+
+}
+.website02 svg{
+    width: 60%;
+    height: 60%;
+
+}
+.footer_apps_title02{
+    min-width: 144px;
+    width: 144px;
+    height: 40px;
+    margin-bottom: 8px;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+.footer_apps_title02 svg{
+    height: 45px;
+    width: 135px;
+}
+.footer_none_xs{
+    display: block;
+    
+}
+.footer_block_xs{
+    display: none;
+}
+.Quick_link_body{
+    display: none;
+}
+.Quick_link{
+    display: none;
+}
+/* --------------客服-ipad版--------------- */
+    .footer_Customer{
+        background-color: #00b7fb;
+        bottom: 5px;
+        right: 50px;
+        z-index: 50;
+        border-radius: 30px;
+        position: fixed;
+        
+    }
+    .c2c_box_wrapper {
+        font-weight: 400px;
+        font-size: 16px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+
+    .c2c-title-text{
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-font-smoothing: subpixel-antialiased;
+        letter-spacing: .55px;
+        white-space: nowrap;
+        
+        text-overflow: ellipsis;
+        max-width: 120px;  
+    }
+    .wrapper_img img{
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* --------------------------------桌機版--1440----------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1440px){
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .banner_color{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(to right, #000 25%, transparent 100%); 
+    }
+    .banner{
+        position: relative;
+       
+    }
+    .banner img{
+        opacity: 0.5;
+    }
+    .xl_banner{
+        display: block;
+    }
+    .md_banner{
+        display: none;
+    }
+
+    .item-group {
+        display: flex;
+    }
+     /* ---------------------------Type_count網站橫幅_分頁-1440------------------------------------- */
+     .TypeImage{
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center;   */
+    }
+    .Type_row01{
+        position: absolute;
+        margin-left: -500px;
+        left: 50%;
+        /* padding: 0 32px; */
+        /* margin: 0 auto; */
+        max-width: 1404px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        height: 100%;
+    }
+    .Type_row02{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .Type_row02::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .4;
+    }
+    .Type_count{
+        position: absolute;
+        width: 100%;
+        top: -450px;
+        /* height: 320px; */
+    }
+    .Type_count video{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .Type_text{
+        position: absolute;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .Type_text p{
+        font-size: 1.125em;
+        font-weight: 400;
+        margin: 0 0 16px;
+
+    }
+    .Type_text h1{
+        font-size: 2.125em;
+        margin: 0 0 24px;
+        font-weight: 400;
+    }
+    .margin_0{
+        margin: 0 auto;
+    }
+    /* -----------------全球銀行金融服務--桌機版--1440---------------------- */
+    .service_body01{
+        background-color: #0967a1;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service_body02 h2{
+        font-size: 2.125em;
+        line-height: 1.25;
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .service_body02{
+        /* width: 70%; */
+        width: 1404px;
+        padding: 0 32px;
+    }
+    .service_count{
+        background-color: #fff;
+        padding: 40px 32px;
+        border-radius: 5px;
+        margin-top: 55px;
+    }
+    .service_img{
+        width: 30%;
+        padding: 32px;
+    }
+    .service_img img{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .service_text{
+        padding: 32px 24px 24px 32px;
+        width: 70%;
+    }
+    .service_text h4{
+        color: #0c77b9;
+        font-size: .875em;
+        /* margin-bottom: 8px; */
+        text-transform: uppercase;
+    }
+    .service_text_row01 ul li{
+        list-style: disc;
+        margin-top: 8px;
+    }
+    .service_text_row01 ul{
+        padding-left: 16px;
+        column-count: 2;
+    }
+    .service_text_row01{
+        margin-bottom: 8px;
+        font-size: .875em;
+    }
+    /* ----------------------------------- */
+    .service_text_row02 ul li{
+        color: #000;
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 8px;
+        margin-top: 4px;
+        list-style: none;
+        font-size: 1em;
+    }
+    .service_text_row02 ul li::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 13px;
+        height: 13px;
+        background-image: url(../page/勾勾.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+
+        
+    }
+    .service_text_row02{
+        margin: 8px 0 24px 0;
+        font-size: .875em;
+    }
+    /* ---------------------------------- */
+    .service_btn{
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.4;
+        background-color: #008738;
+        color: #fff;
+        padding: 1em 1.5em;
+        min-width: 200px;
+        width: 200px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    /* -------------------------------貴賓客群比較--桌機版--1440------------------------------ */
+    .guests_body{
+        overflow:hidden;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: linear-gradient(to right, #000 25%, transparent 100%); */
+        /* opacity: 0.8; */
+    }
+    .background_c{
+        position: absolute;
+        background-color: linear-gradient(to right, #000 25%, transparent 100%);
+        /* background-color: #000; */
+        width: 100%;
+        height: 100%;
+        /* opacity: 0.2; */
+        /* z-index: 5; */
+    }
+    .guests_img{
+        width: 100%;
+        height: 100%;
+    }
+    .guests_img::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #000 25%, transparent 100%);
+        opacity: .5;
+    }
+    .guests_img01{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .guests_img01 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .guests_img02{
+        display: none;
+    }
+    .guests_body{
+        position: relative;
+    }
+    .guests_img{
+        position: absolute;
+    }
+    .guests_text_body{
+        width: 1404px;
+        padding: 0 32px;
+        color: #fff;
+        margin: 0 auto;
+        
+    }
+    .guests_text{
+        position: relative;
+        width: 700px;
+        padding: 40px 0;
+    }
+    .guests_text h2{
+        font-size: 1.875em;
+        font-weight: 200;
+    }
+    .guests_text p{
+        font-size: 1em;
+        margin: 16px 0;
+    }
+    .guests_text_count{
+        height: 100%;
+    }
+
+
+    /* -----------------------------------最新活動--------------------------------------------- */
+    .Activity_body{
+        width: 100%;
+        background-color: #fff;
+        height: 520px;
+        padding: 40px 0;
+        box-sizing: border-box;
+    }
+    .Activity_row{
+        width: 1404px;
+        display: flex;
+        margin: 0 auto;
+        padding: 0 32px;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .Activity_row02{
+        height: 387px;
+    }
+    .Activity_h2{
+        margin-bottom: 16px;
+        font-size: 1.875em;
+        font-weight: inherit;
+    }
+    .Activity_img_body{ 
+        width: 654px;
+        height: 100%;
+        /* height: 387px; */
+        color: #fff;
+        margin: 0 8px;
+        /* padding:上 右 下 左; */
+        position: relative; 
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .Activity_img{
+        position: absolute;
+        /* border-radius: 5px; */
+        /* height: 387px; */
+        width: 654px;
+        height: 100%;
+    }
+    .margin_r16{
+        margin: 0 16px 0 0;
+    }
+    .margin_l16{
+        margin: 0 0 0 16px;
+    }
+    
+    .Activity_img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Activity_text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 654px;
+        bottom: 0;
+        background-color: rgba(0,0,0,.6);
+        padding: 24px 24px 8px;
+    }
+    .Activity_text p{
+        font-size: .875em;
+        margin: 0 0 16px;
+    }
+    .Activity_text h2{
+        font-size: 1.875em;
+        margin: 0 0 24px;
+        font-weight: 200;
+    }
+    .Activity_btn {
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.4;
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        padding: 1em 1.5em;
+        min-width: 200px;
+        width: 200px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    /* -------------------------優先理財貴賓相關聲明及注意事項---------------------- */
+    .Precautions_body{
+        width: 100%;
+        background-color: #fff;
+    }
+    .Precautions_count{
+        padding: 16px 16px 16px 30px;
+        width: 1404px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .Precautions_count h2{
+        font-size: 1em;
+        font-size: 300;
+        padding-left: 5px;
+    }
+    .Precautions_add{
+        width: 24px;
+        height: 24px;
+    }
+    /* ---------------------------謹慎理財 信用至上----------------------------- */
+    .CEDIT_body {
+        padding: 40px 0;
+    }
+    .CEDIT_count{
+        width: 1404px;
+        margin: 0 auto;
+        padding: 0 32px; 
+    }
+    .CEDIT_body h2{
+        color: #0c77b9;
+        margin: 0 0 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e1e1e1;
+        font-size: 1.875em;
+        font-weight: inherit;
+    }
+    .CEDIT_body p{
+        margin-bottom: 8px;
+        font-size: .875em;
+    }
+    
+
+    
+    /* ----------------下拉選單--桌機版--1440--------------------- */
+    .nav_menu_btn:hover{
+        color: #00a546;
+    }
+    /* ----------------下拉選單特效--桌機版--1440--------------------- */
+    .nav_img_Btline li span{
+        background-image: linear-gradient(#0c77b9, #0c77b9);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 0 1px;
+        transition: 0.15s;
+        padding-bottom: 3px;
+    }
+    .nav_img_Btline li span:hover {
+        background-size: 100% 1px;
+        color: #0c77b9;
+    }
+     /* ----------手滑換圖輪播-桌機版--1440-------- */
+    .about{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        /* height: 228px; */
+        height: 300px;
+    }
+    .about_Carousel{
+       
+       
+    }
+    .about_icon_body{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        /* position: relative;
+        white-space: nowrap;
+        overflow: auto; */
+    
+    }
+    .about_icon_body .width-proxy{
+        /* height: 10px;
+        display: inline-block; */
+    }
+    .about_icon_body li:first-child{
+        /* margin-left: 0; */
+    }
+    .about_icon_body::-webkit-scrollbar{
+        /* display: none; */
+    }
+    .about_icon_body li{
+        width: 13%;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content:center;
+        /* border: 1px solid red; */
+        /* position: relative;
+        opacity:0;
+        visibility:hidden; */
+    }
+    .about_icon_body h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .sc-icon{
+        width: 48px;
+        height: 48px;
+        margin:0px auto;
+    }
+    .sc-icon svg{
+        width: 100%;
+        height: 100%;
+    }
+    .about_icon_text06{
+        /* transform: translateX(25%); */
+    }
+/* -----------------輪播內文-桌機版--1440---------------- */
+    .banner_text{
+        position: absolute;
+        max-width: 800px;
+        width: 800px;
+        padding: 40px 0;
+        top: 50px;
+        left: 280px;
+        
+    }
+    .banner_btn{
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.4;        
+        color: #fff;
+        padding: 0.8em 1em;
+        min-width: 200px;
+        margin: 0 24px 16px 0;
+        font-size: 1em;
+        width: 200px;
+        text-align: center;
+    }
+    .btn_01{
+        border: 2px solid #008738;
+        background-color: #008738;
+    }
+    .btn_02{
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+    }
+    .banner_text h2{
+        font-size: 2.9375em;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    .banner_text p{
+        color: #fff;
+        margin-bottom: 32px;
+        display: block;
+    }
+
+
+
+
+/* ----------------桌機版--1440------------------- */
+
+    .main-wrap{
+        margin-left: 10%;
+        padding: 10px;
+        max-width: 80%;
+        overflow: hidden;
+    }
+  
+    .content-container{
+        height: 228px;
+        white-space: nowrap;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .content-container .width-proxy{
+        height: 10px;
+        display: inline-block;
+    }
+  
+    .content-container .about_icon_center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #e1e1e1;
+    }
+    .content-container .about_icon_center:first-child{
+      margin-left: 0;
+    }
+    .content-container .about_icon_center{
+        width: 248px;
+        height: 228px;
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .content-container h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .about_icon_center svg{
+        stroke:#0c77b9;
+    }
+    /* -------------------換圖輪播_左右滑動icon-1440------------------------ */
+    .main-wrap_xl{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        /* padding: 40px 0 32px 0; */
+    }
+    .main-wrap .lSAction{
+        display: none !important;
+    }
+
+
+
+    /* -----------------------最新焦點-桌機版--1440---------------------- */
+    /* 第一層父層 */
+    .Latest_focus{
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .Latest_focus .big_text{
+        margin-bottom: 32px;
+    }
+    /* 第二層父層 */
+    .focus_content{
+        padding: 40px 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    /* 卡片總父層 */
+    .focus_body{
+        display: flex;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        min-height: 455px;
+        /* overflow: auto hidden; */
+        overflow: auto;
+        /* cursor: move; */
+        /* touch-action: none; */
+        
+    }
+
+
+    .focus_body::-webkit-scrollbar{
+        /* width : 0  !important; */
+    }
+    /* 卡片父層 */
+    .focus_cord_body{
+        margin-right: 16px;
+        width: 224px;
+        height: 285px;
+        background-color: #fff;
+    }
+    .focus_cord_body:last-child{
+        margin-right: 0px;
+    }
+    /* 圖片父層 */
+    .focus_img{
+        width: 224px;
+        height: 200px;
+    }
+    .focus_img img{
+        width: 100%;
+        height: 100%;
+    }
+    /* 內文父層 */
+    .focus_text{
+        /* width: 224px; */
+        width: 100%;
+        padding: 16px;
+        height: 85px;
+        /* white-space:pre-wrap; */
+    }
+    .focus_h3{
+        font-size: 1em;
+        height: 41px;
+        overflow: hidden;
+        font-weight: 400;
+        margin-bottom: .75rem;
+        margin-top: 0;
+    }
+    .focus_p{
+        /* height: 97px; */
+        overflow: hidden;
+        /* margin-bottom: 8px; */
+        margin-top: 0;
+        font-size: .875em;
+    }
+    .focus_More{
+        padding-bottom: 20px;
+        font-size: .75em;
+        max-width: 150px;
+        opacity: 0;
+        transition: .2s;
+    }
+    .focus_More:hover{
+        opacity: 1;
+    }
+    .focus_More svg{
+        width: 16px;
+        height: 16px;
+        margin-left: .375rem;
+    }
+    .focus_start{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .focus_content h2{
+        padding-left: 10%;
+    }
+    /* --------------------拖移-1440-------------------- */
+    .Latest_focus_xl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b2929;
+        min-height: 426px;
+    }
+    .focus_content_xl{
+        display: flex;
+        flex-direction: column;
+        /* width: 80%; */
+        width: 1404px;
+        padding: 0 32px;
+    }
+    .focus_content_xl h2{
+        color: #fff;
+    }
+    .lSPager{
+        display: none;
+    }
+
+    /* -----------箭頭-桌機版--1440------- */
+    .focus_arrow{
+        position: relative;
+        min-width: 80%;
+        width: 80%;
+        padding: 0 32px;
+        /* cursor: move; */
+    }
+    
+    .arrow_body{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        top: calc(50% - 38px);
+        z-index: 5;
+    }
+
+    .arrow_right{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 3px solid #e1e1e1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow_left{
+        width: 35px;
+        height: 35px;
+        border: 3px solid #e1e1e1;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .arrow_right svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(5%);
+        fill: #e1e1e1;
+    }
+    .arrow_left svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(-5%);
+        fill: #e1e1e1;
+    }
+    .cls-1 {
+        fill: none;
+        stroke: #e1e1e1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+    }
+    
+/* -----------news-桌機版--1440--------------- */
+    .news .item-group{
+        position: relative;
+    }
+    .news_btn{
+        width: 200px;
+        height: 51px;
+        border-radius:25.5px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    } 
+    .news_btn:hover{
+        background-color: #fff;
+        color: #000;
+    }  
+    .news .item{
+        width: 50%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .news .pic{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #000;
+        overflow: hidden;
+        
+    }
+    .news .text{
+        position: absolute;
+        z-index: 5;
+        margin-left: calc(100%/3.5);
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .text02{
+        position: absolute;
+        z-index: 5;
+        margin-left: 50px;
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .news img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.6;
+        transform: .5s;
+        background-color: #000;
+    }
+    .news img:hover{
+        transform: scale(1.1);
+        opacity: .5;
+        
+    }
+    .big_text{
+        font-size: 1.875em;
+        margin: 0 0 24px;
+        font-weight: 200;
+    }
+    .text_p{
+        font-size: .875em;
+    }
+/* -----------------貴賓理財服務-桌機版--1440-------------- */
+    .Financial_services{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        background-color: rgb(245, 245, 245);
+        padding: 40px 0;
+    }
+    .Financial_body{
+        width: 80%;
+        min-width: 80%;
+        padding: 0 32px;
+    }
+    .Financial_services .item{
+        display: flex;
+        width: 33.333%;
+        padding: 0 8px;
+        
+    }
+    .h2_02{
+        display: none;
+    }
+    .Financial_services .text{
+        background-color: #fff;
+        width: 100%;
+        padding: 16px 16px 0;
+    }
+    .Financial_services .text h3{
+        margin: 0 0 12px;
+        font-size: 1em;
+    }
+    .Financial_services .text p{
+        height: 97px;
+        font-size: .875em;
+    }
+    .Financial_services .wrap .item01:first-child{
+        /* padding:上 右 下 左; */
+        padding: 0 8px 0 0;
+    }
+    .Financial_services .wrap .item02:first-child{
+        /* padding:上 右 下 左; */
+        padding: 0 8px 0 0;
+    }
+    .Financial_services .wrap .item01:last-child{
+        /* padding:上 右 下 左; */
+        padding: 0 0 0 8px;
+    }
+    .services01{
+        margin-bottom: 40px;
+        display: block;
+    }
+/* -------------------tools-桌機版--1440--------------------- */
+    .tools{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .tools .wrap{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .tools .item-group{
+        padding: 40px 0;
+        margin: 0;
+    }
+    .tools .item{
+        width: 323px;
+        min-width:323px;
+        height: 170px;
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #e1e1e1;
+        margin: 8px;
+        border-radius: 5px;
+    }
+    .tools .sc-icon{
+        height: 70px;
+        width: 70px;
+        margin: 24px auto 16px;
+    }
+    .tools .text{
+        padding: 0 16px 16px;
+        width: 100%;
+        font-weight: 400;
+    }
+    /* -----------------往上滑動按鈕-桌機版--1440--------------------- */
+    .scoll_top{
+        height: 54px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .scoll_top_count{
+        width: 1404px;
+        margin: 0 auto;
+        padding: 0 32px;
+        height: 100%;
+    }
+    .arrow_top{
+        width: 12px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow_top img{
+        width: 12px;
+        height: 12px;
+    }
+    .scoll_top_count h3{
+        padding-left: 10px;
+        color: #0c77b9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+/* ---------------------footer-桌機版--1440-------------------- */
+footer{
+    background-color: #2b2929;
+    color: #b7b7b7;
+    padding: 40px 0;
+    min-height: 350px;
+    height: 350px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+.footer_body_xl{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+    margin: 0;
+}
+.footer_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 50px;
+}
+.footer_count_body{
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer04{
+    /* width: 20%; */
+}
+.footer_count{
+    width: 25%;
+    padding-left: 32px;
+}
+.footer03{
+    border-right: 1px solid #b7b7b7;
+}
+.padding_r{
+    padding-right: 32px;
+}
+.padding_l{
+    padding-left: 32px;
+}
+footer li{
+    margin: 0 0 8px;
+}
+.apps_title01{
+    margin-bottom: 8px;
+}
+
+.footer_link{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer_guide{
+    /* width: 25%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+.footer__sitemap::before{
+    border-top: 1px solid #b7b7b7;
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 5px;
+    margin: 0 8px;
+}
+.footer_link .item-group{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+.guide_link{
+    width: 75%;
+}
+.guide_Introduction{
+    width: 25%;
+
+}
+.guide_Introduction li{
+    border-radius: 18px;
+    margin: 0 0 0 19px;
+    width: 36px;
+    height: 36px;
+}
+
+.guide_Introduction a{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guide_Introduction img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer_website path{
+    fill: #b7b7b7;
+}
+.website01 svg{
+    width: 50%;
+    height: 50%;
+
+}
+.website02 svg{
+    width: 60%;
+    height: 60%;
+
+}
+.footer_apps_title02{
+    min-width: 144px;
+    width: 144px;
+    height: 40px;
+    margin-bottom: 8px;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+.footer_apps_title02 svg{
+    height: 45px;
+    width: 135px;
+}
+.footer_none_xs{
+    display: block;
+    width: 25%;
+}
+.footer_block_xs{
+    display: none;
+}
+.Quick_link_body{
+    display: none;
+}
+.Quick_link{
+    display: none;
+}
+/* --------------客服-桌機版--1440------------- */
+    .footer_Customer{
+        background-color: #00b7fb;
+        bottom: 5px;
+        right: 50px;
+        z-index: 50;
+        border-radius: 30px;
+        position: fixed;
+        
+    }
+    .c2c_box_wrapper {
+        font-weight: 400px;
+        font-size: 16px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+
+    .c2c-title-text{
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-font-smoothing: subpixel-antialiased;
+        letter-spacing: .55px;
+        white-space: nowrap;        
+        text-overflow: ellipsis;
+        max-width: 120px;  
+    }
+    .wrapper_img img{
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+}
+/* --------------------------------桌機版--1920----------------------------------------- */
+@media screen and (min-width:1441px){
+    *{
+        padding: 0;
+        margin: 0;
+        /* list-style: none; */
+        /* box-sizing: border-box; */
+    }
+    .nav_02_flex{
+        position: sticky;
+        /* position: fixed; */
+        /* top: 30px; */
+        top: 0;
+    }
+    .banner_color{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(to right, #000 25%, transparent 100%); 
+    }
+    .banner{
+        position: relative;
+        
+    }
+    .banner img{
+        opacity: 0.5;
+    }
+    .xl_banner{
+        display: block;
+    }
+    .md_banner{
+        display: none;
+    }
+
+    .item-group {
+        display: flex;
+    }
+    .margin_b{
+        margin-bottom: 24px;
+    }
+    /* ---------------------------Type_count網站橫幅_分頁-1920------------------------------------- */
+    .TypeImage{
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center;   */
+    }
+    .Type_row01{
+        position: absolute;
+        margin-left: -500px;
+        left: 50%;
+        /* padding: 0 32px; */
+        /* margin: 0 auto; */
+        max-width: 1404px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        height: 100%;
+    }
+    .Type_row02{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .Type_row02::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .4;
+    }
+    .Type_count{
+        position: absolute;
+        width: 100%;
+        top: -450px;
+        /* height: 320px; */
+    }
+    .Type_count video{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .Type_text{
+        position: absolute;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .Type_text p{
+        font-size: 1.125em;
+        font-weight: 400;
+        margin: 0 0 16px;
+
+    }
+    .Type_text h1{
+        font-size: 2.125em;
+        margin: 0 0 24px;
+        font-weight: 400;
+    }
+    .margin_0{
+        margin: 0 auto;
+    }
+    /* -----------------全球銀行金融服務--桌機版--1920---------------------- */
+    .service_body01{
+        background-color: #0967a1;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service_body02 h2{
+        font-size: 2.125em;
+        line-height: 1.25;
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .service_body02{
+        /* width: 70%; */
+        width: 1404px;
+        padding: 0 32px;
+    }
+    .service_count{
+        background-color: #fff;
+        padding: 40px 32px;
+        border-radius: 5px;
+        margin-top: 55px;
+    }
+    .service_img{
+        width: 30%;
+        padding: 32px;
+    }
+    .service_img img{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .service_text{
+        padding: 32px 24px 24px 32px;
+        width: 70%;
+    }
+    .service_text h4{
+        color: #0c77b9;
+        font-size: .875em;
+        /* margin-bottom: 8px; */
+        text-transform: uppercase;
+    }
+    .service_text_row01 ul li{
+        list-style: disc;
+        margin-top: 8px;
+    }
+    .service_text_row01 ul{
+        padding-left: 16px;
+        column-count: 2;
+    }
+    .service_text_row01{
+        margin-bottom: 8px;
+        font-size: .875em;
+    }
+    /* ----------------------------------- */
+    .service_text_row02 ul li{
+        color: #000;
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 8px;
+        margin-top: 4px;
+        list-style: none;
+        font-size: 1em;
+    }
+    .service_text_row02 ul li::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 13px;
+        height: 13px;
+        background-image: url(../page/勾勾.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+
+        
+    }
+    .service_text_row02{
+        margin: 8px 0 24px 0;
+        font-size: .875em;
+    }
+    /* ---------------------------------- */
+    .service_btn{
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.4;
+        background-color: #008738;
+        color: #fff;
+        padding: 1em 1.5em;
+        min-width: 200px;
+        width: 200px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    /* -------------------------------貴賓客群比較--桌機版--1920------------------------------ */
+    .guests_body{
+        overflow:hidden;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: linear-gradient(to right, #000 25%, transparent 100%); */
+        /* opacity: 0.8; */
+    }
+    .background_c{
+        position: absolute;
+        background-color: linear-gradient(to right, #000 25%, transparent 100%);
+        /* background-color: #000; */
+        width: 100%;
+        height: 100%;
+        /* opacity: 0.2; */
+        /* z-index: 5; */
+    }
+    .guests_img{
+        width: 100%;
+        height: 100%;
+    }
+    .guests_img::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #000 25%, transparent 100%);
+        opacity: .5;
+    }
+    .guests_img01{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .guests_img01 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .guests_img02{
+        display: none;
+    }
+    .guests_body{
+        position: relative;
+    }
+    .guests_img{
+        position: absolute;
+    }
+    .guests_text_body{
+        width: 1404px;
+        padding: 0 32px;
+        color: #fff;
+        margin: 0 auto;
+        
+    }
+    .guests_text{
+        position: relative;
+        width: 700px;
+        padding: 40px 0;
+    }
+    .guests_text h2{
+        font-size: 1.875em;
+        font-weight: 200;
+    }
+    .guests_text p{
+        font-size: 1em;
+        margin: 16px 0;
+    }
+    .guests_text_count{
+        height: 100%;
+    }
+
+
+    /* -----------------------------------最新活動--------------------------------------------- */
+    .Activity_body{
+        width: 100%;
+        background-color: #fff;
+        height: 520px;
+        padding: 40px 0;
+        box-sizing: border-box;
+    }
+    .Activity_row{
+        width: 1404px;
+        display: flex;
+        margin: 0 auto;
+        padding: 0 32px;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .Activity_row02{
+        height: 387px;
+    }
+    .Activity_h2{
+        margin-bottom: 16px;
+        font-size: 1.875em;
+        font-weight: inherit;
+    }
+    .Activity_img_body{ 
+        width: 654px;
+        height: 100%;
+        /* height: 387px; */
+        color: #fff;
+        margin: 0 8px;
+        /* padding:上 右 下 左; */
+        position: relative; 
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .Activity_img{
+        position: absolute;
+        /* border-radius: 5px; */
+        /* height: 387px; */
+        width: 654px;
+        height: 100%;
+    }
+    .margin_r16{
+        margin: 0 16px 0 0;
+    }
+    .margin_l16{
+        margin: 0 0 0 16px;
+    }
+    
+    .Activity_img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Activity_text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 654px;
+        bottom: 0;
+        background-color: rgba(0,0,0,.6);
+        padding: 24px 24px 8px;
+    }
+    .Activity_text p{
+        font-size: .875em;
+        margin: 0 0 16px;
+    }
+    .Activity_text h2{
+        font-size: 1.875em;
+        margin: 0 0 24px;
+        font-weight: 200;
+    }
+    .Activity_btn {
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.4;
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        padding: 1em 1.5em;
+        min-width: 200px;
+        width: 200px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    /* -------------------------優先理財貴賓相關聲明及注意事項---------------------- */
+    .Precautions_body{
+        width: 100%;
+        background-color: #fff;
+    }
+    .Precautions_count{
+        padding: 16px 16px 16px 30px;
+        width: 1404px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .Precautions_count h2{
+        font-size: 1em;
+        font-size: 300;
+        padding-left: 5px;
+    }
+    .Precautions_add{
+        width: 24px;
+        height: 24px;
+    }
+    /* ---------------------------謹慎理財 信用至上----------------------------- */
+    .CEDIT_body {
+        padding: 40px 0;
+    }
+    .CEDIT_count{
+        width: 1404px;
+        margin: 0 auto;
+        padding: 0 32px; 
+    }
+    .CEDIT_body h2{
+        color: #0c77b9;
+        margin: 0 0 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e1e1e1;
+        font-size: 1.875em;
+        font-weight: inherit;
+    }
+    .CEDIT_body p{
+        margin-bottom: 8px;
+        font-size: .875em;
+    }
+    
+
+    
+    /* ----------------下拉選單--桌機版--1920--------------------- */
+    .nav_menu_btn:hover{
+        color: #00a546;
+    }
+    /* ----------------下拉選單特效--桌機版--1920--------------------- */
+    .nav_img_Btline li span{
+        background-image: linear-gradient(#0c77b9, #0c77b9);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 0 1px;
+        transition: 0.15s;
+        padding-bottom: 3px;
+    }
+    .nav_img_Btline li span:hover {
+        background-size: 100% 1px;
+        color: #0c77b9;
+    }
+     /* ----------手滑換圖輪播-桌機版--1920-------- */
+    .about{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        /* height: 228px; */
+        height: 300px;
+    }
+    .about_Carousel{
+       
+       
+    }
+    .about_icon_body{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        /* position: relative;
+        white-space: nowrap;
+        overflow: auto; */
+    
+    }
+    .about_icon_body .width-proxy{
+        /* height: 10px;
+        display: inline-block; */
+    }
+    .about_icon_body li:first-child{
+        /* margin-left: 0; */
+    }
+    .about_icon_body::-webkit-scrollbar{
+        /* display: none; */
+    }
+    .about_icon_body li{
+        width: 13%;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content:center;
+        /* border: 1px solid red; */
+        /* position: relative;
+        opacity:0;
+        visibility:hidden; */
+    }
+    .about_icon_body h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .sc-icon{
+        width: 48px;
+        height: 48px;
+        margin:0px auto;
+    }
+    .sc-icon svg{
+        width: 100%;
+        height: 100%;
+    }
+    .about_icon_text06{
+        /* transform: translateX(25%); */
+    }
+/* -----------------輪播內文-桌機版--1920---------------- */
+    .banner_text{
+        position: absolute;
+        max-width: 800px;
+        width: 800px;
+        padding: 40px 0;
+        top: 50px;
+        left: 280px;
+        
+    }
+    .banner_btn{
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.4;        
+        color: #fff;
+        padding: 0.8em 1em;
+        min-width: 200px;
+        margin: 0 24px 16px 0;
+        font-size: 1em;
+        width: 200px;
+        text-align: center;
+    }
+    .btn_01{
+        border: 2px solid #008738;
+        background-color: #008738;
+    }
+    .btn_02{
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+    }
+    .banner_text h2{
+        font-size: 2.9375em;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    .banner_text p{
+        color: #fff;
+        margin-bottom: 32px;
+        display: block;
+    }
+
+
+
+
+/* ----------------桌機版--1920------------------- */
+
+    .main-wrap{
+        margin-left: 10%;
+        padding: 10px;
+        max-width: 80%;
+        overflow: hidden;
+    }
+  
+    .content-container{
+        height: 228px;
+        white-space: nowrap;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .content-container .width-proxy{
+        height: 10px;
+        display: inline-block;
+    }
+  
+    .content-container .about_icon_center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #e1e1e1;
+    }
+    .content-container .about_icon_center:first-child{
+      margin-left: 0;
+    }
+    .content-container .about_icon_center{
+        width: 248px;
+        height: 228px;
+    }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+    .content-container h2{
+        font-size: 1.125em;
+        margin-top: 5px;
+    }
+    .about_icon_center svg{
+        stroke:#0c77b9;
+    }
+    /* -------------------換圖輪播_左右滑動icon-1920------------------------ */
+    .main-wrap_xl{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        /* padding: 40px 0 32px 0; */
+    }
+    .main-wrap .lSAction{
+        display: none !important;
+    }
+
+
+
+    /* -----------------------最新焦點-桌機版--1920---------------------- */
+    /* 第一層父層 */
+    .Latest_focus{
+        background-color: rgb(245, 245, 245);
+        min-height: 550px;
+    }
+    .Latest_focus .big_text{
+        margin-bottom: 32px;
+    }
+    /* 第二層父層 */
+    .focus_content{
+        padding: 40px 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    /* 卡片總父層 */
+    .focus_body{
+        display: flex;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        min-height: 455px;
+        /* overflow: auto hidden; */
+        overflow: auto;
+        /* cursor: move; */
+        /* touch-action: none; */
+        
+    }
+
+
+    .focus_body::-webkit-scrollbar{
+        /* width : 0  !important; */
+    }
+    /* 卡片父層 */
+    .focus_cord_body{
+        margin-right: 16px;
+        width: 224px;
+        height: 285px;
+        background-color: #fff;
+    }
+    .focus_cord_body:last-child{
+        margin-right: 0px;
+    }
+    /* 圖片父層 */
+    .focus_img{
+        width: 224px;
+        height: 200px;
+    }
+    .focus_img img{
+        width: 100%;
+        height: 100%;
+    }
+    /* 內文父層 */
+    .focus_text{
+        /* width: 224px; */
+        width: 100%;
+        padding: 16px;
+        height: 85px;
+        /* white-space:pre-wrap; */
+    }
+    .focus_h3{
+        font-size: 1em;
+        height: 41px;
+        overflow: hidden;
+        font-weight: 400;
+        margin-bottom: .75rem;
+        margin-top: 0;
+    }
+    .focus_p{
+        /* height: 97px; */
+        overflow: hidden;
+        /* margin-bottom: 8px; */
+        margin-top: 0;
+        font-size: .875em;
+    }
+    .focus_More{
+        padding-bottom: 20px;
+        font-size: .75em;
+        max-width: 150px;
+        opacity: 0;
+        transition: .2s;
+    }
+    .focus_More:hover{
+        opacity: 1;
+    }
+    .focus_More svg{
+        width: 16px;
+        height: 16px;
+        margin-left: .375rem;
+    }
+    .focus_start{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .focus_content h2{
+        padding-left: 10%;
+    }
+    /* --------------------拖移-1920-------------------- */
+    .Latest_focus_xl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b2929;
+        min-height: 426px;
+    }
+    .focus_content_xl{
+        display: flex;
+        flex-direction: column;
+        /* width: 80%; */
+        width: 1404px;
+        padding: 0 32px;
+    }
+    .focus_content_xl h2{
+        color: #fff;
+    }
+    .lSPager{
+        display: none;
+    }
+
+    /* -----------箭頭-桌機版--1920------- */
+    .focus_arrow{
+        position: relative;
+        min-width: 80%;
+        width: 80%;
+        padding: 0 32px;
+        /* cursor: move; */
+    }
+    
+    .arrow_body{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        top: calc(50% - 38px);
+        z-index: 5;
+    }
+
+    .arrow_right{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 3px solid #e1e1e1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow_left{
+        width: 35px;
+        height: 35px;
+        border: 3px solid #e1e1e1;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .arrow_right svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(5%);
+        fill: #e1e1e1;
+    }
+    .arrow_left svg{
+        width: 70%;
+        height: 70%;
+        transform: translateX(-5%);
+        fill: #e1e1e1;
+    }
+    .cls-1 {
+        fill: none;
+        stroke: #e1e1e1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+    }
+    
+/* -----------news-桌機版--1920--------------- */
+    .news .item-group{
+        position: relative;
+    }
+    .news_btn{
+        width: 200px;
+        height: 51px;
+        border-radius:25.5px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    } 
+    .news_btn:hover{
+        background-color: #fff;
+        color: #000;
+    }  
+    .news .item{
+        width: 50%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .news .pic{
+        width: 100%;
+        height: 320px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #000;
+        overflow: hidden;
+        
+    }
+    .news .text{
+        position: absolute;
+        z-index: 5;
+        margin-left: calc(100%/3.5);
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .text02{
+        position: absolute;
+        z-index: 5;
+        margin-left: 50px;
+        max-width: 638px;
+        height: 280px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .news img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.6;
+        transform: .5s;
+        background-color: #000;
+    }
+    .news img:hover{
+        transform: scale(1.1);
+        opacity: .5;
+        
+    }
+    .big_text{
+        font-size: 1.875em;
+        margin: 0 0 24px;
+        font-weight: 200;
+    }
+    .text_p{
+        font-size: .875em;
+    }
+/* -----------------貴賓理財服務-桌機版--1920-------------- */
+    .Financial_services{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        background-color: rgb(245, 245, 245);
+        padding: 40px 0;
+    }
+    .Financial_body{
+        width: 80%;
+        min-width: 80%;
+        padding: 0 32px;
+    }
+    .Financial_services .item{
+        display: flex;
+        width: 33.333%;
+        padding: 0 8px;
+        
+    }
+    .h2_02{
+        display: none;
+    }
+    .Financial_services .text{
+        background-color: #fff;
+        width: 100%;
+        padding: 16px 16px 0;
+    }
+    .Financial_services .text h3{
+        margin: 0 0 12px;
+        font-size: 1em;
+    }
+    .Financial_services .text p{
+        height: 97px;
+        font-size: .875em;
+    }
+    .Financial_services .wrap .item01:first-child{
+        /* padding:上 右 下 左; */
+        padding: 0 8px 0 0;
+    }
+    .Financial_services .wrap .item02:first-child{
+        /* padding:上 右 下 左; */
+        padding: 0 8px 0 0;
+    }
+    .Financial_services .wrap .item01:last-child{
+        /* padding:上 右 下 左; */
+        padding: 0 0 0 8px;
+    }
+    .services01{
+        margin-bottom: 40px;
+        display: block;
+    }
+/* -------------------tools-桌機版--1920--------------------- */
+    .tools{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .tools .wrap{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .tools .item-group{
+        padding: 40px 0;
+        margin: 0;
+    }
+    .tools .item{
+        width: 323px;
+        min-width:323px;
+        height: 170px;
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #e1e1e1;
+        margin: 8px;
+        border-radius: 5px;
+    }
+    .tools .sc-icon{
+        height: 70px;
+        width: 70px;
+        margin: 24px auto 16px;
+    }
+    .tools .text{
+        padding: 0 16px 16px;
+        width: 100%;
+        font-weight: 400;
+    }
+    /* -----------------往上滑動按鈕-桌機版--1920--------------------- */
+    .scoll_top{
+        height: 54px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .scoll_top_count{
+        width: 1404px;
+        margin: 0 auto;
+        padding: 0 32px;
+        height: 100%;
+    }
+    .arrow_top{
+        width: 12px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow_top img{
+        width: 12px;
+        height: 12px;
+    }
+    .scoll_top_count h3{
+        padding-left: 10px;
+        color: #0c77b9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+/* ---------------------footer-桌機版--1920-------------------- */
+    footer{
+        background-color: #2b2929;
+        color: #b7b7b7;
+        padding: 40px 0;
+        min-height: 350px;
+        height: 350px;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        /* position: relative; */
+    }
+    .footer_body_xl{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        padding: 0;
+        margin: 0;
+    }
+    .footer_body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+    .footer_count_body{
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer04{
+        /* width: 20%; */
+    }
+    .footer_count{
+        width: 25%;
+        padding-left: 32px;
+    }
+    .footer03{
+        border-right: 1px solid #b7b7b7;
+    }
+    .padding_r{
+        padding-right: 32px;
+    }
+    .padding_l{
+        padding-left: 32px;
+    }
+    footer li{
+        margin: 0 0 8px;
+    }
+    .apps_title01{
+        margin-bottom: 8px;
+    }
+
+    .footer_link{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer_guide{
+        /* width: 25%; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .footer__sitemap::before{
+        border-top: 1px solid #b7b7b7;
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 5px;
+        margin: 0 8px;
+    }
+    .footer_link .item-group{
+        
+        display: flex;
+        flex-direction: row;
+
+    }
+    .guide_link{
+        width: 75%;
+    }
+    .guide_Introduction{
+        width: 25%;
+
+    }
+    .guide_Introduction li{
+        border-radius: 18px;
+        margin: 0 0 0 19px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .guide_Introduction a{
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .guide_Introduction img{
+        width: 100%;
+        height: 100%;
+    }
+   
+    .footer_website path{
+        fill: #b7b7b7;
+    }
+    .website01 svg{
+        width: 50%;
+        height: 50%;
+
+    }
+    .website02 svg{
+        width: 60%;
+        height: 60%;
+
+    }
+    .footer_apps_title02{
+        min-width: 144px;
+        width: 144px;
+        height: 40px;
+        margin-bottom: 8px;
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+    .footer_apps_title02 svg{
+        height: 45px;
+        width: 135px;
+    }
+    .footer_none_xs{
+        display: block;
+        width: 25%;
+    }
+    .footer_block_xs{
+        display: none;
+    }
+    .Quick_link_body{
+        display: none;
+    }
+    .Quick_link{
+        display: none;
+    }
+
+/* --------------客服-桌機版--1920------------- */
+    .footer_Customer{
+        background-color: #00b7fb;
+        bottom: 5px;
+        right: 50px;
+        z-index: 50;
+        border-radius: 30px;
+        position: fixed;
+        
+    }
+    .c2c_box_wrapper {
+        font-weight: 400px;
+        font-size: 16px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+
+    .c2c-title-text{
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-font-smoothing: subpixel-antialiased;
+        letter-spacing: .55px;
+        white-space: nowrap;        
+        text-overflow: ellipsis;
+        max-width: 120px;  
+    }
+    .wrapper_img img{
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+
+
+
+
+
+
+
+
+
+}
