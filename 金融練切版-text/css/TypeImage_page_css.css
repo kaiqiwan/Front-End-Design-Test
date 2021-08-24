@@ -1363,12 +1363,44 @@
     .wrapper_img img{
         width: 24px;
         height: 24px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
     }
     /* ---------------------------------- */
     .margin_b16{
         margin-bottom: 16px;
     }
+    /* ----------------------了解--我有興趣--手機板------------------- */
+    .Understand{
+        width: 100%;
+        background-color: #000;
+        z-index: 10;
+        min-height: 75px;
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+    }
+    .Interest_body{
+        /* width: 1404px; */
+        /* padding: 0 16px; */
+        color: #fff;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .Interest_text{
+        font-size: 16px;
+        padding-right: 8px;
+    }
+    .Interest_btn{
+        font-size: 14px;
+    }
+    .m75b{
+        height: 75px;
+        width: 100%;
+        background-color: #2b2929;
+    }
+
 
 }
 
@@ -2604,15 +2636,38 @@ footer li{
     .wrapper_img img{
         width: 24px;
         height: 24px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
     }
-
-
-
-
-
-
-
+ /* ----------------------了解--我有興趣--ipad版------------------- */
+    .Understand{
+        width: 100%;
+        background-color: #000;
+        z-index: 10;
+        min-height: 75px;
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+    }
+    .Interest_body{
+        /* width: 1404px; */
+        padding: 0 32px;
+        color: #fff;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .Interest_text{
+        font-size: 16px;
+    }
+    .Interest_btn{
+        font-size: 14px;
+    }
+    .m75b{
+        height: 75px;
+        width: 100%;
+        background-color: #2b2929;
+    }
 
 
 
@@ -3850,7 +3905,37 @@ footer li{
     .wrapper_img img{
         width: 24px;
         height: 24px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
+    }
+     /* ----------------------了解--我有興趣--1440------------------- */
+     .Understand{
+        width: 100%;
+        background-color: #000;
+        z-index: 10;
+        min-height: 75px;
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+    }
+    .Interest_body{
+        width: 1404px;
+        padding: 0 32px;
+        color: #fff;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .Interest_text{
+        font-size: 16px;
+    }
+    .Interest_btn{
+        font-size: 14px;
+    }
+    .m75b{
+        height: 75px;
+        width: 100%;
+        background-color: #2b2929;
     }
 }
 /* --------------------------------桌機版--1920----------------------------------------- */
@@ -4924,6 +5009,7 @@ footer li{
         justify-content: center;
         list-style: none;
         /* position: relative; */
+        /* margin-bottom: 75px; */
     }
     .footer_body_xl{
         width: 100%;
@@ -5093,15 +5179,42 @@ footer li{
     .wrapper_img img{
         width: 24px;
         height: 24px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
     }
-
-
-
-
-
-
-
-
+    /* ----------------------了解--我有興趣--1920------------------- */
+    .Understand{
+        width: 100%;
+        background-color: #000;
+        z-index: 10;
+        min-height: 75px;
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+        
+    }
+    .Interest_body{
+        width: 1404px;
+        padding: 0 32px;
+        color: #fff;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .Interest_text{
+        font-size: 16px;
+    }
+    .Interest_btn{
+        font-size: 14px;
+    }
+    .m75b{
+        height: 75px;
+        width: 100%;
+        background-color: #2b2929;
+    }
+/* ------------------------------------------------------ */
+    .Customer_btn{
+        /* display: none; */
+    }
 
 }

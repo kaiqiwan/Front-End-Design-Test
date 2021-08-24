@@ -1679,25 +1679,53 @@
 
                 </div>
             </div>
+
             <!-- ---------------客服--------------- -->
             <div class="footer_Customer">
                 <div class="c2c_box_wrapper item-group">
                     <div class="wrapper_img">
                         <img src="./img/scformsikon-chat.svg" alt="">
                     </div>
+                    <!-- <div class="Hamburger_body Customer_btn">
+                        <input type="checkbox" name="" id="check02">
+                        <div class="nav_Hamburger_container">
+                            <div class="nav_Hamburger_xs">
+                                <div class=""></div>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="c2c-title-text">
-                        數位客服
+                        <!-- 數位客服 -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- ---------------客服--btn------------- -->
+            <!-- <div class="Customer_body">
+                <div class="c2c_box_wrapper">
+                    <div class="wrapper_img">
+                        <img src="./img/scformsikon-chat.svg" alt="">
                     </div>
                 </div>
-                <!-- <ul class="item-group">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> -->
-            </div>
-
+                <div class="Hamburger_body">
+                    <input type="checkbox" name="" id="check">
+                    <div class="nav_Hamburger_container">
+                        <div class="nav_Hamburger_xs">
+                            <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
 
         </footer>
+        <div class="m75b"></div>
+        <!-- --------------------------了解--我有興趣--------------------------------- -->
+        <div class="Understand">
+            <div class="Interest_body item-group">
+                <div class="Interest_text">了解更多優先理財貴賓權益</div>
+                <div class="service_btn Interest_btn">我有興趣</div>
+            </div>
+        </div>
     </div>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <!-- -----------------拖移----------------------- -->
@@ -2394,9 +2422,27 @@
 
 
         });
+        // ---------------------------------------------------------------------------------------
+        // Understand
+        //scrollTop
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 0) {
+                $(".Understand").show();
+            }
+            else {
+                $(".Understand").hide();
 
-
-
+            }
+        });
+        // -----------------------------------------------------------------------
+        // footer_Customer
+        // Customer_body
+        // $('footer_Customer').click(function () {
+        //     // $('Customer_body').hide()
+        //     $('Customer_btn').css('display', 'block');
+        //     $('footer_Customer').css('background-color', '#fff').css('width', '45px').css('height', '45px');
+        //     $('.nav_Hamburger_xs').css('background-color', '#2b2929');
+        // })
     </script>
 </body>
 
