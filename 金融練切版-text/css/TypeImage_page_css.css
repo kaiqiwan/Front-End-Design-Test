@@ -3877,7 +3877,7 @@ footer{
 footer{
     background-color: #2b2929;
     color: #b7b7b7;
-    padding: 40px 0 120px 0;
+    padding: 40px 0 100px 0;
     /* padding:上 右 下 左; */
     min-height: 350px;
     /* height: 350px; */
@@ -5227,7 +5227,7 @@ footer{
     footer{
         background-color: #2b2929;
         color: #b7b7b7;
-        padding: 40px 0 75px 0;
+        padding: 40px 0 100px 0;
         min-height: 350px;
         /* height: 350px; */
         min-width: 100%;
