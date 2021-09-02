@@ -1681,44 +1681,55 @@
             </div>
 
             <!-- ---------------客服--------------- -->
-            <div class="footer_Customer">
-                <div class="c2c_box_wrapper item-group">
+            <div class="footer_Customer02">
+
+                <div class="Customer01 item-group">
                     <div class="wrapper_img">
                         <img src="./img/scformsikon-chat.svg" alt="">
                     </div>
-                    <!-- <div class="Hamburger_body Customer_btn">
-                        <input type="checkbox" name="" id="check02">
-                        <div class="nav_Hamburger_container">
-                            <div class="nav_Hamburger_xs">
-                                <div class=""></div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="c2c-title-text">
-                        <!-- 數位客服 -->
+                    <div class="c2c-title-text02">
+                        數位客服
                     </div>
+                </div>
+
+
+            </div>
+
+            <div class="footer_Customer">
+                <div class="c2c_box_wrapper">
+                    <ul class="Customer02-2-1 item-group">
+                        <li class="p0_32 Customer02-2 item-group">
+                            <div class="wrapper_img">
+                                <img src="./page/scformsikon-video.svg" alt="">
+                            </div>
+                            <div class="c2c-title-text Customer_text02-2">
+                                視訊
+                            </div>
+                        </li>
+                        <li class="p0_32 Customer02-2 item-group">
+                            <div class="wrapper_img">
+                                <img src="./page/scformsikon-voice.svg" alt="">
+                            </div>
+                            <div class="c2c-title-text Customer_text02-2">
+                                網路電話
+                            </div>
+                        </li>
+                        <li class="p0_32 item-group">
+                            <div class="wrapper_img">
+                                <img src="./img/scformsikon-chat.svg" alt="">
+                            </div>
+                            <div class="c2c-title-text">
+                                數位客服
+                            </div>
+                        </li>
+                    </ul>
+
 
                 </div>
             </div>
-            <!-- ---------------客服--btn------------- -->
-            <!-- <div class="Customer_body">
-                <div class="c2c_box_wrapper">
-                    <div class="wrapper_img">
-                        <img src="./img/scformsikon-chat.svg" alt="">
-                    </div>
-                </div>
-                <div class="Hamburger_body">
-                    <input type="checkbox" name="" id="check">
-                    <div class="nav_Hamburger_container">
-                        <div class="nav_Hamburger_xs">
-                            <div class=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
         </footer>
-        <div class="m75b"></div>
+        <!-- <div class="m75b"></div> -->
         <!-- --------------------------了解--我有興趣--------------------------------- -->
         <div class="Understand">
             <div class="Interest_body item-group">
@@ -2068,20 +2079,26 @@
         });
         // ---------------------------返回上一頁-----------------------------------
         $('.nav_youAre_count02').click(function () {
-            SetBodyHeight();
-            hiddenLanguage_body();
-            if (warp02_width <= 768) {
+            //SetBodyHeight();
+            //hiddenLanguage_body();
+            var windowsWidth = $(window).width();
+            console.log(`warp02_width_${windowsWidth}`);
+            if (414 < windowsWidth && windowsWidth <= 768) {
                 // --------------------nav_細頁_存款---------------------
                 $('.deposit_img01').removeClass("m_l");
                 $('.ul_bottom').removeClass('w_31pa');
                 $('.ul_bottom').addClass('w_100pa');
                 $('.nav_deposit02').removeClass('w_70pa');
+                $('.deposit_img02').removeClass('m_l');
                 $('.nav_deposit02').addClass('w_100pa');
                 $('.nav_deposit_body .ul_bottom').css('padding-right', '0px').css('margin-bottom', '15px');
+                $('.deposit_img01').css('margin-right', '8px');
+                $('.deposit_img02').css('margin-left', '8px');
                 $('.nav_img_btn').css('height', '200px');
                 $('.nav_pt').css('padding-top', '15px');
                 $('.nav_border_b').css('padding-bottom', '6px').css('border-bottom', '1px solid #919191');
                 $('.nav_setUp_m').css('margin', '20px 0px');
+
                 // --------------------nav_細頁_信用卡----------------------
                 $('.creditCard_xs').removeClass("l_padding w_25pa");
                 $('.nav_creditCard_body .ul_bottom').css('padding-right', '0px').css('margin-bottom', '15px');
@@ -2094,8 +2111,12 @@
                 $('.nav_loan_body .ul_bottom').css('padding-right', '0px');
                 $('.nav_loan_03').removeClass("w_50pa l_padding");
                 $('.nav_loan_img01').removeClass("m_l");
+                $('.nav_loan_img02').removeClass("m_l");
                 $('.nav_loan_body .ul_bottom').css('margin-bottom', '15px');
                 $('.ul_bottom li').css('padding-bottom', '8px');
+                $('.nav_loan_img01').css('margin-right', '8px');
+                $('.nav_loan_img02').css('margin-left', '8px');
+                // $('.nav_loan_img01').css('margin-bottom', '16px');
                 // ----------------------nav_細頁_投資-------------------------
                 $('.investment_02').removeClass("l_padding");
                 $('.investment_xs01').removeClass("w_50pa");
@@ -2107,6 +2128,7 @@
                 $('.Insurance_xs02').removeClass("l_padding ul_bottom w_25pa ul_bottom_l");
                 $('.Insurance_xs03').removeClass("nav_pt_0");
                 $('.Insurance_04').removeClass("w_25pa l_padding");
+                $('.nav_creditCard').removeClass("EvenlySplit_warp_xs");
                 $('.Insurance_04').addClass('w_100pa');
                 $('.Insurance_04 .creditCard_img01').css('width', '50%');
                 $('.Insurance_04').css('margin-top', '30px');
@@ -2130,38 +2152,64 @@
                 $('.nav_creditCard').css('padding', '0px 16px');
 
             }
-            else {
-
-
-            }
-        });
-        // --------------------------------------------------
-        $('.nav_youAre_count02').click(function () {
-            SetBodyHeight();
-            hiddenLanguage_body();
-            if (warp02_width <= 414) {
+            else if (windowsWidth <= 414) {
                 // --------------------nav_細頁_存款---------------------
                 $('.deposit_img01').removeClass("w_50pa");
                 $('.deposit_img02').removeClass("m_l w_50pa");
                 $('.deposit_img01').addClass('w_100pa');
                 $('.deposit_img02').addClass('w_100pa');
-                $('.deposit_img01').css('margin-bottom', '20px');
+                $('.deposit_img01').css('margin-right', '0px');
+                $('.deposit_img01').css('margin-bottom', '16px');
+                $('.ul_bottom').removeClass('w_31pa');
+
                 // --------------------nav_細頁_信用卡----------------------
                 $('.creditCard_04').removeClass("w_50pa");
                 $('.creditCard_04').addClass('w_100pa');
+                $('.creditCard_xs').removeClass("l_padding w_25pa");
+                $('.creditCard_04').removeClass("w_25pa l_padding");
                 // ----------------------nav_細頁_貸款-------------------------
                 $('.nav_loan_img01').removeClass("w_50pa");
                 $('.nav_loan_img02').removeClass("m_l w_50pa");
                 $('.nav_loan_img01').addClass('w_100pa');
                 $('.nav_loan_img02').addClass('w_100pa');
                 $('.nav_loan_img01').css('margin-bottom', '20px');
+                $('.nav_loan_img01').css('margin-bottom', '16px');
+                $('.nav_loan_xs02').removeClass("l_padding w_50pa");
+                $('.nav_loan_03').removeClass("w_50pa l_padding");
+                $('.nav_loan_body .ul_bottom').css('padding-right', '0px');
+                // ----------------------nav_細頁_投資-------------------------
+                $('.investment_02').removeClass("l_padding");
+                $('.investment_xs01').removeClass("w_50pa");
+                $('.investment_xs02').removeClass("w_50pa");
+                $('.investment_xs02').removeClass("w_50pa");
+                $('.investment_02 .ul_bottom').css('padding-right', '0px');
+                $('.investment_03').removeClass("w_50pa l_padding");
                 // ----------------------nav_細頁_數位服務-------------------------
+                $('.DigitalService_xs02').removeClass("ul_bottom ul_bottom_l l_padding");
                 $('.DigitalService_03').removeClass("w_50pa");
                 $('.DigitalService_03').addClass('w_100pa');
+                $('.DigitalService_xs02').removeClass("ul_bottom ul_bottom_l l_padding");
+                $('.DigitalService_xs02').css('margin-bottom', '15px');
+                $('.DigitalService_03').removeClass("w_30pa l_padding item-group_xs");
+                $('.DigitalService_03').css('flex-direction', 'row');
+                $('.DigitalService_xs03').removeClass("w_72pa");
                 // ----------------------nav_細頁_保險-------------------------
                 $('.Insurance_04').removeClass("w_50pa");
                 $('.Insurance_04').addClass('w_100pa');
                 $('.Insurance_04 .creditCard_img01').css('width', '100%');
+                $('.Insurance_xs02').removeClass("l_padding ul_bottom w_25pa ul_bottom_l");
+                $('.Insurance_xs03').removeClass("nav_pt_0");
+                $('.Insurance_04').removeClass("w_25pa l_padding");
+                $('.Insurance_04').css('margin-top', '16px');
+                $('.Insurance_03').css('margin-top', '20px');
+                $('.Insurance_02').css('margin-top', '14px');
+                // ----------------------nav_細頁_支援中心-------------------------
+                $('.SupportCenter_xs02').removeClass("ul_bottom l_padding");
+                $('.SupportCenter_xs01_1').css('display', 'none');
+                $('.SupportCenter_xs01_2 li').css('padding', '8px 0px').css('font-size', '14px');
+                $('.nav_deposit').css('padding', '0px 16px');
+                $('.nav_loan').css('padding', '0px 16px');
+                $('.nav_creditCard').css('padding', '0px 16px');
                 // ----------------------footer-------------------------
                 $('.footer_body_xs .footer_count').removeClass("padding_r");
 
@@ -2437,12 +2485,78 @@
         // -----------------------------------------------------------------------
         // footer_Customer
         // Customer_body
-        // $('footer_Customer').click(function () {
-        //     // $('Customer_body').hide()
-        //     $('Customer_btn').css('display', 'block');
-        //     $('footer_Customer').css('background-color', '#fff').css('width', '45px').css('height', '45px');
-        //     $('.nav_Hamburger_xs').css('background-color', '#2b2929');
-        // })
+
+        // footer_Customer02
+
+        $('.footer_Customer02').click(function () {
+            let windowsWidth = $(window).width();
+            if (windowsWidth > 414) {
+                $('.footer_Customer02').animate({ opacity: '0' });
+                $('.c2c-title-text').animate({ opacity: '0' });
+                $('.wrapper_img').animate({ opacity: '0' });
+                $('.footer_Customer').animate({ opacity: '1' });
+                $('.Customer02-2').animate({ opacity: '1' });
+                // $('.c2c_box_wrapper').animate({ padding: '22px 0px' });
+                $('.p0_32').animate({ padding: '22px 20px' });
+                // $('.footer_Customer').animate({ width: '448.03px', height: '68px' });
+                $('.c2c_box_wrapper').css('height', '68px');
+
+                $('.footer_Customer').css('border-radius', '34px');
+                setTimeout(function () {
+                    $('.wrapper_img').animate({ opacity: '1' });
+                    $('.c2c-title-text').animate({ opacity: '1' });
+
+                }, 900);
+            };
+
+
+            if (windowsWidth <= 414) {
+                $('.footer_Customer02').animate({ opacity: '0' });
+                $('.c2c-title-text').animate({ opacity: '0' });
+                $('.wrapper_img').animate({ opacity: '0' });
+                $('.footer_Customer').animate({ opacity: '1' });
+                $('.Customer02-2').animate({ opacity: '1' });
+                // $('.c2c_box_wrapper').animate({ padding: '22px 0px' });
+                $('.p0_32').animate({ padding: '22px 16px' });
+                // $('.footer_Customer').animate({ width: '448.03px', height: '68px' });
+                $('.c2c_box_wrapper').css('height', '68px');
+                $('.footer_Customer02').css('right', '14.5px');
+                $('.footer_Customer').css('border-radius', '34px');
+                $('.footer_Customer').css('right', '14.5px');
+                setTimeout(function () {
+                    $('.wrapper_img').animate({ opacity: '1' });
+                    $('.c2c-title-text').animate({ opacity: '1' });
+
+                }, 900);
+            };
+        });
+        //footer_Customer
+        //Customer02-2-1
+        $('.Customer02-2-1').mouseenter(function () {
+            $('.footer_Customer02').hide();
+
+        }).mouseleave(function () {
+            $('.footer_Customer02').animate({ opacity: '1' });
+            $('.c2c-title-text').animate({ opacity: '0' });
+            $('.wrapper_img').animate({ opacity: '1' });
+            $('.footer_Customer').animate({ opacity: '0' });
+            $('.Customer02-2').animate({ opacity: '0' });
+            // $('.c2c_box_wrapper').animate({ padding: '22px 0px' });
+            $('.footer_Customer02').animate({ padding: '10px 20px' });
+            // $('.footer_Customer').animate({ width: '160.2px', height: '44px' });
+            $('.c2c_box_wrapper').css('height', '44px');
+            $('.footer_Customer').css('border-radius', '30px');
+            $('.footer_Customer02').show();
+            setTimeout(function () {
+                $('.wrapper_img').animate({ opacity: '1' });
+                $('.c2c-title-text').animate({ opacity: '0' });
+
+            }, 900);
+        });
+        $('.p0_32').hover(function () {
+            $(this).css('background-color', '#1b7da0').siblings().css('background-color', '#00b7fb');
+            console.log($(this));
+        })
     </script>
 </body>
 

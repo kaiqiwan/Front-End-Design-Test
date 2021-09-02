@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="21px" height="31px" viewBox="0 0 21 31" aria-label="Voice Chat">
+  <g>
+    <path fill="#FFF" d="M10.5 5C11.785 5 13 6.048 13 7.156v9.25c0 1.108-1.215 2.156-2.5 2.156S8 17.514 8 16.406v-9.25C8 6.048 9.215 5 10.5 5m0-2C8.205 3 6 4.86 6 7.156v9.25c0 2.295 2.205 4.156 4.5 4.156s4.5-1.86 4.5-4.156v-9.25C15 4.86 12.795 3 10.5 3z"/>
+  </g>
+  <g>
+    <path fill="#FFF" d="M10.406 24.704C6.173 24.704 3 21.867 3 18v-6h2v6c0 2.717 2.322 4.583 5.406 4.583S16 20.717 16 18v-6h2v6c0 3.867-3.36 6.704-7.594 6.704z"/></g><g><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M9 26h3v2H9z"/>
+  </g>
+  <g>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M5 29h11v1H5z"/>
+  </g>
+</svg>
