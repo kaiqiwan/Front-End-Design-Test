@@ -1859,21 +1859,54 @@
                 </div>
             </div>
             <!-- ---------------客服--------------- -->
-            <div class="footer_Customer">
-                <div class="c2c_box_wrapper item-group">
+            <div class="footer_Customer02">
+
+                <div class="Customer01 item-group">
                     <div class="wrapper_img">
                         <img src="./img/scformsikon-chat.svg" alt="">
                     </div>
-                    <div class="c2c-title-text">
+                    <div class="c2c-title-text02">
                         數位客服
                     </div>
                 </div>
-                <!-- <ul class="item-group">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> -->
+
+
             </div>
+
+            <div class="footer_Customer">
+                <div class="c2c_box_wrapper">
+                    <ul class="Customer02-2-1 item-group">
+                        <li class="p0_32 Customer02-2 item-group">
+                            <div class="wrapper_img">
+                                <img src="./page/scformsikon-video.svg" alt="">
+                            </div>
+                            <div class="c2c-title-text Customer_text02-2">
+                                視訊
+                            </div>
+                        </li>
+                        <li class="p0_32 Customer02-2 item-group">
+                            <div class="wrapper_img">
+                                <img src="./page/scformsikon-voice.svg" alt="">
+                            </div>
+                            <div class="c2c-title-text Customer_text02-2">
+                                網路電話
+                            </div>
+                        </li>
+                        <li class="p0_32 item-group">
+                            <div class="wrapper_img">
+                                <img src="./img/scformsikon-chat.svg" alt="">
+                            </div>
+                            <div class="c2c-title-text">
+                                數位客服
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </footer>
 
 
         </footer>
@@ -2337,7 +2370,76 @@
 
             });
         });
-        // $('.main-wrap .lSAction').css('display', 'none');
+        // -------------------------客服----------------------------------------------
+        $('.footer_Customer02').click(function () {
+            let windowsWidth = $(window).width();
+            if (windowsWidth > 414) {
+                $('.footer_Customer02').animate({ opacity: '0' });
+                $('.c2c-title-text').animate({ opacity: '0' });
+                $('.wrapper_img').animate({ opacity: '0' });
+                $('.footer_Customer').animate({ opacity: '1' });
+                $('.Customer02-2').animate({ opacity: '1' });
+                // $('.c2c_box_wrapper').animate({ padding: '22px 0px' });
+                $('.p0_32').animate({ padding: '22px 20px' });
+                // $('.footer_Customer').animate({ width: '448.03px', height: '68px' });
+                $('.c2c_box_wrapper').css('height', '68px');
+
+                $('.footer_Customer').css('border-radius', '34px');
+                setTimeout(function () {
+                    $('.wrapper_img').animate({ opacity: '1' });
+                    $('.c2c-title-text').animate({ opacity: '1' });
+
+                }, 900);
+            };
+
+
+            if (windowsWidth <= 414) {
+                $('.footer_Customer02').animate({ opacity: '0' });
+                $('.c2c-title-text').animate({ opacity: '0' });
+                $('.wrapper_img').animate({ opacity: '0' });
+                $('.footer_Customer').animate({ opacity: '1' });
+                $('.Customer02-2').animate({ opacity: '1' });
+                // $('.c2c_box_wrapper').animate({ padding: '22px 0px' });
+                $('.p0_32').animate({ padding: '22px 16px' });
+                // $('.footer_Customer').animate({ width: '448.03px', height: '68px' });
+                $('.c2c_box_wrapper').css('height', '68px');
+                $('.footer_Customer02').css('right', '14.5px');
+                $('.footer_Customer').css('border-radius', '34px');
+                $('.footer_Customer').css('right', '14.5px');
+                setTimeout(function () {
+                    $('.wrapper_img').animate({ opacity: '1' });
+                    $('.c2c-title-text').animate({ opacity: '1' });
+
+                }, 900);
+            };
+        });
+        //footer_Customer
+        //Customer02-2-1
+        $('.Customer02-2-1').mouseenter(function () {
+            $('.footer_Customer02').hide();
+
+        }).mouseleave(function () {
+            $('.footer_Customer02').animate({ opacity: '1' });
+            $('.c2c-title-text').animate({ opacity: '0' });
+            $('.wrapper_img').animate({ opacity: '1' });
+            $('.footer_Customer').animate({ opacity: '0' });
+            $('.Customer02-2').animate({ opacity: '0' });
+            // $('.c2c_box_wrapper').animate({ padding: '22px 0px' });
+            $('.footer_Customer02').animate({ padding: '10px 20px' });
+            // $('.footer_Customer').animate({ width: '160.2px', height: '44px' });
+            $('.c2c_box_wrapper').css('height', '44px');
+            $('.footer_Customer').css('border-radius', '30px');
+            $('.footer_Customer02').show();
+            setTimeout(function () {
+                $('.wrapper_img').animate({ opacity: '1' });
+                $('.c2c-title-text').animate({ opacity: '0' });
+
+            }, 900);
+        });
+        $('.p0_32').hover(function () {
+            $(this).css('background-color', '#1b7da0').siblings().css('background-color', '#00b7fb');
+            console.log($(this));
+        })
 
 
 
